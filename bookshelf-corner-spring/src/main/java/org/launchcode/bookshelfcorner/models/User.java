@@ -26,9 +26,11 @@ public class User extends AbstractEntity {
 
     public User() {}
 
-    public User(String username, String email, String password) {
+    public User(String username, String email, String pwHash) {
+        super();
         this.username = username;
-        this.pwHash = encoder.encode(password);
+//        this.pwHash = encoder.encode(password);
+        this.pwHash = pwHash;
         this.email = email;
 //        this.booksToShare = aBooksToShare;
 //            , List<Book> aBooksToShare
@@ -43,6 +45,9 @@ public class User extends AbstractEntity {
     public void setUsername(String username) { this.username = username; }
 
     public void setEmail(String email) { this.email = email; }
+
+    //Does it need to be hashed? Safety concerns?
+    public void setPwHash (String pwHash) { this.pwHash = pwHash; }
 
 //    public List<Book> getBooksToShare() { return booksToShare; }
 
