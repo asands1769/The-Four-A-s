@@ -66,3 +66,5 @@ public class User extends AbstractEntity {
         return encoder.matches(password, pwHash);
     }
 }
+
+//This comment is a test
