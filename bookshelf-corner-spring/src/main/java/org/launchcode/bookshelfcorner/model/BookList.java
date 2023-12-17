@@ -8,11 +8,11 @@ public class BookList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookId;
-    //@Column(name = "book_title")
+    @Column(name = "book_title")
     private String bookTitle;
-    //@Column(name = "book_author")
+    @Column(name = "book_author")
     private String bookAuthor;
-    //@Column(name = "published_year")
+    @Column(name = "published_year")
     private int publishedYear;
 
     public BookList() {
