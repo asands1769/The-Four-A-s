@@ -1,7 +1,7 @@
 package org.launchcode.bookshelfcorner.controllers;
 
 import org.launchcode.bookshelfcorner.models.Event;
-import org.launchcode.bookshelfcorner.repositories.EventView;
+import org.launchcode.bookshelfcorner.models.data.EventView;
 
 public class EventController {
 
