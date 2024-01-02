@@ -21,19 +21,17 @@ public class User extends AbstractEntity {
     @NotNull
     private String pwHash;
 
-//    @ManyToMany
-//    private List<Book> booksToShare = new ArrayList<>();
+    @ManyToMany
+    private List<Book> booksToShare = new ArrayList<>();
 
     public User() {}
 
-    public User(String username, String email, String pwHash) {
+    public User(String aUsername, String anEmail, String password, List<Book> aBooksToShare) {
         super();
-        this.username = username;
-//        this.pwHash = encoder.encode(password);
-        this.pwHash = pwHash;
-        this.email = email;
-//        this.booksToShare = aBooksToShare;
-//            , List<Book> aBooksToShare
+        this.username = aUsername;
+        this.pwHash = encoder.encode(password);
+        this.email = anEmail;
+        this.booksToShare = aBooksToShare;
     }
 
     public String getUsername() {
@@ -46,12 +44,11 @@ public class User extends AbstractEntity {
 
     public void setEmail(String email) { this.email = email; }
 
-    //Does it need to be hashed? Safety concerns?
-    public void setPwHash (String pwHash) { this.pwHash = pwHash; }
+    public void setPwHash (String password) { this.pwHash = encoder.encode(password); }
 
-//    public List<Book> getBooksToShare() { return booksToShare; }
+    public List<Book> getBooksToShare() { return booksToShare; }
 
-//    public void setSkills(List<Book> booksToShare) { this.booksToShare = booksToShare; }
+    public void setBooksToShare(List<Book> booksToShare) { this.booksToShare = booksToShare; }
 
     //Do we need another method to update booksToShare list?
     //Should this be another class by itself?
@@ -67,4 +64,3 @@ public class User extends AbstractEntity {
     }
 }
 
-//This comment is a test
