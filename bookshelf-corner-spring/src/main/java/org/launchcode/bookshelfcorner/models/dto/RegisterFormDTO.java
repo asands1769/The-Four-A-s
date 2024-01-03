@@ -1,4 +1,4 @@
-package org.launchcode.techjobsauth.models.dto;
+package org.launchcode.bookshelfcorner.models.dto;
 
 public class RegisterFormDTO extends org.launchcode.bookshelfcorner.models.dto.LoginFormDTO {
 

@@ -26,12 +26,11 @@ public class User extends AbstractEntity {
 
     public User() {}
 
-    public User(String aUsername, String anEmail, String password, List<Book> aBooksToShare) {
+    public User(String aUsername, String anEmail, String password) {
         super();
         this.username = aUsername;
         this.pwHash = encoder.encode(password);
         this.email = anEmail;
-        this.booksToShare = aBooksToShare;
     }
 
     public String getUsername() {
