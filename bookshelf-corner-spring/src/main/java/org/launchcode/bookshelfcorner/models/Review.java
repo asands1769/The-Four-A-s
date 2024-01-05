@@ -5,7 +5,9 @@ import jakarta.persistence.Entity;
 import java.time.LocalDate;
 
 @Entity
+
 public class Review extends AbstractEntity{
+
 
     private String user;
 
