@@ -1,13 +1,12 @@
 package org.launchcode.bookshelfcorner.controllers;
 
 import org.launchcode.bookshelfcorner.models.Event;
-import org.launchcode.bookshelfcorner.models.data.EventRepository;
+import org.launchcode.bookshelfcorner.repository.EventRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -57,11 +56,11 @@ public class EventController {
         List<Event> allEvents = eventRepository.getAllEvents();
 
         // Apply filtering based on search criteria
-        List<Event> filteredEvents = allEvents.stream()
-                .filter(event -> isEventMatchingCriteria(event, keyword, eventName, eventDescription, /* other parameters */))
-                .collect(Collectors.toList());
+        /*List<Event> filteredEvents = allEvents.stream()
+                .filter(event -> isEventMatchingCriteria(event, keyword, eventName, eventDescription, /* other parameters ))
+                /*.collect(Collectors.toList());
 
-        return filteredEvents;
+        return filteredEvents;*/
     }
 
 

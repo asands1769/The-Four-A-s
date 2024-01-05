@@ -3,7 +3,7 @@ package org.launchcode.bookshelfcorner.controllers;
 
 
 import org.launchcode.bookshelfcorner.models.Review;
-import org.launchcode.bookshelfcorner.models.data.ReviewRepository;
+import org.launchcode.bookshelfcorner.repository.ReviewRepository;
 
 
 public class ReviewController {
