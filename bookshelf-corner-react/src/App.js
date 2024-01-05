@@ -1,7 +1,6 @@
 import Header from './components/Header';
-import AddUser from './users/Register';
-import Login from './users/Login';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Login from './users/Login'
 
 import './App.css';
 
@@ -10,7 +9,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/login" element={<BookListComponent/>}></Route>
+          <Route exact path="/users/Login" element={<Login/>}></Route>
         </Routes>
       </Router>
       <Header />
