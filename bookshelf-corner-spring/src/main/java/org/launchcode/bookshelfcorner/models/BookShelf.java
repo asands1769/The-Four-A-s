@@ -1,27 +1,27 @@
 package org.launchcode.bookshelfcorner.models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
-    public class Book {
+@Table (name = "Book")
+    public class BookShelf {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private int id;
         private static int nextId = 1;
-
+    @Column
         private String title;
+    @Column
         private String author;
+    @Column
         private String genre;
-        public Book() {
+        public BookShelf() {
         id = nextId;
         nextId++;
         }
 
-        public Book(int id, String title, String author, String genre) {
+        public BookShelf(int id, String title, String author, String genre) {
             this.id = id;
             this.title = title;
             this.author = author;
@@ -56,6 +56,14 @@ import jakarta.persistence.Id;
             this.genre = genre;
         }
 
-        // Other fields, getters, and setters
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", genre='" + genre + '\'' +
+                '}';
+    }
+    // Other fields, getters, and setters
     }
 

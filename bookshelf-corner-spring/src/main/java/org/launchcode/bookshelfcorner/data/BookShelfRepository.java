@@ -1,9 +1,9 @@
 package org.launchcode.bookshelfcorner.data;
 
-import org.launchcode.bookshelfcorner.models.Book;
+import org.launchcode.bookshelfcorner.models.BookShelf;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BookRepository extends CrudRepository <Book, Integer> {
+public interface BookShelfRepository extends CrudRepository <BookShelf, Integer> {
 }
