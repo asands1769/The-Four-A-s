@@ -1,4 +1,6 @@
-package org.launchcode.bookshelfcorner.models;
+package org.launchcode.bookshelfcorner.exceptions;
+
+import org.launchcode.bookshelfcorner.exceptions.CustomFieldError;
 
 import java.util.List;
 

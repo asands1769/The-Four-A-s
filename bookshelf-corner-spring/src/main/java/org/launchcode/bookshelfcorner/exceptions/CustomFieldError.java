@@ -1,4 +1,4 @@
-package org.launchcode.bookshelfcorner.models;
+package org.launchcode.bookshelfcorner.exceptions;
 
 public class CustomFieldError {
 

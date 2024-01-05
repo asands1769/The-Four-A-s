@@ -7,28 +7,28 @@ import jakarta.validation.constraints.Size;
 
 public class LoginFormDTO {
 
-    @NotNull
-    @NotBlank
-    @Size(min = 3, max = 20, message = "Invalid username. Must be between 3 and 20 characters.")
-    private String username;
+//    @NotNull(message = "Username is required")
+//    @NotBlank
+//    @Size(min = 3, message = "Invalid username. Must be between 3 and 20 characters.")
+//    private String username;
 
-    @NotNull
+    @NotNull(message = "Password is required.")
     @NotBlank
-    @Size(min = 5, max = 30, message = "Invalid password. Must be between 5 and 30 characters.")
+    @Size(min = 8, message = "Invalid password. Must be 8 or more characters.")
     private String password;
 
-    @Email
-    @NotNull
+    @Email(message = "Email is not properly formatted")
+    @NotNull(message = "Email is required")
     @NotBlank
     private String email;
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
+//    public String getUsername() {
+//        return username;
+//    }
+//
+//    public void setUsername(String username) {
+//        this.username = username;
+//    }
 
     public String getPassword() {
         return password;

@@ -1,4 +1,4 @@
-package org.launchcode.bookshelfcorner.models.data;
+package org.launchcode.bookshelfcorner.repository;
 
 import org.launchcode.bookshelfcorner.models.User;
 import org.springframework.data.repository.CrudRepository;

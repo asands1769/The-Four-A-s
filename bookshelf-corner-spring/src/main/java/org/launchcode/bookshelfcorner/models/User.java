@@ -21,8 +21,8 @@ public class User extends AbstractEntity {
     @NotNull
     private String pwHash;
 
-    @ManyToMany
-    private List<Book> booksToShare = new ArrayList<>();
+//    @ManyToMany
+//    private List<Book> booksToShare = new ArrayList<>();
 
     public User() {}
 
@@ -45,9 +45,10 @@ public class User extends AbstractEntity {
 
     public void setPwHash (String password) { this.pwHash = encoder.encode(password); }
 
-    public List<Book> getBooksToShare() { return booksToShare; }
-
-    public void setBooksToShare(List<Book> booksToShare) { this.booksToShare = booksToShare; }
+//    public List<Book> getBooksToShare() { return booksToShare; }
+//
+//
+//    public void setBooksToShare(List<Book> booksToShare) { this.booksToShare = booksToShare; }
 
     //Do we need another method to update booksToShare list?
     //Should this be another class by itself?

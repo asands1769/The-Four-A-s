@@ -1,4 +1,4 @@
-package org.launchcode.bookshelfcorner.controllers;
+package org.launchcode.bookshelfcorner.exceptions.handler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,11 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import org.launchcode.bookshelfcorner.models.CustomFieldError;
-import org.launchcode.bookshelfcorner.models.FieldErrorResponse;
+import org.launchcode.bookshelfcorner.exceptions.CustomFieldError;
+import org.launchcode.bookshelfcorner.exceptions.FieldErrorResponse;
+
 @ControllerAdvice
 public class ControllerErrorHandler extends ResponseEntityExceptionHandler {
 
