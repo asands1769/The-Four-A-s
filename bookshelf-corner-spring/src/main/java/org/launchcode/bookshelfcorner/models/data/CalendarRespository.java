@@ -1,4 +1,4 @@
 package org.launchcode.bookshelfcorner.models.data;
 
-public interface ReviewRepository {
+public interface CalendarRespository {
 }

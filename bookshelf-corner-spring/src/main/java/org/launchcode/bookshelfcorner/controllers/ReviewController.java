@@ -3,18 +3,19 @@ package org.launchcode.bookshelfcorner.controllers;
 
 
 import org.launchcode.bookshelfcorner.models.Review;
-import org.launchcode.bookshelfcorner.models.data.ReviewView;
+import org.launchcode.bookshelfcorner.models.data.ReviewRepository;
+
 
 public class ReviewController {
 
     private Review review;
 
-    private ReviewView reviewView;
+    private ReviewRepository reviewRepository;
 
 
-    public ReviewController(Review review, ReviewView reviewView) {
+    public ReviewController(Review review, ReviewRepository reviewRepository) {
         this.review = review;
-        this.reviewView = reviewView;
+        this.reviewRepository = reviewRepository;
 
     }
 

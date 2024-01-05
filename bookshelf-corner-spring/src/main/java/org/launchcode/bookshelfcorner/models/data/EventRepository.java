@@ -1,4 +1,13 @@
 package org.launchcode.bookshelfcorner.models.data;
 
-public interface EventView {
+import org.launchcode.bookshelfcorner.models.Event;
+
+import java.util.List;
+
+public interface EventRepository {
+    void saveEvent(Event event);
+
+    List<Event> getAllEvents();
+
+    void updateEvent(Event event);
 }

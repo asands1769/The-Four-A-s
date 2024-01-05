@@ -7,52 +7,75 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 @Entity
-public class Event extends AbstractEntity{
+public class Event extends AbstractEntity {
 
     @NotNull
-    private String name;
+    private String eventName;
 
     @NotNull
-    private String description;
+    private String eventDescription;
 
     @NotNull
-    private LocalDateTime date_time;
+    private String eventLocation;
 
     @NotNull
-    private ArrayList attendees;
+    private LocalDateTime eventDateTime;
+
+    @NotNull
+    private ArrayList eventParticipants;
 
     public Event() {
     }
 
-    public String getName() {
-        return name;
+    public String getEventName() {
+        return eventName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
-    public String getDescription() {
-        return description;
+    public String getEventDescription() {
+        return eventDescription;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setEventDescription(String eventDescription) {
+        this.eventDescription = eventDescription;
     }
 
-    public LocalDateTime getDate_time() {
-        return date_time;
+    public String getEventLocation() {
+        return eventLocation;
     }
 
-    public void setDate_time(LocalDateTime date_time) {
-        this.date_time = date_time;
+    public void setEventLocation(String eventLocation) {
+        this.eventLocation = eventLocation;
     }
 
-    public ArrayList getAttendees() {
-        return attendees;
+    public LocalDateTime getEventDateTime() {
+        return eventDateTime;
     }
 
-    public void setAttendees(ArrayList attendees) {
-        this.attendees = attendees;
+    public void setEventDateTime(LocalDateTime eventDateTime) {
+        this.eventDateTime = eventDateTime;
+    }
+
+    public ArrayList getEventParticipants() {
+        return eventParticipants;
+    }
+
+    public void setEventParticipants(ArrayList attendees) {
+        this.eventParticipants = eventParticipants;
+    }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "eventId=" + eventId +
+                ", eventName='" + eventName + '\'' +
+                ", eventDescription='" + eventDescription + '\'' +
+                ", eventLocation='" + eventLocation + '\'' +
+                ", eventParticipants='" + eventParticipants + '\'' +
+                ", eventDateTime=" + eventDateTime +
+                '}';
     }
 }
