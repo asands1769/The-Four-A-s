@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.launchcode.bookshelfcorner.models.dto.LoginFormDTO;
+import org.launchcode.bookshelfcorner.models.dto.LoginRequestDTO;
 import org.launchcode.bookshelfcorner.models.dto.LoginResponseDTO;
 
 @RestController
@@ -19,7 +19,7 @@ import org.launchcode.bookshelfcorner.models.dto.LoginResponseDTO;
 public class LoginController {
 
     @PostMapping
-    public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody LoginFormDTO loginRequestDTO){
+    public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody LoginRequestDTO loginRequestDTO){
         return ResponseEntity.ok(new LoginResponseDTO("Success !"));
     }
 }

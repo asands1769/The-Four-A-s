@@ -1,6 +1,6 @@
 package org.launchcode.bookshelfcorner.models.dto;
 
-public class RegisterFormDTO extends org.launchcode.bookshelfcorner.models.dto.LoginFormDTO {
+public class RegisterFormDTO extends LoginRequestDTO {
 
     private String verifyPassword;
 

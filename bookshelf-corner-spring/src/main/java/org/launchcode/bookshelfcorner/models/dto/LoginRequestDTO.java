@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-public class LoginFormDTO {
+public class LoginRequestDTO {
 
 //    @NotNull(message = "Username is required")
 //    @NotBlank
