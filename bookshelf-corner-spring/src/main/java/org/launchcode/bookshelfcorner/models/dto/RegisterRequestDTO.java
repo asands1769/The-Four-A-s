@@ -5,22 +5,22 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 
-public class RegisterFormDTO extends LoginRequestDTO {
+public class RegisterRequestDTO extends LoginRequestDTO {
 
     @NotNull(message = "Username is required.")
     @NotBlank(message = "Username is required.")
     @Size(min = 3, message = "Invalid username. Must be between 3 and 20 characters.")
     private String username;
 
-    private String verifyPassword;
-
-    public String getVerifyPassword() {
-        return verifyPassword;
-    }
-
-    public void setVerifyPassword(String verifyPassword) {
-        this.verifyPassword = verifyPassword;
-    }
+//    private String verifyPassword;
+//
+//    public String getVerifyPassword() {
+//        return verifyPassword;
+//    }
+//
+//    public void setVerifyPassword(String verifyPassword) {
+//        this.verifyPassword = verifyPassword;
+//    }
 
     public String getUsername() { return username; }
 
