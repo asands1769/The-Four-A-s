@@ -7,16 +7,16 @@ export default function RegisterUser() {
     const [passwordError, setPasswordError] = useState('');
     const [usernameError, setUsernameError] = useState('');
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
-
-    //how to get data from form?
-    //how to make a function that is not dependent on a click event etc.
-    const [password, setPassword] = useState('');
-    const [verifyPassword, setVerifyPassword] = useState('');
     
     const onSubmit = (e) => {
         e.preventDefault();
    
         const formData = new FormData(e.target);
+
+        if(formData.get('password') !== formData.get('verifyPassword')) {
+          setVerifyPasswordError('Passwords do not match.');
+          e.preventDefault();
+        } else {
 
         fetch("http://localhost:8080/register", {
           method: "POST",
@@ -28,12 +28,10 @@ export default function RegisterUser() {
             email: formData.get('email'),
             username: formData.get('username'),
             password: formData.get('password')
-            // verifypassword: formData.get('verifyPassword')
           }),
         })
           .then((response) => response.json())
           .then((data) => {
-            //can I add an if or else if here to just check of passwords match and change the error message? also prevent click?
             if(data.fieldErrors) {
               data.fieldErrors.forEach(fieldError => {
                 if(fieldError.field === 'email'){
@@ -45,16 +43,15 @@ export default function RegisterUser() {
                 if(fieldError.field === 'password'){
                   setPasswordError(fieldError.message);
                 }
-                // if(fieldError.field === 'verifyPassword'){
-                //     setPasswordError(fieldError.message);
-                //   }
               });
             } else {
               alert("You have succesfully registered.");
             }
           })
           .catch((err) => err);
+       }
       }
+    
 
       const onEmailFocus = (e) => {
         e.preventDefault();
@@ -104,7 +101,7 @@ export default function RegisterUser() {
                           }
                   </div>
                   <div>
-                      <label htmlFor="VerifyPassword">Verify Password</label> 
+                      <label htmlFor="verifyPassword">Verify Password</label> 
                       <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus}/>
                           {
                           verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
