@@ -11,12 +11,13 @@ function App() {
     // </div>
     <Router>
       <Routes>
-        <Route exact path='/bookShelf' element={</BookShelfComponent>}>
+        <Route exact path='/bookList' element={<BookListComponent/>}>
 
         </Route>
       </Routes>
       </Router>
   );
 }
+
 
 export default App;
