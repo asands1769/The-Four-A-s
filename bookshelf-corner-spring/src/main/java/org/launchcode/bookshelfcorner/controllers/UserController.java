@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 //@Repository("register")
 public class UserController {
 
