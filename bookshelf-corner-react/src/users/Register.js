@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function RegisterUser() {
 
+    let navigate = useNavigate();
 
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
@@ -50,6 +52,7 @@ export default function RegisterUser() {
           })
           .catch((err) => err);
        }
+       return navigate("/users/profile");
       }
     
 
@@ -108,7 +111,7 @@ export default function RegisterUser() {
                           }
                   </div>
                   <div>
-                      <input type="submit" name="submit" value="Sign up" />
+                      <input type="submit" name="submit" value="Sign up"/>
                   </div>
               </form>
           </div>
