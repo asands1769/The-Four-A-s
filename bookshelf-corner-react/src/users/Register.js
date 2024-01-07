@@ -48,11 +48,12 @@ export default function RegisterUser() {
               });
             } else {
               alert("You have succesfully registered.");
+              return navigate("/users/profile");
             }
           })
           .catch((err) => err);
        }
-       return navigate("/users/profile");
+       //need to move to only navigate when correct
       }
     
 
