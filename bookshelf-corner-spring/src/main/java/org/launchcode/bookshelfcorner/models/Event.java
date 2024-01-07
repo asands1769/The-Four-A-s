@@ -24,8 +24,8 @@ public class Event extends AbstractEntity {
     @NotNull
     private String eventLocation;
 
-  /*  @NotNull
-    private LocalDateTime eventDateTime;*/
+    @NotNull
+    private LocalDateTime eventDateTime;
 
     @NotNull
     @ManyToMany
@@ -59,13 +59,13 @@ public class Event extends AbstractEntity {
         this.eventLocation = eventLocation;
     }
 
-    /*public LocalDateTime getEventDateTime() {
+    public LocalDateTime getEventDateTime() {
         return eventDateTime;
     }
 
     public void setEventDateTime(LocalDateTime eventDateTime) {
         this.eventDateTime = eventDateTime;
-    }*/
+    }
 
     public List<User> getEventParticipants() {
         return eventParticipants;
@@ -83,7 +83,7 @@ public class Event extends AbstractEntity {
                 ", eventDescription='" + eventDescription + '\'' +
                 ", eventLocation='" + eventLocation + '\'' +
                 ", eventParticipants='" + eventParticipants + '\'' +
-                ", eventDateTime=" + /*eventDateTime +*/
+                ", eventDateTime=" + eventDateTime +
                 '}';
     }
 }
