@@ -26,12 +26,11 @@ public class User extends AbstractEntity {
 
     public User() {}
 
-    public User(String username, String email, String password) {
-        this.username = username;
+    public User(String aUsername, String anEmail, String password) {
+        super();
+        this.username = aUsername;
         this.pwHash = encoder.encode(password);
-        this.email = email;
-//        this.booksToShare = aBooksToShare;
-//            , List<Book> aBooksToShare
+        this.email = anEmail;
     }
 
     public String getUsername() {
@@ -44,9 +43,12 @@ public class User extends AbstractEntity {
 
     public void setEmail(String email) { this.email = email; }
 
-//    public List<Book> getBooksToShare() { return booksToShare; }
+    public void setPwHash (String password) { this.pwHash = encoder.encode(password); }
 
-//    public void setSkills(List<Book> booksToShare) { this.booksToShare = booksToShare; }
+//    public List<Book> getBooksToShare() { return booksToShare; }
+//
+//
+//    public void setBooksToShare(List<Book> booksToShare) { this.booksToShare = booksToShare; }
 
     //Do we need another method to update booksToShare list?
     //Should this be another class by itself?
@@ -61,3 +63,4 @@ public class User extends AbstractEntity {
         return encoder.matches(password, pwHash);
     }
 }
+
