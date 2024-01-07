@@ -1,38 +1,26 @@
-import jakarta.persistence.*;
-import org.launchcode.bookshelfcorner.models.User;
+package org.launchcode.bookshelfcorner.models;
 
-import java.awt.print.Book;
+import jakarta.persistence.*;
+
+//import java.awt.print.Book;
+import java.util.HashSet;
 import java.util.List;
 
 @Entity
-public class Bookshelf {
-
+public class BookShelf {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id") // Assuming there's a "user_id" column in the bookshelf table
+    private int id;
     private User user;
-
-    @ManyToMany
-    @JoinTable(
-            name = "bookshelf_books",
-            joinColumns = @JoinColumn(name = "bookshelf_id"),
-            inverseJoinColumns = @JoinColumn(name = "book_id")
-    )
-    private List<Book> books;
-
-    // Constructors, getters, and setters
-
-    public Bookshelf(Long id) {
-        // Default constructor needed by JPA
+    private Set<BookList> books = new HashSet<>();
+    public BookShelf(int id, User user) {
         this.id = id;
+        this.user = user;
     }
 
-    public Bookshelf(User user, List<Book> books) {
-        this.user = user;
-        this.books = books;
+
+    public int getId() {
+        return id;
     }
 
     public User getUser() {
@@ -43,12 +31,18 @@ public class Bookshelf {
         this.user = user;
     }
 
-    public List<Book> getBooks() {
+
+    public Set<BookList> getBooks() {
         return books;
     }
 
-    public void setBooks(List<Book> books) {
+    public void setBooks(Set<BookList> books) {
         this.books = books;
     }
-// Other constructors, getters, and setters
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
+
