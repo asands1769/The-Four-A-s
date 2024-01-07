@@ -4,38 +4,448 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="d32b7906-35f8-41db-91c2-4983599dbf9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-=======
     <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller">
+      <change afterPath="$PROJECT_DIR$/../.github/workflows/node.js.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/002257f1972412d670c3da4950d61229842d44e8b9298a746635618ee71ab7d6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0305df6d9fda46058b411e582597369934b05613286554abc4d744b855245b9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/03b9201c2498191f8bf2e39f5ca762aa25f90fcf3baa69572d0eae98e0be70d1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/044473e26650040e7ff68542648a504ef21a1cc77c09fe428b0b9e14dffa45ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/04aa4bb046ec2335648ab99025d72cabce4d462640839205ff4fa6a0946bdb74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/05ae53d88e6233e82a8cd5b215f9f7ce8c59188eff4113e839720066b2f1e734.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/05e3a4ed2d8a87260b6091387f8878241cedcd9bd8391460db2e38dd7f01a7d3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/069602f97d6142b173b3b6f623996906ec8aac4ed8da493ccbf878015bd48ce2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/06d795efbe8aac48ef0bcc7bfd122b680876068c8fb90e538695cd7cefbe1121.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/090d6131d7afb0265fdeb233afc6c06701ac265dc1c3087d4165df7f6a61e0bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0a0ec23affc7d21131e3951ca9e4723c63e5ecc300fafefccea956c25a7773ba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0bfd69f052c02eb9407a4aea290210486f3b9868010d3c86922230f2db078ae3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0c915fe7abfd2d002234c32cfbd5959a59defbd98afbfd56ccb391594909eea0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0c93967c1b7d13842fb3acb50f5e272be049fa109247f3a483467328a9a8af2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/0ecc8274fea8cf15ad76e32e67d303b612d4606d4f04b88f11cbbdee3212c009.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/11f692f4b66f45f6b15d63d60740ef75678503d45bd74877e99e007f4e8392a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/12f12cd846ab819eb65103dde48b6fcbfb43a3b3c7d1993d3594fe89eb0dd8ea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1308f2660df1fb099fdc6474f31a21d446273e4e2b823b6fc8b7520f9b685e78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/149dff979ae3aa019cf535fb01541e3fce3a0ccf566dcca6e3bcad6c26ece9d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/16640413b43b7fc5b10561f782f0cb67e8135339ee9e6dc31f94ab2efcb61c67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/172ec228b9447b8ba085f142a91dfd854e2f1fe6cd361d624dd917ced1b217c5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1893b614ff596a317c03e6230a10902f94969be805bb4f138a41ac17c820c412.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1a16f826df8af622b4f53333a39f04cc0ded2730f7d08ee357153b00dff36b27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1a40b16fcf3aa5e5cad8e6e41b9eb6d97660ad052395a880ca94228f1cb82d65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1afa04f39bce580e4e17652ce3ca625a6bfcac8c48b846aadd8a7dd7c3f22545.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1bd74e1893036e4d5edf5750871a3dda0bc0fdefd52c0cbbab09b203a7021029.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1c86c48d84195d369f9874a9dddb30b6c233462905af08a7737e1cd63d94c12f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1c931af9991f396e11febad61db709fb635c4f4c78c2a612307e870b09728eda.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1e76641c7dac031a3992c09e408df2cea89c9d09b874ea31fd5d879b67fc4b80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/1fc0b647079b07aa67d19c6f252307dc856fdf898a581976a1dcc95e639cdd43.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2079b8849e6ca74875cfc326a0553e58055d73c127e6e30923863f6a9341e341.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/20c35317d23a69f9a954fb636f288b203844ed797792e0c1b22d9e7be0717c84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/20fc1407048078a128d5e0028b4775e0e51cbd7cc77d1393aac036fd30194ec3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/216797dea892da3007a95fc149dc1bcf1f699fe61a94a8aef1c97f94debf8f8b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/222b660d6758a8e2fa6be4cd6e68dd4b7f5389e0b9fdaa658c6a488e9dd4d8aa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/22b769f44a9bdce3a5014039a8e4562c359bcc31db792a0426abce10b5e7fa2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2345a212eb7146e5ee91fbdfc7319dde133b4b3e79cdf0fdff4e2b8a56da5ce8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/23d6bc69890404e0317e8ce65dfc64c42cb61d53dc3f63b89389bdabc1097bf3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2479a6ce0bdc232bdf21e879302d36bb85756a30cd0763c08b8db8a2bf8eae74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/25c950d415e017ce049b216ac3d8c8159c84774703e021fa0dbeb2d1d14ba490.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/26c9b91b4f872951b732ec336c5566f884c6433173a1dd4cc4fcfee686bad52a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2719df58e112c6305c3452053f9c7ba8931872ab85ca41d0a382ae1f33253ffd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/287515862563140e4226c68adf35745bb4a4882aef700a4c451ec70c9ded4e24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/29296670e2b282a41da74b40b37e46a16f928289aa19e16333b2da830392333f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2ba359b14bb311fd83df1f1acaf6de4400de4b5f4a67651dffaa77fb0bee7903.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2cecdf12caef5e9efdae468ce8f36ae33952eaeb9dd8f5f2ae09cd06b3ba946e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2d301a1bf3b7f729a653ef4aef57d06c13f7ef49e8762e43b936cdc9ad4610b9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2ea0aadbf600b79ace1880ce5ab0fc7ea593886dde953aa7ae9fdf3a7c7324cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2f9de7327953c020de57cb4f5c1e303a82cbe16c731a87d6f7c04064dcb40348.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/2fd1fe468134f191060567399525d932585094ab15ba76ff81bd99a285d20d3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/30f27634bee61c2776d85c06357c6f3cd58f73ef9e64327b4e18e364b034ee95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/316f889541d9094f8acbe20501b85036838a740c05c6442e12289c1996ba508e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/319dbc5452989b00886f2254b36f02b1c93a78f2ee1678b7aba66733db990133.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/32ae5501cc04dd9cf9e29d23915a2a346d4016331abe41d5927eee3e2da3702f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/32d12d3ccb90e141110ebada70437a95de9b8876ba7059f1c2afa4d3bb6de58c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/339b44610a59af0d8f93b0c65b50104833c981a013fef5c61841453cbc96620e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/33e20a88c1ebe589f850a6aae5d177f87043920743295b24afe87210cf1a8c11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/34052401e8d9ce8eedaf22279be106f24c0020c227d4e1af9fe253d28a245af8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3428eceaae9c22325621a5b1a560f4c1a3806ed787c49bf5013614071a076c6f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/34a471b543638e25795ce8985104c28583faf8f1443a3f1189723ca561d57000.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/34ebe48779ba76c89e7ceb995d7c4f7cbcce30d5fa01ad67113bbbd3e12995d1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/351c73d2ee72af1ecee02c6f600c67f0a51bd27087d5b1bc0fb075292bb5c3e4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3756a88e1f45688edd303e4c2e9707e9660b624b601d1a9401b1c6d7bbc5988d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/375c9997d4b7be5b519783f5996180e4695db5db61b625567db36e537877ce8e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/378e54176d4aa9a1fe1eaf5d00cd8f7468ebe6e8912974b1dfff1220f5d7eaba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/37e33838ffcc40e4f6f1c1e9336b8845e173d8497a2e20c52afa9d2a8f855e24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3805a683a831eb5271114d42d1b72c980e4ef36cb67883b3f3e64bc8554a35ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/391a3f14ccd1aeebea2e94e2bee593624edbcbfd6a89b03c04d70ae044a83b2a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/399e5c8828c91c53a59adefbc60a7c66d4b78713f11b6a3051b17bf96bd86ceb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/39a30656ddca668acfe613d2bd6212b3c5b481144154865560319a22a9d93bc1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3a025604d2bafa88b1965b7888c1fecdb82811a376d1522cbff82753c275e6e5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3a52f564fb6a9b13a0c414b7201f799624d62c6d253b2fe91081d6afdfabab6d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3ad1c7bbf60b9d464f691fe98db72a920c44e8749320983c72e286f20bff4025.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3b10296ad5c6ba04ce8377cb83f1ad3e12a1f0cace43c437b75eb04cc4c1db18.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3c3fcf098222361ae37bc23eaa358618271f044d735ef2e5daad3eb2e81ba519.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3c5fe175a5cdf243b8ae2f4d95b1e27d734d239a6d0d575925bd3deb96662096.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3cad11537da40bd6224cb26d0eb0fae605654f6d3524e77fdc5414c0a7612f3e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3d3acba8546e58578a4b0974c90f2ba7da525611533c955029ec2d8664ec7e21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3e7c0d00bcfc9ee9590879a42522b8b662907a7c1ba67d654250532cf6188b88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3e9a36ea1d3c46c37a11aa9c14dfca55a29bf4e17676a6e3d5d7e04ed19ef731.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3ec8057e2eaf067c32cb7d3933d4c0c1bd8a39e49e01646e37f83c524c4a0968.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3f42d202e1d3c5c7101cef2ceca9053a5b81bfb1507bc04d2236167a1542c386.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3ffb565364c33495e02290aaaeb05d734a1d5ffe1b7856b0d043633a32e5fa96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/3ffd3679a64636174994044b3fd4eda7be55b609d69b97932f409d3f5c401814.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/402e4c078a9fc9353606e848eca0e96c735c5a0d003337ccfc799bfa3fd01657.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4117773434fb0b4475a2c9147952c9657e7fe3c1355df8421089c209b541a7cd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/417adbc87ac0950bcaadeb2e54d2fbf4573f4eaf0291d0a22d64a43013fc5509.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/44d492cbf47929ec7a2aa429d9aaa13a15d7329869486bd71f26994aa5dc3d7b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/459c45a4d9f43ee55c1009394be6eaa686018e6b2538014a8fd69dbf3bfc1215.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/45d4ca74855fd4e98e78e67ac26ec71846f9a61fb369d8a07b06a00bc6170d10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4657229971bf886cffaf6d32b9378eb6ce1f4dc0ea689bc7bb285526fe8523fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4774528823cc119a35beae6fbffc3af6632a61b0c5cb49740a7e8acc383c7b67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/48243a8ddb3fb65f800a1b707f19af2508415d9428a9a687e5d465d462c99b1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/491d77a889ab61388dd5ae66a1b08b0b797d2c4aeedc31eaf7753b572bd81065.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/49431c5f0161fecc1841d9ead24526a74800b5138ae7e6ba95792dff787af263.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/49568ec988883c62f7bcc2ee5f072bede75a7b8194bece94e107c8bdda0b99b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/49c51eefdcbc10cc11eb82cd0410f51aef820a145f0369a372340ce733bd201c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4a961bd9618a59795110557c7602715ebee6368b4cc3e9904e04289cc4492aef.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4afd7adbaef80400525f66692763e5d2cc10f10736cd1b384209b1c2b8d7412b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4b1d950f6b58096af4bca8c33a2f2a7c4d0ffefa2cb5e36d19e48b4b33a39dfd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4b493cf59b6543fcee5f851b05a7fe7ce5ee1409ddbd11a0453027c50b67416a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4b679b82233c4f19d4704da99c617cf8779af686424533b5435a269b641d86a7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4c341a8b832ca296a88ff7aea3075753d67276beddf6f24268aa06aa97349538.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4c400ef106cfe90e4a2e762de0845c222443de779091e21ebeadb292f1d74ba6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4cbd833d5231bcb5a45a093d83632b5fbebe46b44f2afe90e581b2b825c6b7c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4d6f55d05524b71742351bc231c513ea089322e7ea6d12fee1a7930cbf53bf3b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4d94fb0bcc8e579608e27c03b13fe3c1753a64ee7140743b3200b0531977f83b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4d99bf7a8ff77968861941ce3c7775f78dae3e531572aed0202bd60b02a402dc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4e4ea80211707a721aff4b344a087134d43ab8f8cd9fb3bf74bfc24846fffbbe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4ef65703bacd7a620b268a948770d97fabf1d36e25b03954434cce9e4e8e199d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4fe7d38925cbb465b19e98a05fcb89ab7aab3299095eff4db21dde04e4fddbb3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/4fee656158b700903197fce06e05fcee26ffffe70f3a10c2bbb41f469e351322.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5087c4f62fdb270e1e92ff001dfa8a4e1a1df0a04a6ada9b5bc817d7f5dcf0c6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/509e536dbdce86df76515f6a11e2dbace4164b5690103ef2277b0572434e795e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/52172a5cbc7a3b8a2ab1c249868d210bf1fd160eaeda6c52438914e914eaefea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/52f8c256785349d4a9387c731df3952611555c9b722503e9087cca71fbdcc5cc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/566d5ebbb78504fe40db1f39159f8da7201b9707a7e4e266c064447dfc089b9f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/56fe4a76c4e78321e2940cb659f09aa0cdac4434ee2357adf7660a3c7ed8e36d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/578b7af7acd719520bc06814de39e094d44156d472c273e4adef9d9f9905054e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/57bb1a668b6df5f79c046221f3d8ef5cbc2a4e64ac4eeee14fa6793358393dfe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/57f108d5af8677a8ec495e29c3b6bfd360425db1818723f9fb8a2760a0072838.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/59502d47d568e7590c637086341355a6d697b1f1bb2799631d27bff05bd720ad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5aa4858595c308371c5454d1bf648a694e0f95c9c98a857e8b35be3a5846faa2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5af76861d6f7ddb345d0062b6ff6ff8fad26c0a275494190533ffc709ee25384.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5b705a8cee9397da5969b3a06702fb2d1f417a18f00f05827954f75847710c20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5bb9899f5d8e57f1bf51beadf03cdbbc2dec66b40d1a7b67c82957a9cf6f60b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5c2fec4ac33761d2f304bfe44d7ca5ed552819bb9d9f4dd8ca3ae78f538edc32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5c914f580d964680353da56cd9e16888957ccbb1bf9c40735bfb7a56ca186867.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5d0d025cd981179ae22e535d5ade426920d55bcb3243fbe8ca74f4c1f053fa5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5d3fa9ce650609913170fe7669e17991e0e7ee67bffc3acd8a08b3e800305c32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5d91ab93b23e45c11be45be51b48cdb87e32179a2387fc1d2c5ee213d0ba5d75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5ee92dd0a6f1e08b5b36dfff5c3d6055e8eb46db964f41389db4e7c5122a5d07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5f1099edceb623cffe071556e5bfb343393811d678dadf6b5ee9e59cae971d5d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/5f8196a34d94412093d626c4893e387ddf697c99b6910fd7ad95ed0ee01877f0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/600bd17797aa5451cd33b2dcfd8843a32c8c9c1d4115ee478bb528de61d1ce43.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/60d1b99379a53ad1616e752174bb8f6458383b0957e6f71f154a06417cfbfeff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/62813796ce8e3d40ef3186d0d972a57f3a35a23d137eeb20a9677eb887ace4a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/638f2e5cdfde9644b4722917c677b22b008fa761c0b62a1fe4ee9c0fb67f60d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/64580de97c8b7b8f733b5c654f9f248358632e65d9bfde10d687d9b8341c916d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/64f3963cefab1dc73ce6069231ec79582e53d0a00b56532b957c1d717d082e9d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/657dcd44c05cfe649638c179822a14e136515f2309ef3beeb8fe875aa1ffd7df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/65dab00507d71bdedee52cfb37539a32e0033eea17f92e944a14bd3f354218a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/66bbe82b6a4a6c24ccc63abc8f6ae5f17a3525b555056497032d1f4760174da7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/677adf20f6b58ddb3269a9e04b513473a0cf3f7d8fa402ca1bca7d08f68482f0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/695d34102cbc0b07e20272464fe7b3511f249ff7c1a16804f69b633561f8b0a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6c86b2fef081a742199a3286d6bac5912b3f6501275f28fc425c6c2f2a75af1d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6ddf6810ed04d294a203274752e73ab5f3f91b08c528b7b36a58a059cf016e4f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6e102e752d51ddc33a874258fe25a5063992d8181250670610a0e029f2a441da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6e31908055e203523f216b66dc5e524a2ef223981c5f5bfdf0ef0c460d0ef9b7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6ea7e9aa07996b171b70ec75293a25d5532e1adb167ad3f037c67adc2e87ba17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6f27412766f9ad5bdfbcb7f3123379515aac4a67f8c650cc84768bc5cf1ff6fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6f45514979c97b639cc9a5d0a653a1a91391161dea89bc81dcf6bedb072019fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/6fbc758ca9ca1bfd8b095c81dab31c07e0306bbd7a9c745890203f14d713d4e5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/708ba32433d5e0794084ec5b583204d109fa70adc88a030434e34db07a73085d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7163072bf4a626ec28534a0ea55344276678484123fb26bc785ba1fa6d4998e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7181016303cf9882444e097828febba6c9a35b3c1821d776230e00efdb4da44a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/718459bff9c2b2bc4477507aa616e8a28cc95572cbb20c218b30f55c941409b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/719d14dd9d0137e0cad96ffd39d038d0744f806e03d79affc44f8830ebf36449.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7221c00aacedf019ab5de1445e9609a835e1c95f7d0412429e202bcd9f986cfe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7231b1803ca00f4f59d5e8bca14ef6d9d1ed014981f4ca9e515e5b76c5a5e245.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/74b350bbb23117df041637c967ebe64f7f211f0ca272e7944062543b30438eaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/74de45390dad50a29959eff47198eea49648e5bf49ed5a4e3223e8d717aa0d5a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/75369f05bb8001bd2827ae05a31f29be6b2c3c7835770d08a3bb9560d6dbf89b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7577f085ea377e884a72c9e1c763bc1530ae9b2b9adc914bc6279585f79974c8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/76b1ec1e7c5faa8ed95c855170142eff715b9e88e66e5745b796bfd4e5dc2a49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/76fead603438724300eabb0583cafbd980550fdbcf59963756f3b2bad40756b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7779baccde62ecc407d51d57d9a2c451c31308243498f47f2f6148951f356ae2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/78469fead0c542e759e4f11dcf51b09dc33e1894d99672b503f224e15261a45c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/78979c7e54ddf18be3e7eb21070b0bdb63b47c92e8972758e6c6fc239e791ffb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7a47229305a845580855847c68ec0e46092374e5297587919d22f9726531059e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7b8ad43aeb1db7c531009b603f1173cf6471ae2fdc5d13c051cc49ceca2524c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7dd2c12043664c270884522d279cdad678ae374b13018dad005ac7369ee954d0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7e04ab1c03bdba2961e309c83631d24b3923e1f166bf4dd7f556a1e54cc3d02b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7e5f1c0ffad22f87efff5f7c265334fe8a7836d2de7acb8bca85c0623741aa21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7eb7f92a16d9a18cbc47967f82bda76c763f4d301a780c14f59f8ac3a87c07fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7edb1c47c3240fa2b17678b572fa9e9bfa905a750c6f9911c00a8ccb0e88c6a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7edb8211ddbc7192b7f1b84b0b22c51f3f59d12d7b85ef609731b21a1b042a32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/7f4b4bf3b4fcfbffa7a43852dd03806bc8d3b514ab1cac093863a3e20058d363.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8003dfc06b8abb2d2bfb1b27f3c5b525d95d14d62cd564df20d3b27e3a137fd8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/817da1f1cec59a38d5d50a0545e9a11b42c0082acfea7e03c1d31d3f93ddcfb5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8391b3313cb318395abc63faf0d762e003eb7a9cb6c1c5cdbd9c34d3b9404276.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8560dffbfdee7d361bfb463b050fd4d9e35236263d2102d8f77e9f5c4226c760.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/874c034208b7aa2fd0e0bdb99d63990d51655da9532ea1643edecc3fa0dffd64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8773f7b41cdaf67c1d513a5928657c6836aad2813e8045bb7759dfb426985583.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/87989a6aac5f6da25521f9d66a24a57797b431cb9f57b135cbe3c68bae9368cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/87afbc02d56db4a5c209235da445642de59ed3dc3c2192bffb28c9c6f842c8a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8959c1ae61eed982ad00972ca375b48dc32f3641dd0bd1f40bb3b5d68dfde9ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8b195f6fdd9b71c21a352164f3f8f7595a3df764646362dd26d14844e7debe42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8cb889b9a04a8e067979c65b06fea77a331288e57a1538289322ba1e130f84e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8d3a130571cf36311180a1fb41d566d054776a4ebfee9c5c82647d97b1fd2bf3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8d79977feb735d210af64ffaa651667faa575bd41a7e399ddef5d08ad374e009.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8ec90e6ca83ae604a25b4c4c4f7407d52b95d76c94c1ed5cf9692ffb6195a55a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8ef312547c3aa351203e3ab24103f644e6e01b8413e08b8a0882a6925991bc15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/8fd49b04b879c2b3dab0c29535864acb78767f074cda8ac29b9f8e3f785f52c8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/91e50730738328432b81aaaa36b5dff87dddd75bb0fce72d66ccfcda2428a594.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/936015dc926130d9e0f931b57bf68dc188f1639bc1581f90e1a6b75cbf18df30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/936308f17858ab010d22a22a2a3cab25794b637bd2cacc8223b543d14c7f9303.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/941cd8b245d536a6f9d396af6cfac96108405cd1ec8b8da75aa36e1d79c2a6af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/95f5fe2b681d917122a92b4a8cd30528de84ee6e1fe8aa42218975d9f38fa241.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/96dd529037a57fda804f3106c801fc8fdedd255c78c3ad1c348ec05269bd919c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9715913eee2f60df61ad98772b1892e9715213caa5a5dd9ba5686eb335429a98.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/97c9215a819220b97cac3d1d5dea0603fc956f3978a2603dd16f530599a225a7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9c145b10d7e176be6b580242c2412c448e442b93e1302175e1c4f71242a91597.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9c722e9f469ac27b83e923a0feb59d97ab4423c6cd41edd64a371815665716f7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9d34df5fc89be164cd415dc280b034a045c0159179b2d2563bf6ca5a7bfc2d74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9d80fedcdf1d95bd732591880c458dc9a3836eb417665ca52863557762106dd8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9dff85cc19c91c6d180707319bc96957da23a01b8cfc363b415aaa123f82c582.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9dffedd91e4f352017fc5fe2d5323155ebb8deaee4b167f02f301ce164a0871e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/9e9945a32d55b09ae02e77d88f690017c0eb35b69ea494e21cd1a27e201f3944.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a0184b540e10a3866406f100d3833a7bb0588f36838796f3c261a99f10f02775.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a22d88d8f5e299473ae21f5f76c51989d33abc5e894978bea5e79ac578098be4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a3296222230fef9856344a907dd108308499c9ac3f855604ed5aac69f3def065.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a45a7325aa8b3cc1be4b2bf117ee002c719a3c6ece78bf597dc24c33a37e5e8b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a57cf72d52c79fbba87e9a9bc81b37b02ce9dd16861d1db5f880bc6dff806c28.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a677e7cdc48e182f0effa7eff218b461de7987b02c1b1d96a514eb310de5b258.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a72cc02fdb2e5d318f238daee954d7aa6916e67f1cad0e8b6d44c7d360d2125d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/a8b739de74ed8ca376bd9e0de237b407ba35bfa0f3497f889613b4ef95c17238.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/aa24daf2513e94df4d4aa5641b011526b8add5451cc994ae752b261a17379292.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ac4bdaff9113ca10ce1f7a3cc35709911c13ba28761554748b8cd6a7353d2606.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/acd0f26e254b29033351a94bccf36ed40591e9e492a6ed1ef0bbd2327f625d91.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/adbf95c88579ca74c78a1386c4cebaa316d5baf19490fa912f5a5cd3cd97b785.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ae45c2074928d825c3e7e3ddbb092f39ebb78d1279ddcc6856d4c20a541c8fcb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/af30b6d1aacc1dacf8cd454ab88a02408666752fb35feae2f2fe3b3fffb054a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b11cc6fa2a6803e1b6212c466cfd4c606ba2d856f9268b8e26bad771d9bca355.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b17155fc6787d1d091c221c6a26c2ba6a1841fd9f449f529951637d09453a872.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b1bf4d8dfba82345f3a880522bb0c7bd5afe8a16576185dfe40d806e80131275.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b1fa4920f30f11909ac988362f1d9cb1dd9946387bc37d9b938daa08ab02d74e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b23ab5ec91c772c1961593dc705f9700f09880032fd1f307f4f343298c3c5024.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b28ea8738b2e41c473ad26c23456963739cdc0554c5d9a99f4bf9c6a6e7ae637.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b3028f6dab32a27966afff3d8f49ddca6305c08ef5843faf5c41031b777d50ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b30f67d66ddd08773fa65238a96967c66acdbe2ab861b5b9081bbb379b2df4e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b31054b77d674b607a5e5a6c39eee74192972238875f5c1ca9bf3af73ef7a9d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b37d3ecead928b0b25bc04d0f0d31d1f956e85aaf690e934b7acf3d3cd1623b4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b50c11180ffb68c1a6c3ff3f25b6b14c587b36719772e11fcece34d29695787a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b5ca2f127aa66876774bdc0e2757b01c28f8a492099c94fd5a3e2459d96fd73b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b5d76730a76b30cb81b256663a879d8a4dc7bec206e354975107d76724366519.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b7dbdef0a4bccedf29f6d85d8cdad9ed0f7c3ca6f6611b62f5609f6bc0ade6a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b837bce5ab336bacb413aa440e0f0ecee659a6c9c82eba0cba0c4642a97ad831.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b87736e3199c24bf56414849b315b10a2cb39fed60f5293f66efd6bd140be1b2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/b8fc7218aad76d5d8c7486af83217f75bf5465329cb10529831fa9dcac5bfece.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ba7c5adbcc28c7b6a29ac02011da6d11143ee1b9ac1b90a8e0a2490bdb00cc69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/bc2a522585c2680981e61eb26197c4ebf9799861d7f6fd44849613ebae01c437.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/bd55c0a506ca06e347150bfdaa90683834ecc0f841d8e2329ff9da743bff1a3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/bdac3c22629aa379419c66660db1323565a29394a5480d7cb05e73fbcb31445c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/bdf6357ca4aafe633a6c008a2fae2c5fad27bd1a508d33d71b74e778c457280d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/be90971239ee659b384f37521c573f18ef48b90384e193b1477a83843ccc1503.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/bec89fcfca47b21241f8bf381b3f35fe3f376b6d34f02f15e7e89ddc96e57d17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c08825f10b0cef09235c2015ff17857e4b104214f09b8370bfadf994b6d23b0a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c0ed88e27285add460c4a9f848fae93a19b685de4ad0e04ed9d98b8c3742cd68.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c13034e2d71afb4857901ab2c44747ef818f765b7c87eface369a2e31ead1206.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c160d33b59070bd036157bc209d99ab19bd50c073a49614d58f9c2f31b117989.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c19bb52414dd5acab72c83501f103fd57210b40ea7bd2b270b90cad05317202e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c1cfbd225780b9a207f19cdc5db641e64c24680896f0f2105e9f04459a3a08b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c2c0ed361e1f7f54cdf00e6c678f290535b57bb294cd5b93c1e273a22e800bbe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c3b1b3474032c0ca5f0c4ebe7c0b40f804a24882f7937c35665c1ecae6a8ac6f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c4a90291abb9f359b59ae079661a946ef63f75ae0642a4a1ec2c1804f894227c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c4c2348467931dc7d9e241dcccd8b878802b47c863d5e526045159762344a5fd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c5a8821f3093c22d8182cdd79327fe28368c4388b4920bd822fd1e81e82e5466.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c7deae6227f36d20c77e4f9951523d13082bd89a0119e6c0c29f79dbef69c5b1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c896f5ae1abd417a3b08a959d2d973860c4da737296f0be33c0719ef01546f33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/c8dd10682a4f550e05ac42e81f369c458dd1a50f7db4bc4e9ea7442829658a2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cb44af872451104131d1d575ca3885f603f835998bbb2ceff7f002c6611f83de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cb574695706f2f2e8dac88091db69754cc7a9ede0f42750473a3f6ea88dfc23e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cb70be2a71acfde3a7d6f3add4f098993042a0d442ecf2bf22e4844158173523.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cc9f78714b060d2b4d1d5e294fbcb9d962dd40660ed4b0cf9c9629465632e4b7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cd520db390e33f1b6421b441bb462c27be511e2667942980b4fa61f6c8f4d47a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ce2e17932c4748539847b0d967482137cff6dd8a7236e73f08d48d4774333135.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ce7ff3d5338dc828604c6ec5cba1219be4ec514d642c023eb689e492dc41ce66.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/cf12c87624a2a07b8aa924b6ed8f8137ccb451b9cdb1f86bd04bc47b67aceac5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d130f4efb9813e615a10d4ffe1ee11ea91cad27000e036ad371e96f91d24a278.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d1b463925bd6fa9b9e767e9d603fd1968fb9438b48c9b4321ae9b4f1a88152cd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d29754d5392001b0d76cefd4ad3e47594f23fc2d49b145c860361c3d72eb8c3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d4eeaee7e370b634c31e34468ca725fc851061386c1cf3e97138da395e74706b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d5abcd9e0150c97fae4aa0e2ffe0036ff52ffe9b44ce34327f8994a16b5aa912.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d5fa98575970c06ae878dd64b8da6a1e43ca00e1baf8735c68ab7f080c228fd8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d603d66711fab04fc99da99420ee758b4b94a31f6cef1119341d45c46bb11691.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d65fdf207a01864f0cd907cbcf5c69fcf9c5118dd92dac259564931309831185.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/d82828cf8efcc9c5a150ef9924aa93a64bdd682d520f154935c6df06a6e94be8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/da660f5771f2eb34d81664fc3e573dc7bff9b814d41e2eb4000f6c246d7e5a54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/da76238b803c57336950ee71e1923b51cf172bebf64644c05ddfd9dade9064a1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dac000201aeea54edeb028abc5cce082c47d4fffef91da09a97fe64c36079d1c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dbc4af58d727c34d7d5af5d7d0e87bccd90f75c6ac6b23b78141ce1b781400eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dc5df87de88f3dd5ee8001814e79479b263aaa67be99825654723318bb94a0d0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dc91d3fc190372cf7420133a2cfe2ba5dac1577db4d131118a716587b5a36b27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dd42eaa4896fe8687077618944788a1b2d3ed908d1b3d131f9fb3698ccb667ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/dd9367af4b0812f78115eb9c58473fd596f326be2d6d6c93d78d5fd0841b237f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/decd2cd215f5e85a037a87ea6d9f9b12d41b53b6061e71e1d3e76d0c0a122f27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/df25a021a4a6701fae6d941d8f0fcac2f255317076b11fbac5f68421188dc6d8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/df906563e43a1e2ec8db329185b1b53d519e33961c0bf0ac1cf632f1e589441e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e1133c1ddb6c49af9dbd5ab847489ef163280bd5b4d6216c48f00afc8ae93fee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e144dc6e47f718758b67ae03e7ef8a1ad568baa6c043918f64662eb8c275473e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e2e8af2c125d147eb2beeb3744259e970b767ecfc4ec0a1d27b108824ecb4c7f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e37ca876653439601cedf8b5411059f7b62e22600b4368c801d450e40a9ba22a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e384de47bd08c7562b91ddc5cd617325c9ea204d866fa529b0a66ba97da50429.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e47d262339fcf19204b069448f307bd0e199ec2429f70f15927677d3e1203033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e6d8dabd7a08a76df831b4fee29e132c99a1fa29e1f5388697e40b09b25945f7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e7832c53766233fe11c8468077d1da18d8ef46bb5076134a535f572bb0e7a00d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e7aab47af85d77efbbb6b33d6d0565403e7f9f9e9e118c340e38cfa6849b6c83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e7fa9070b63dc566cf4ad947c8a4be0e6711d918e57a0be9e106cdaa73562d3c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/e9767be134cd1f9ae2f9642b437806851c8f904373cde3a7b7a7abc6fc239eda.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/eb38dd1b9aeb046ef7782b452f8a8c8f78d1c4922238cd0353c20c2ae43eeb70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/eba017a373a5c7eb09938e69f06bc16a8b10aa3c8f76b6c392e0f8712ae6adb4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ec2bc97402477c6a980f260f82f07f6f55bcfa4444e995a6d8462e0de6b3dd00.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ece82900baf4a3e62e56b1383cf373a0f3133061ae519d3814af950d3e3faad9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ed88c775f464993db00d7af3e61ab7fe636efb8b25e4a257bc25eee3991879e3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ee09b916ad1334bb5212e981dae5cfbb63d657966c0f90252cbca8fb0418ab27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ee64f5eb3346ae989aad1950c9e2ee6f55e9be7734fc619593ed68676bf3dab3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/ef58b26b4d83eed59b01e2b47965559b3ab2a66ce946e4ca4877891a7ff33b85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/efb0b2c3414c0517022c45cd1903ea88c9abee69ace1977e31137d8fc6bc5067.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/efe0c009d9556b1a6c7c04e83c0067d3a5e27e2624096fe89dc436ef1d6b6af9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f02549f8feb3837419ef03f9ecfd840858f21345baaec97d589966232cac7664.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f0a699d46cb2601b299a007a58be278e6cc48efb9e619be8fff108feb611fbae.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f15e9f16c5583f7253f701dca4658b2a652380333192dad703f903db3d5cb189.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f1e9dda3e0f3b73752ebd856357d27846dda9b8b64de8526f0e9808f905c0e22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f290f5cbfb35d66fc52a5fb7b2bcb93427f33e64d9db7ce39c9e0ea87b205530.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f42609a081375cb0331e784184966ee754c2f547eca34edee7e63ff1f25ffd65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f5f55f92cc5c90f48a38ebc929e8d626c8295e6dd74fb845949b0bedf292d201.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f6c8ea7bb1f64a478e9d7fea14a32c9417dfa2ae94c95957f75c4ad7ca3a2ce8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f79eb66c562867d1984c2a42436192e67be8f3d634cbbd5e33786b542da0299f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f7cfb0d18e97a63a5eab9fb342ada24b4d580c5d9ba886f917d07da1d492f479.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/f7f255b24596b9a576c60b4d15c82d97bc79bf08c87af46691553a2554df685e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/faf4c02a490f11d2f035c72bfc2c051a13ab09e5daadce2f1d166fa4978fbae6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/fc80c1efbf146367162255827164e301f1c65f795a0540fe352c0d8307932475.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/babel-loader/feb63611291df6aca20d3fdeb8e530ebcd8227ba35b5a84572df8cc78eaa2e5f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/13.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/14.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/fsevents.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/fsevents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/fsevents.node" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/fsevents/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/css/Event.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/html/Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/.md5-checksums.bin.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bash.exe.stackdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/AuthenticationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/CalendarController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/EventController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/ReviewController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/exceptions/CustomFieldError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/exceptions/FieldErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/exceptions/handler/ControllerErrorHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Calendar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Event.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/dto/LoginRequestDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/dto/LoginResponseDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/dto/RegisterRequestDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repositories/ReviewView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/CalendarRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/EventRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/ReviewRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AuthenticationController.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarController.class.uniqueId3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarRespository.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventController.class.uniqueId4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventRepository.class.uniqueId5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/RegisterRequestDTO.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewController.class.uniqueId2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewRepository.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/WebApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/CalendarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/EventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/CustomFieldError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/FieldErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/handler/ControllerErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Calendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/dto/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/dto/LoginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/dto/RegisterRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repositories/ReviewView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/CalendarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/EventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/The-Four-A-s.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/The-Four-A-s.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.bin/react-scripts" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.bin/react-scripts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/BookshelfCornerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/CalendarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/EventController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/controllers/ReviewController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/AbstractEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Calendar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Review.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repositories/ReviewView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/CalendarRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/EventRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/ReviewRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/data/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/data/BookShelfRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/data/TagRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/BookListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/BookListRepository.java" afterDir="false" />
->>>>>>> 6acc22c39df46417a1d945de6ad78c45ba9ba887
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/BookShelfRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/BookShelfRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +566,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging sumitha__branch"
   }
 }]]></component>
   <component name="RunManager">
@@ -179,6 +590,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
