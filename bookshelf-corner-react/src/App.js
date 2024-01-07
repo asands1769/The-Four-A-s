@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import BookShelfComponent from './components/BookShelfComponent';
+//import BookShelfComponent from './components/BookShelfComponent';
 //import { Route, Router } from 'react-router-dom';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
@@ -11,9 +11,8 @@ function App() {
     // </div>
     <Router>
       <Routes>
-        <Route exact path='/bookList' element={<BookListComponent/>}>
-
-        </Route>
+        
+        
       </Routes>
       </Router>
   );

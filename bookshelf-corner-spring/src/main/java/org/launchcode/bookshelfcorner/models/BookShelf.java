@@ -11,11 +11,11 @@ public class BookShelf {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private User user;
-    private Set<BookList> books = new HashSet<>();
+    //private User user;
+    //private Set<BookList> books = new HashSet<>();
     public BookShelf(int id, User user) {
         this.id = id;
-        this.user = user;
+        //this.user = user;
     }
 
 
@@ -23,22 +23,22 @@ public class BookShelf {
         return id;
     }
 
-    public User getUser() {
-        return user;
-    }
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 
+    //public Set<BookList> getBooks() {
+        //return books;
+   // }
 
-    public Set<BookList> getBooks() {
-        return books;
-    }
-
-    public void setBooks(Set<BookList> books) {
-        this.books = books;
-    }
+    //public void setBooks(Set<BookList> books) {
+        //this.books = books;
+    //}
 
     @Override
     public boolean equals(Object obj) {
