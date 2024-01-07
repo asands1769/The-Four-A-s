@@ -12,6 +12,10 @@ import java.util.List;
 public class User extends AbstractEntity {
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+
+    @ManyToMany(mappedBy = "eventParticipants")
+    private List<Event> events= new ArrayList<>();
+
     @NotNull
     private String username;
 

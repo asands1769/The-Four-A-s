@@ -1,13 +1,11 @@
 package org.launchcode.bookshelfcorner.repository;
 
 import org.launchcode.bookshelfcorner.models.Event;
+import org.launchcode.bookshelfcorner.models.User;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface EventRepository {
-    void saveEvent(Event event);
+public interface EventRepository extends CrudRepository <Event, Integer>{
 
-    List<Event> getAllEvents();
-
-    void updateEvent(Event event);
 }

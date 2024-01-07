@@ -1,13 +1,19 @@
 package org.launchcode.bookshelfcorner.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Event extends AbstractEntity {
+
+    @ManyToOne
+    private Calendar calendar;
 
     @NotNull
     private String eventName;
@@ -18,11 +24,13 @@ public class Event extends AbstractEntity {
     @NotNull
     private String eventLocation;
 
-    @NotNull
-    private LocalDateTime eventDateTime;
+  /*  @NotNull
+    private LocalDateTime eventDateTime;*/
 
     @NotNull
-    private ArrayList eventParticipants;
+    @ManyToMany
+    private List<User> eventParticipants = new ArrayList<>();
+
 
     public Event() {
     }
@@ -51,31 +59,31 @@ public class Event extends AbstractEntity {
         this.eventLocation = eventLocation;
     }
 
-    public LocalDateTime getEventDateTime() {
+    /*public LocalDateTime getEventDateTime() {
         return eventDateTime;
     }
 
     public void setEventDateTime(LocalDateTime eventDateTime) {
         this.eventDateTime = eventDateTime;
-    }
+    }*/
 
-    public ArrayList getEventParticipants() {
+    public List<User> getEventParticipants() {
         return eventParticipants;
     }
 
-    public void setEventParticipants(ArrayList attendees) {
+    public void setEventParticipants(List<User> eventParticipants) {
         this.eventParticipants = eventParticipants;
     }
 
     @Override
     public String toString() {
         return "Event{" +
-                "eventId=" + eventId +
+                "eventId=" + /*eventId*/
                 ", eventName='" + eventName + '\'' +
                 ", eventDescription='" + eventDescription + '\'' +
                 ", eventLocation='" + eventLocation + '\'' +
                 ", eventParticipants='" + eventParticipants + '\'' +
-                ", eventDateTime=" + eventDateTime +
+                ", eventDateTime=" + /*eventDateTime +*/
                 '}';
     }
 }

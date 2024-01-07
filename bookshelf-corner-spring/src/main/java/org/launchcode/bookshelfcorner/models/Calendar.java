@@ -1,10 +1,13 @@
 package org.launchcode.bookshelfcorner.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Calendar extends AbstractEntity {
@@ -16,7 +19,8 @@ public class Calendar extends AbstractEntity {
     private LocalTime time;
 
     @NotNull
-    private Event event;
+    @OneToMany(mappedBy = "calendar")
+    private List<Event> event = new ArrayList<>();
 
     public LocalDate getDate() {
         return date;
@@ -34,11 +38,11 @@ public class Calendar extends AbstractEntity {
         this.time = time;
     }
 
-    public Event getEvent() {
+    public List<Event> getEvent() {
         return event;
     }
 
-    public void setEvent(Event event) {
+    public void setEvent(List<Event> event) {
         this.event = event;
     }
 }
