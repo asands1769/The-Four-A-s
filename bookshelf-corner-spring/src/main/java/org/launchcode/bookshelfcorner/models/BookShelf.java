@@ -1,48 +1,63 @@
 package org.launchcode.bookshelfcorner.models;
 
+
 import jakarta.persistence.*;
 
-//import java.awt.print.Book;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class BookShelf {
+public class BookShelf  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    //private User user;
-    //private Set<BookList> books = new HashSet<>();
-    public BookShelf(int id, User user) {
+    private String name;
+    @OneToMany
+    private final List<Book> books;
+
+    // Constructors
+
+
+    public BookShelf(int id, String name, List<Book> books) {
         this.id = id;
-        //this.user = user;
+        this.name = name;
+        this.books = books;
     }
 
+    // Getter and Setter for owner
+    public String getName() {
+        return name;
+    }
 
-    public int getId() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for books
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    // Add a book to the bookshelf
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
+    // Remove a book from the bookshelf
+    public void removeBook(Book book) {
+        books.remove(book);
+    }
+
+    // Display the books in the bookshelf
+    public void displayBooks() {
+        System.out.println("Books in " + name + "'s BookShelf:");
+        for (Book book : books) {
+            System.out.println(book.getTitle() + " by " + book.getAuthor());
+        }
+    }
+
+    public Integer getId() {
         return id;
-    }
-
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-
-
-    //public Set<BookList> getBooks() {
-        //return books;
-   // }
-
-    //public void setBooks(Set<BookList> books) {
-        //this.books = books;
-    //}
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
     }
 }
 

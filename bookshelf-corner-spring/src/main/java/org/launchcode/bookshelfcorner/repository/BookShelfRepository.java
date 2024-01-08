@@ -9,7 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface BookShelfRepository extends CrudRepository<BookShelf, Integer> {
-    Optional<BookShelf> findById(Long id);
 
-    void deleteById(Long id);
 }
