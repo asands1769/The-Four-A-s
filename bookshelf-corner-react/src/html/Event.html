@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- Include any additional styles or scripts here -->
+</head>
+<body>
+<div>
+<h1>Create Event</h1>
+
+<form id="createEventForm" action="/create-event" method="post">
+    <!-- Event Name -->
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName" name="eventName" required>
+
+    <!-- Event Description -->
+    <label for="eventDescription">Event Description:</label>
+    <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+
+    <!-- Event Date and Time -->
+    <label for="eventDateTime">Event Date and Time:</label>
+    <input type="datetime-local" id="eventDateTime" name="eventDateTime" required>
+
+    <label for="eventLocation">Event Location:</label>
+    <textarea id="eventLocation" name="eventLocation" rows="2" required></textarea>
+
+
+
+    <!-- Submit Button -->
+    <button type="submit">Create Event</button>
+</form>
+
+<h1>RSVP to Event</h1>
+
+<form id="rsvpForm" action="/rsvp" method="post">
+    <!-- User Information -->
+    <label for="userName">Your Name:</label>
+    <input type="text" id="userName" name="userName" required>
+
+    <label for="userEmail">Your Email:</label>
+    <input type="email" id="userEmail" name="userEmail" required>
+
+    <!-- RSVP Status -->
+    <label for="rsvpStatus">RSVP Status:</label>
+    <select id="rsvpStatus" name="rsvpStatus" required>
+        <option value="attending">Attending</option>
+        <option value="not_attending">Not Attending</option>
+    </select>
+
+    <!-- Additional user details or RSVP options can be added as needed -->
+
+    <!-- Hidden Field for Event ID (Assuming you need to associate the RSVP with a specific event) -->
+    <input type="hidden" id="eventId" name="eventId" value="123"> <!-- Replace with the actual event ID -->
+
+    <!-- Submit Button -->
+    <button type="submit">Submit RSVP</button>
+</form>
+<!-- Include any additional content or scripts here -->
+</div>
+</body>
+</html>
