@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 // import "./App.css";
 
 export default function Login() {
 
+    let navigate = useNavigate();
+
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
+
+    if (window.sessionStorage.getItem('logged in')) {
+      return <Navigate replace to="/users/profile" />
+    }
     
     const onSubmit = (e) => {
         e.preventDefault();
@@ -35,7 +43,8 @@ export default function Login() {
                 }
               });
             } else {
-              alert("Success !!");
+              sessionStorage.setItem("logged in", true);
+              return navigate("/users/profile");
             }
           })
           .catch((err) => err);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function RegisterUser() {
 
@@ -9,7 +10,11 @@ export default function RegisterUser() {
     const [passwordError, setPasswordError] = useState('');
     const [usernameError, setUsernameError] = useState('');
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
-    
+
+    if (window.sessionStorage.getItem('logged in')) {
+      return <Navigate replace to="/users/profile" />
+    }
+
     const onSubmit = (e) => {
         e.preventDefault();
    
@@ -47,13 +52,13 @@ export default function RegisterUser() {
                 }
               });
             } else {
+              sessionStorage.setItem("logged in", true);
               alert("You have succesfully registered.");
               return navigate("/users/profile");
             }
           })
           .catch((err) => err);
        }
-       //need to move to only navigate when correct
       }
     
 
