@@ -1,22 +1,22 @@
 import React from 'react';
-import BookShelf from './BookShelf';
-import Bookform from './Bookform';
+import React, { useState } from 'react';
 
-class BookshelfComponent extends React.Component {
-    render() {
-        const { bookshelf } = this.props;
+function BookShelf () {
+  
+  return (
+    <div>
+      <h2>Bookshelf</h2>
+      <ul>
+        {books.map((book) => (
+          <li key={book.id}>
+            {book.title} by {book.author}
+            <button onClick={() => handleRemoveBook(book.id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+      <button onClick={handleAddBook}>Add Book</button>
+    </div>
+  );
+};
 
-        return (
-            <div>
-                <h2>{bookshelf.user}'s Bookshelf</h2>
-                <ul>
-                    {bookshelf.books.map(book => (
-                        <li key={book.title}>{book.title}</li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
-}
-
-export default BookshelfComponent;
+export default BookShelf;
