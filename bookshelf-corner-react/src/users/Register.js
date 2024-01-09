@@ -11,8 +11,8 @@ export default function RegisterUser() {
     const [usernameError, setUsernameError] = useState('');
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
 
-    if (window.sessionStorage.getItem('logged in')) {
-      return <Navigate replace to="/users/profile" />
+    if (sessionStorage.getItem('logged in')) {
+      return <Navigate replace to="/profile" />
     }
 
     const onSubmit = (e) => {
@@ -52,10 +52,11 @@ export default function RegisterUser() {
                 }
               });
             } else {
-              sessionStorage.setItem("username", formData.get('username'))
+              sessionStorage.setItem("userId", data.userId)
+              // sessionStorage.setItem("username", formData.get('username'))
               sessionStorage.setItem("logged in", true);
               alert("You have succesfully registered.");
-              return navigate("/users/profile");
+              return navigate("/profile");
             }
           })
           .catch((err) => err);

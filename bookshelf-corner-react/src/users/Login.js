@@ -11,7 +11,7 @@ export default function Login() {
     const [passwordError, setPasswordError] = useState('');
 
     if (window.sessionStorage.getItem('logged in')) {
-      return <Navigate replace to="/users/profile" />
+      return <Navigate replace to="/profile" />
     }
     
     const onSubmit = (e) => {
@@ -44,8 +44,8 @@ export default function Login() {
               });
             } else {
               sessionStorage.setItem("userId", data.userId);
-              sessionStorage.setItem("logged in", true);
-              return navigate("/users/profile");
+              sessionStorage.setItem("loggedIn", true);
+              return navigate("/profile");
             }
           })
           .catch((err) => err);
@@ -90,6 +90,9 @@ export default function Login() {
                     <input type="submit" name="submit" value="Sign in" />
                   </div>
             </form>
+            <p>
+              Not a member of the BookShelf Corner? Sign up <a href="/users/register">here!</a>
+            </p>
         </div>
       )
 

@@ -23,9 +23,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/bookList' element={<BookListComponent/>}></Route>
-          <Route exact path="/users/Login" element={<Login />}></Route>
-          <Route exact path="/users/Register" element={<RegisterUser />}></Route>
-          <Route exact path="/users/Profile" element={<Profile/>}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/register" element={<RegisterUser />}></Route>
+          <Route exact path="/profile" element={<Profile/>}></Route>
           <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/events' element={<Event/>}></Route>
 
