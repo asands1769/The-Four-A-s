@@ -91,7 +91,7 @@ export default function Login() {
                   </div>
             </form>
             <p>
-              Not a member of the BookShelf Corner? Sign up <a href="/users/register">here!</a>
+              Not a member of the BookShelf Corner? Sign up <a href="/register">here!</a>
             </p>
         </div>
       )
