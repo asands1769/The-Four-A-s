@@ -30,6 +30,7 @@ class BookListComponent extends Component {
                                     <th>Book Title</th>
                                     <th>Book Author</th>
                                     <th>Published Year</th>
+                                    <th>Genre</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -41,6 +42,7 @@ class BookListComponent extends Component {
                                         <td>{book.bookTitle}</td>
                                         <td>{book.bookAuthor}</td>
                                         <td>{book.publishedYear}</td>
+                                        <td>{book.genre}</td>
 
                                     </tr>
                                 )

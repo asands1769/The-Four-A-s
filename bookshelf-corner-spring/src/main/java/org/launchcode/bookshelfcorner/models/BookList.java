@@ -14,14 +14,17 @@ public class BookList {
     private String bookAuthor;
     @Column(name = "published_year")
     private int publishedYear;
+    @Column(name = "Genre")
+    private String genre;
 
     public BookList() {
     }
 
-    public BookList(String bookTitle, String bookAuthor, int publishedYear) {
+    public BookList(String bookTitle, String bookAuthor, int publishedYear, String genre) {
         this.bookTitle = bookTitle;
         this.bookAuthor = bookAuthor;
         this.publishedYear = publishedYear;
+        this.genre = genre;
     }
 
     public int getBookId() {
@@ -54,5 +57,13 @@ public class BookList {
 
     public void setPublishedYear(int publishedYear) {
         this.publishedYear = publishedYear;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
