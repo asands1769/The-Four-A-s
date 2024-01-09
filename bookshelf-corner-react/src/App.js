@@ -6,7 +6,8 @@ import Profile from './users/Profile';
 import Test from './users/Test';
 
 import './App.css';
-import Event from './components/Event';
+import CreateEvent from './components/CreateEvent';
+import Events from './components/Events';
 
 
 
@@ -20,8 +21,8 @@ function App() {
           <Route exact path="/users/Register" element={<RegisterUser/>}></Route>
           <Route exact path="/users/Profile" element={<Profile/>}></Route>
           <Route exact path="/users/Test" element={<Test/>}></Route>
-          <Route exact path='/events' element={<Event/>}></Route>
-
+          <Route exact path='/createevent' element={<CreateEvent/>}></Route>
+          <Route exact path='/events' element={<Events/>}></Route>
         </Routes>
       </Router>
     </div>
