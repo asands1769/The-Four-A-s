@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    width: 100px;
+    height: 10px;
+    background-color:lightblue;
+    text-align: center;
+    color: red;
+    display: flex;
+  }
