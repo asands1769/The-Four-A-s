@@ -52,6 +52,7 @@ export default function RegisterUser() {
                 }
               });
             } else {
+              sessionStorage.setItem("username", formData.get('username'))
               sessionStorage.setItem("logged in", true);
               alert("You have succesfully registered.");
               return navigate("/users/profile");

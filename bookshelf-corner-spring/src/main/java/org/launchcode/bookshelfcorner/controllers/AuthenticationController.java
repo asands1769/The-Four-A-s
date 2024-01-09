@@ -31,11 +31,12 @@ public class AuthenticationController {
 
         User newUser = new User(registerRequestDTO.getUsername(), registerRequestDTO.getEmail(), registerRequestDTO.getPassword());
         userRepository.save(newUser);
-        return ResponseEntity.ok(new LoginResponseDTO("Success !"));
+        return ResponseEntity.ok(new LoginResponseDTO(newUser.getId(),"Success !"));
     }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody LoginRequestDTO loginRequestDTO){
-        return ResponseEntity.ok(new LoginResponseDTO("Success !"));
+        User user = userRepository.findByEmail(loginRequestDTO.getEmail());
+        return ResponseEntity.ok(new LoginResponseDTO(user.getId(),"Success !"));
     }
 }

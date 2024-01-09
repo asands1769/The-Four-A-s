@@ -43,6 +43,7 @@ export default function Login() {
                 }
               });
             } else {
+              sessionStorage.setItem("userId", data.userId);
               sessionStorage.setItem("logged in", true);
               return navigate("/users/profile");
             }
