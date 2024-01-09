@@ -47,3 +47,17 @@
     color: red;
     display: flex;
   }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    float: left;
+  }
+
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  }

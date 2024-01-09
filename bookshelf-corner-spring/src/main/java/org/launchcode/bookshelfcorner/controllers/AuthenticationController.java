@@ -26,18 +26,17 @@ public class AuthenticationController {
     private UserRepository userRepository;
 
     @PostMapping("/register")
-//    User newUser(@RequestBody User newUser) {
-//        return userRepository.save(newUser);
+
     public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody RegisterRequestDTO registerRequestDTO){
-        //How do we handle passwords not matching? Answer: client side. Add error message or alert and prevent from clicking on submit button? New span that shows error message or shared span with other error?
-        //How do we save to database?
+
         User newUser = new User(registerRequestDTO.getUsername(), registerRequestDTO.getEmail(), registerRequestDTO.getPassword());
         userRepository.save(newUser);
-        return ResponseEntity.ok(new LoginResponseDTO("Success !"));
+        return ResponseEntity.ok(new LoginResponseDTO(newUser.getId(),"Success !"));
     }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody LoginRequestDTO loginRequestDTO){
-        return ResponseEntity.ok(new LoginResponseDTO("Success !"));
+        User user = userRepository.findByEmail(loginRequestDTO.getEmail());
+        return ResponseEntity.ok(new LoginResponseDTO(user.getId(),"Success !"));
     }
 }
