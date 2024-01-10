@@ -71,7 +71,7 @@ export default function Profile() {
             <div>
                 <h3>Hi, {username}, welcome to your profile!</h3>
                 <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Default User"></img>
-                <p>Click <a href="/EditProfile">here</a> to edit your profile.</p>
+                <p>Click <a href="/EditProfile">here</a> to edit your profile and profile image.</p>
             </div>
             <div>
                 <h5>Favorite Books:</h5>
