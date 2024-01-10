@@ -52,9 +52,8 @@ export default function RegisterUser() {
                 }
               });
             } else {
-              sessionStorage.setItem("userId", data.userId)
-              // sessionStorage.setItem("username", formData.get('username'))
-              sessionStorage.setItem("loggedIn", true);
+              sessionStorage.setItem("userId", data.userId);
+              sessionStorage.setItem("loggedIn", "true");
               alert("You have succesfully registered.");
               return navigate("/profile");
             }
@@ -92,28 +91,28 @@ export default function RegisterUser() {
               <form method="POST" autoComplete="off" onSubmit={onSubmit}>
                   <div>
                   <label htmlFor="email">Email</label>
-                  <input type="text" name="email" onFocus={onEmailFocus}/>
+                  <input type="text" name="email" onFocus={onEmailFocus} />
                   {
                       emailError ? <span style={{ color: 'red', fontSize: '12px'}}>{emailError}</span> : ''
                   }
                   </div>
                   <div>
                   <label htmlFor="username">Username</label>
-                  <input type="text" name="username" onFocus={onUsernameFocus}/>
+                  <input type="text" name="username" onFocus={onUsernameFocus} />
                   {
                       usernameError ? <span style={{ color: 'red', fontSize: '12px'}}>{usernameError}</span> : ''
                   }
                   </div>
                   <div>
                       <label htmlFor="password">Password</label> 
-                      <input type="password" name="password" onFocus={onPasswordFocus}/>
+                      <input type="password" name="password" onFocus={onPasswordFocus} />
                           {
                           passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
                           }
                   </div>
                   <div>
                       <label htmlFor="verifyPassword">Verify Password</label> 
-                      <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus}/>
+                      <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus} />
                           {
                           verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
                           }

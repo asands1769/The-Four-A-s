@@ -10,8 +10,6 @@ export default function Login() {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
 
-    console.log(sessionStorage.getItem("loggedIn"));
-
     if (window.sessionStorage.getItem('loggedIn') === "true") {
       return <Navigate replace to="/profile" />
     }
@@ -45,10 +43,10 @@ export default function Login() {
                 }
               });
             } else {
-              console.log(sessionStorage.getItem("loggedIn"));
               sessionStorage.setItem("userId", data.userId);
-              sessionStorage.setItem("loggedIn", true);
-              return navigate("/profile");
+              sessionStorage.setItem("loggedIn", "true");
+              navigate("/profile");
+              return navigate(0);
             }
           })
           .catch((err) => err);

@@ -1,33 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { Navigate } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
-import { redirect } from 'react-router-dom';
-
+import React, { useState, useEffect } from 'react'
 
 export default function Profile() {
 
-    // make logout button with sessionStorage and auto nav away
-    let navigate = useNavigate();
-    
     const userId = window.sessionStorage.getItem("userId");
-    let username = '';
+    const [username, setUsername] = useState([]);
+    
 
     useEffect(() => {
+        fetchData();
+    },);
 
-        fetch("http://localhost:8080/getUsername/"+userId, {
-        method: "GET",
-        headers: {
-            "content-type": "text/plain"
-          },
-        })
-          .then((response) => response.text())
-          .then((data) => {
-            window.sessionStorage.setItem("username",data);
-          })
-          .catch((error) => error);
-      }, [userId]);
-
-      username = window.sessionStorage.getItem("username");
+        const fetchData = async () => {
+            await fetch("http://localhost:8080/getUsername/"+userId, {
+            method: "GET",
+            headers: {
+                "content-type": "text/plain"
+            },
+            })
+            .then((response) => response.text())
+            .then((data) => {
+                setUsername(data);
+                window.sessionStorage.setItem("username",data)
+            })
+            .catch((error) => error);
+        };
     
 
     // const onSubmitAddBook = (e) => {
@@ -72,7 +68,29 @@ export default function Profile() {
 
     return (
         <div>
-            <h3>Hi, {username}, welcome to your profile!</h3>
+            <div>
+                <h3>Hi, {username}, welcome to your profile!</h3>
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Default User"></img>
+                <p>Click <a href="/EditProfile">here</a> to edit your profile.</p>
+            </div>
+            <div>
+                <h5>Favorite Books:</h5>
+                <ul>
+                    <li>book 1</li>
+                    <li>book 2</li>
+                    <li>book 3</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Favorite Genres:</h5>
+                    <ul>
+                        <li>Genre 1</li>
+                        <li>Genre 2</li>
+                        <li>Genre 3</li>
+                    </ul>
+            </div>
+
+
               {/* <span>
                   <h5>Add a new book to share</h5>
               </span>
