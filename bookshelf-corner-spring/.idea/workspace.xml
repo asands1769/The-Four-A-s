@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
