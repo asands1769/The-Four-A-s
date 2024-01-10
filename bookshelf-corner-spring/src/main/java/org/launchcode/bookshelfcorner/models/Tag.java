@@ -1,23 +1,31 @@
 package org.launchcode.bookshelfcorner.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+import jakarta.persistence.*;
 
 @Entity
 public class Tag {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
+    @Column(name = "tag_name", nullable = false)
     private String name;
+    @Column(name = "tag_type", nullable = false)
+    private String type; // Attribute to represent the type of tag (e.g., "Must Read", "Timeless")
 
-    public Tag(int id, String name) {
-        this.id = id;
-        this.name = name;
+    // Constructors, getters, and setters
+
+    public Tag() {
+        // Default constructor
     }
 
+    public Tag(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    // Getter and Setter for name
     public String getName() {
         return name;
     }
@@ -25,5 +33,14 @@ public class Tag {
     public void setName(String name) {
         this.name = name;
     }
-    // Constructors, getters, setters, etc.
+
+    // Getter and Setter for type
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
 }
