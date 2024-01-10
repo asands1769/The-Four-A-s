@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
+import { redirect } from 'react-router-dom';
 
 
 export default function Profile() {
 
     // make logout button with sessionStorage and auto nav away
     let navigate = useNavigate();
-
-    // if (!sessionStorage.getItem('logged in')) {
-    //     return <Navigate replace to="/login" />
-    //   }
-
-    const userId = sessionStorage.getItem("userId");
+    
+    const userId = window.sessionStorage.getItem("userId");
+    let username = '';
 
     useEffect(() => {
 
@@ -24,12 +22,13 @@ export default function Profile() {
         })
           .then((response) => response.text())
           .then((data) => {
-            sessionStorage.setItem("username",data)
+            window.sessionStorage.setItem("username",data);
           })
           .catch((error) => error);
-      }, []);
+      }, [userId]);
 
-    const username = sessionStorage.getItem("username");
+      username = window.sessionStorage.getItem("username");
+    
 
     // const onSubmitAddBook = (e) => {
     // e.preventDefault();

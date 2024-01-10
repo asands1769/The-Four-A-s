@@ -5,6 +5,8 @@ import Login from './users/Login';
 import RegisterUser from './users/Register';
 import Profile from './users/Profile';
 import Test from './users/Test';
+import Home from './components/Home';
+import PrivateRoute from './users/PrivateRoute';
 
 import './App.css';
 import BookListComponent from './components/BookListComponent';
@@ -19,16 +21,21 @@ function App() {
   return (
     <div>
        
-      <Header />
+      
       <Router>
+      <Header />
         <Routes>
+          <Route exact path="/" element={<Home />}></Route>
           <Route exact path='/bookList' element={<BookListComponent/>}></Route>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/register" element={<RegisterUser />}></Route>
-          <Route exact path="/profile" element={<Profile/>}></Route>
+          <Route path="/profile" element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }/>
           <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/events' element={<Event/>}></Route>
-
         </Routes>
       </Router>
     </div>
