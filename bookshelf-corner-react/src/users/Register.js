@@ -11,7 +11,7 @@ export default function RegisterUser() {
     const [usernameError, setUsernameError] = useState('');
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
 
-    if (sessionStorage.getItem('logged in')) {
+    if (window.sessionStorage.getItem('loggedIn') === "true") {
       return <Navigate replace to="/profile" />
     }
 
@@ -54,7 +54,7 @@ export default function RegisterUser() {
             } else {
               sessionStorage.setItem("userId", data.userId)
               // sessionStorage.setItem("username", formData.get('username'))
-              sessionStorage.setItem("logged in", true);
+              sessionStorage.setItem("loggedIn", true);
               alert("You have succesfully registered.");
               return navigate("/profile");
             }

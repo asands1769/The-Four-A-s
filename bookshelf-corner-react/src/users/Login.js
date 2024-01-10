@@ -10,7 +10,9 @@ export default function Login() {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
 
-    if (window.sessionStorage.getItem('logged in')) {
+    console.log(sessionStorage.getItem("loggedIn"));
+
+    if (window.sessionStorage.getItem('loggedIn') === "true") {
       return <Navigate replace to="/profile" />
     }
     
@@ -43,6 +45,7 @@ export default function Login() {
                 }
               });
             } else {
+              console.log(sessionStorage.getItem("loggedIn"));
               sessionStorage.setItem("userId", data.userId);
               sessionStorage.setItem("loggedIn", true);
               return navigate("/profile");

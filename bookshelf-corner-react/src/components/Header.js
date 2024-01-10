@@ -1,7 +1,19 @@
+import React from 'react';
 import { Component } from 'react';
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default class Header extends Component {
-    render() {
+export default function Header()  {
+
+        const onLogout = () => {
+        //   console.log(sessionStorage.getItem("loggedIn"));
+          window.sessionStorage.setItem("loggedIn", null);
+        //   console.log(sessionStorage.getItem("loggedIn"));
+        }
+
+
+
         return (
             <header>
                 <h1>The BookShelf Corner</h1>
@@ -10,9 +22,8 @@ export default class Header extends Component {
                             <a href="/booklist">Book List</a>
                             <a href="/events">Events</a>
                             <a href="/login">Sign in</a>
-                            {/* <button value="Log out">Log out</button> */}
+                            <Link to="/" onClick={onLogout}>Sign out</Link>
                         </ul>
             </header>
         );
-    }
 }
