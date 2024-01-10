@@ -8,7 +8,7 @@ const TagList = () => {
   // Function to fetch all tags
   const fetchTags = async () => {
     try {
-      const response = await fetch('/api/tags');
+      const response = await fetch("http://localhost:8080/tags");
       const data = await response.json();
       setTags(data);
     } catch (error) {
@@ -19,10 +19,11 @@ const TagList = () => {
   // Function to create a new tag
   const createTag = async () => {
     try {
-      const response = await fetch('/api/tags', {
+      const response = await fetch("http://localhost:8080/tags", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': 'http://localhost:3000',
         },
         body: JSON.stringify({ name: newTagName, type: newTagType }),
       });
