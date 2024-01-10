@@ -7,6 +7,8 @@ import Test from './users/Test';
 
 import './App.css';
 import Event from './components/Event';
+import BookShelf from './components/BookShelf';
+import TagList from './components/tag';
 
 
 
@@ -21,6 +23,8 @@ function App() {
           <Route exact path="/users/Profile" element={<Profile/>}></Route>
           <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/events' element={<Event/>}></Route>
+          <Route exact path='/bookshelf'element={<BookShelf/>}></Route>
+          <Route exact path='/tag'element={<TagList/>}></Route>
 
         </Routes>
       </Router>

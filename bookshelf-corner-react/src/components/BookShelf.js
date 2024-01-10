@@ -1,67 +1,64 @@
 import React, { useState, useEffect } from 'react';
 
-const BookShelf = () => {
-  const [bookShelves, setBookShelves] = useState([]);
-  const [newShelfName, setNewShelfName] = useState('');
 
-  // Function to fetch bookshelves from the backend
-  const fetchBookShelves = async () => {
-    try {
-      const response = await fetch('/api/bookshelves');
-      const data = await response.json();
-      setBookShelves(data);
-    } catch (error) {
-      console.error('Error fetching bookshelves:', error);
-    }
-  };
 
-  // Function to add a new bookshelf
-  const handleAddShelf = async () => {
-    try {
-      const response = await fetch('/api/bookshelves/add', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name: newShelfName }),
-      });
-
-      if (response.status === 201) {
-        // Bookshelf added successfully
-        setNewShelfName('');
-        fetchBookShelves(); // Refresh the bookshelf list
-      } else {
-        console.error('Error adding bookshelf:', response.statusText);
-      }
-    } catch (error) {
-      console.error('Error adding bookshelf:', error);
-    }
-  };
+let BookShelf = () => {
+  let [bookShelves, setBookShelves] = useState([]);
+  let [newBookShelf, setNewBookShelf] = useState({ name: '', books: [] });
 
   useEffect(() => {
-    fetchBookShelves();
-  }, []); // Fetch bookshelves on component mount
+    // Fetch bookshelves from the backend when the component mounts
+    fetch('"http://localhost:8080/bookshelves"')
+      .then(response => response.json())
+      .then(data => setBookShelves(data))
+      .catch(error => console.error('Error fetching bookshelves:', error));
+  }, []);
+
+  let handleInputChange = (event) => {
+    let { name, value } = event.target;
+    setNewBookShelf({ ...newBookShelf, [name]: value });
+  };
+
+  let handleCreateBookShelf = () => {
+    // Send a POST request to create a new bookshelf
+    fetch('"http://localhost:8080/bookshelves', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'http://localhost:3000',
+      },
+      body: JSON.stringify(newBookShelf),
+    })
+      .then(response => response.json())
+      .then(data => setBookShelves([...bookShelves, data]))
+      .catch(error => console.error('Error creating bookshelf:', error));
+
+    // Clear the input fields after creating a new bookshelf
+    setNewBookShelf({ name: '', books: [] });
+  };
 
   return (
     <div>
-      <h2>Bookshelves</h2>
-      {bookShelves.map((shelf) => (
-        <div key={shelf.id}>
-          <h3>{shelf.name}</h3>
-          <ul>
-            {shelf.books.map((book) => (
-              <li key={book.id}>
-                {book.title} by {book.author}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <h1>BookShelves</h1>
+      <ul>
+        {bookShelves.map(bookShelf => (
+          <li key={bookShelf.id}>
+            {bookShelf.name} - Books: {bookShelf.books.length}
+          </li>
+        ))}
+      </ul>
       <div>
-        <h3>Add New Shelf</h3>
-        <label>Name:</label>
-        <input type="text" value={newShelfName} onChange={(e) => setNewShelfName(e.target.value)} />
-        <button onClick={handleAddShelf}>Add Shelf</button>
+        <h2>Create a New BookShelf</h2>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={newBookShelf.name}
+            onChange={handleInputChange}
+          />
+        </label>
+        <button onClick={handleCreateBookShelf}>Create BookShelf</button>
       </div>
     </div>
   );
