@@ -2056,6 +2056,12 @@
       <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/CreateEvent.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/RSVP.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Reviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Calendar.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarRepository.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Event.class.uniqueId5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventController.class.uniqueId3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventRepository.class.uniqueId4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" afterDir="false" />
@@ -2080,8 +2086,6 @@
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/CreateEvent.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/components/Events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -2095,7 +2099,7 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repositories/ReviewView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AuthenticationController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarController.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarController.class.uniqueId3" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarController.class.uniqueId2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CalendarRespository.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventController.class.uniqueId4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/EventRepository.class.uniqueId5" beforeDir="false" />
