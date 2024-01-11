@@ -3,6 +3,7 @@ package org.launchcode.bookshelfcorner.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name="events")
 public class Event extends AbstractEntity {
 
     @ManyToOne

@@ -8,6 +8,7 @@ import Test from './users/Test';
 import './App.css';
 import CreateEvent from './components/CreateEvent';
 import Events from './components/Events';
+import Reviews from './components/Reviews';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/createevent' element={<CreateEvent/>}></Route>
           <Route exact path='/events' element={<Events/>}></Route>
+          <Route exact path='/reviews' element={<Reviews/>}></Route>
         </Routes>
       </Router>
     </div>
