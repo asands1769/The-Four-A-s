@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 
 
-let BookShelf = () => {
-  let [bookShelves, setBookShelves] = useState([]);
-  let [newBookShelf, setNewBookShelf] = useState({ name: '', books: [] });
+const BookShelf = () => {
+  const [bookShelves, setBookShelves] = useState([]);
+  const [newBookShelf, setNewBookShelf] = useState({ name: '', books: [] });
 
   useEffect(() => {
     // Fetch bookshelves from the backend when the component mounts
@@ -14,12 +14,27 @@ let BookShelf = () => {
       .catch(error => console.error('Error fetching bookshelves:', error));
   }, []);
 
-  let handleInputChange = (event) => {
-    let { name, value } = event.target;
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
     setNewBookShelf({ ...newBookShelf, [name]: value });
   };
 
-  let handleCreateBookShelf = () => {
+  // Example GET request
+fetch('http://your-backend-api.com/api/resource')
+.then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  return response.json();
+})
+.then(data => {
+  console.log('Data received:', data);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+
+  const handleCreateBookShelf = () => {
     // Send a POST request to create a new bookshelf
     fetch('"http://localhost:8080/bookshelves', {
       method: 'POST',
@@ -29,6 +44,23 @@ let BookShelf = () => {
       },
       body: JSON.stringify(newBookShelf),
     })
+    
+    
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Bad Request');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Process the successful response
+        console.log(data);
+      })
+      .catch(error => {
+        // Handle errors, including potential 400 Bad Request
+        console.error('Error:', error.message);
+      })
+
       .then(response => response.json())
       .then(data => setBookShelves([...bookShelves, data]))
       .catch(error => console.error('Error creating bookshelf:', error));
@@ -36,6 +68,7 @@ let BookShelf = () => {
     // Clear the input fields after creating a new bookshelf
     setNewBookShelf({ name: '', books: [] });
   };
+
 
   return (
     <div>
