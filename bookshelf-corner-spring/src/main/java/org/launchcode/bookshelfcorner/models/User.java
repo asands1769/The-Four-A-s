@@ -1,7 +1,9 @@
 package org.launchcode.bookshelfcorner.models;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -15,6 +17,9 @@ public class User extends AbstractEntity {
 
     @ManyToMany(mappedBy = "eventParticipants")
     private List<Event> events= new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Genre> genreList;
 
     @NotNull
     private String username;
@@ -57,11 +62,28 @@ public class User extends AbstractEntity {
     //Do we need another method to update booksToShare list?
     //Should this be another class by itself?
 
+
+    public List<Genre> getGenreList() {
+        return genreList;
+    }
+
+    public void setGenreList(List<Genre> genreList) {
+        this.genreList = genreList;
+    }
+
+    public void addGenre(Genre genre) {
+        this.genreList.add(genre);
+    }
+
+    public void removeGenre(Genre genre) {
+        this.genreList.remove(genre);
+    }
+
+
     @Override
     public String toString() {
         return username;
     }
-
 
     public boolean isMatchingPassword(String password) {
         return encoder.matches(password, pwHash);

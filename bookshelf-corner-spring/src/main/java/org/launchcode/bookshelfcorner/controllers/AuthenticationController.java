@@ -26,7 +26,6 @@ public class AuthenticationController {
     private UserRepository userRepository;
 
     @PostMapping("/register")
-
     public ResponseEntity<LoginResponseDTO> performLogin(@Valid @RequestBody RegisterRequestDTO registerRequestDTO){
 
         User newUser = new User(registerRequestDTO.getUsername(), registerRequestDTO.getEmail(), registerRequestDTO.getPassword());
