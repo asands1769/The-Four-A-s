@@ -18,8 +18,13 @@ public class User extends AbstractEntity {
     @ManyToMany(mappedBy = "eventParticipants")
     private List<Event> events= new ArrayList<>();
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Genre> genreList;
+=======
+    @OneToMany(mappedBy = "createdBy")
+    private List<Review> reviews= new ArrayList<>();
+>>>>>>> ed40c84ee6aa8c6054a6d7c3d5812bccac2fecba
 
     @NotNull
     private String username;
