@@ -7,9 +7,8 @@ import Test from './users/Test';
 
 import './App.css';
 import Event from './components/Event';
-import BookShelf from './components/BookShelf';
+import BookShelf from './components/BookShelf.js';
 import TagList from './components/tag';
-
 
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route exact path='/events' element={<Event/>}></Route>
           <Route exact path='/bookshelf'element={<BookShelf/>}></Route>
           <Route exact path='/tag'element={<TagList/>}></Route>
-
         </Routes>
       </Router>
     </div>

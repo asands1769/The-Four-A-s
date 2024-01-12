@@ -1,97 +1,105 @@
 import React, { useState, useEffect } from 'react';
 
-
-
 const BookShelf = () => {
-  const [bookShelves, setBookShelves] = useState([]);
-  const [newBookShelf, setNewBookShelf] = useState({ name: '', books: [] });
+  const [bookshelves, setBookshelves] = useState([]);
+  const [newBookShelf, setNewBookShelf] = useState({
+    name: '',
+    bookCategory: '',
+    tagType: '',
+  });
 
   useEffect(() => {
-    // Fetch bookshelves from the backend when the component mounts
-    fetch('"http://localhost:8080/bookshelves"')
-      .then(response => response.json())
-      .then(data => setBookShelves(data))
-      .catch(error => console.error('Error fetching bookshelves:', error));
+    fetchBookshelves();
   }, []);
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setNewBookShelf({ ...newBookShelf, [name]: value });
+  const fetchBookshelves = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/bookshelves');
+      const data = await response.json();
+      setBookshelves(data);
+    } catch (error) {
+      console.error('Error fetching bookshelves:', error);
+    }
   };
 
-  // Example GET request
-fetch('http://your-backend-api.com/api/resource')
-.then(response => {
-  if (!response.ok) {
-    throw new Error(`HTTP error! Status: ${response.status}`);
-  }
-  return response.json();
-})
-.then(data => {
-  console.log('Data received:', data);
-})
-.catch(error => {
-  console.error('Error:', error);
-});
+  const addBookShelf = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/bookshelves/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newBookShelf),
+      });
 
-  const handleCreateBookShelf = () => {
-    // Send a POST request to create a new bookshelf
-    fetch('"http://localhost:8080/bookshelves', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:3000',
-      },
-      body: JSON.stringify(newBookShelf),
-    })
-    
-    
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Bad Request');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Process the successful response
-        console.log(data);
-      })
-      .catch(error => {
-        // Handle errors, including potential 400 Bad Request
-        console.error('Error:', error.message);
-      })
-
-      .then(response => response.json())
-      .then(data => setBookShelves([...bookShelves, data]))
-      .catch(error => console.error('Error creating bookshelf:', error));
-
-    // Clear the input fields after creating a new bookshelf
-    setNewBookShelf({ name: '', books: [] });
+      if (response.ok) {
+        fetchBookshelves();
+        setNewBookShelf({
+          name: '',
+          bookCategory: '',
+          tagType: '',
+        });
+      } else {
+        console.error('Error adding bookshelf:', response.status);
+      }
+    } catch (error) {
+      console.error('Error adding bookshelf:', error);
+    }
   };
 
+  const deleteBookShelf = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:8080/bookshelves/${id}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        fetchBookshelves();
+      } else {
+        console.error('Error deleting bookshelf:', response.status);
+      }
+    } catch (error) {
+      console.error('Error deleting bookshelf:', error);
+    }
+  };
 
   return (
     <div>
-      <h1>BookShelves</h1>
-      <ul>
-        {bookShelves.map(bookShelf => (
-          <li key={bookShelf.id}>
-            {bookShelf.name} - Books: {bookShelf.books.length}
-          </li>
-        ))}
-      </ul>
+      <h2>BookShelf</h2>
+
       <div>
-        <h2>Create a New BookShelf</h2>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={newBookShelf.name}
-            onChange={handleInputChange}
-          />
-        </label>
-        <button onClick={handleCreateBookShelf}>Create BookShelf</button>
+        <h3>Add New Bookshelf</h3>
+        <label>Name:</label>
+        <input
+          type="text"
+          value={newBookShelf.name}
+          onChange={(e) => setNewBookShelf({ ...newBookShelf, name: e.target.value })}
+        />
+        <label>Book Category:</label>
+        <input
+          type="text"
+          value={newBookShelf.bookCategory}
+          onChange={(e) => setNewBookShelf({ ...newBookShelf, bookCategory: e.target.value })}
+        />
+        <label>Tag Type:</label>
+        <input
+          type="text"
+          value={newBookShelf.tagType}
+          onChange={(e) => setNewBookShelf({ ...newBookShelf, tagType: e.target.value })}
+        />
+        <button onClick={addBookShelf}>Add Bookshelf</button>
+      </div>
+
+      <div>
+        <h3>Delete Bookshelves</h3>
+        <ul>
+          {bookshelves.map((bookshelf) => (
+            <li key={bookshelf.id}>
+              {bookshelf.name} - {bookshelf.bookCategory} - {bookshelf.tagType}
+              <button onClick={() => deleteBookShelf(bookshelf.id)}>Delete</button>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
