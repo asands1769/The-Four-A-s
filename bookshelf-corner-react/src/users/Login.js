@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 // import "./App.css";
 
 export default function Login() {
 
+    let navigate = useNavigate();
+
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
+
+    if (window.sessionStorage.getItem('loggedIn') === "true") {
+      return <Navigate replace to="/profile" />
+    }
     
     const onSubmit = (e) => {
         e.preventDefault();
@@ -35,7 +43,10 @@ export default function Login() {
                 }
               });
             } else {
-              alert("Success !!");
+              sessionStorage.setItem("userId", data.userId);
+              sessionStorage.setItem("loggedIn", "true");
+              navigate("/profile");
+              return navigate(0);
             }
           })
           .catch((err) => err);
@@ -80,6 +91,9 @@ export default function Login() {
                     <input type="submit" name="submit" value="Sign in" />
                   </div>
             </form>
+            <p>
+              Not a member of the BookShelf Corner? Sign up <a href="/register">here!</a>
+            </p>
         </div>
       )
 

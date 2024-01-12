@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function RegisterUser() {
 
@@ -9,7 +10,11 @@ export default function RegisterUser() {
     const [passwordError, setPasswordError] = useState('');
     const [usernameError, setUsernameError] = useState('');
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
-    
+
+    if (window.sessionStorage.getItem('loggedIn') === "true") {
+      return <Navigate replace to="/profile" />
+    }
+
     const onSubmit = (e) => {
         e.preventDefault();
    
@@ -47,13 +52,14 @@ export default function RegisterUser() {
                 }
               });
             } else {
+              sessionStorage.setItem("userId", data.userId);
+              sessionStorage.setItem("loggedIn", "true");
               alert("You have succesfully registered.");
-              return navigate("/users/profile");
+              return navigate("/profile");
             }
           })
           .catch((err) => err);
        }
-       //need to move to only navigate when correct
       }
     
 
@@ -85,28 +91,28 @@ export default function RegisterUser() {
               <form method="POST" autoComplete="off" onSubmit={onSubmit}>
                   <div>
                   <label htmlFor="email">Email</label>
-                  <input type="text" name="email" onFocus={onEmailFocus}/>
+                  <input type="text" name="email" onFocus={onEmailFocus} />
                   {
                       emailError ? <span style={{ color: 'red', fontSize: '12px'}}>{emailError}</span> : ''
                   }
                   </div>
                   <div>
                   <label htmlFor="username">Username</label>
-                  <input type="text" name="username" onFocus={onUsernameFocus}/>
+                  <input type="text" name="username" onFocus={onUsernameFocus} />
                   {
                       usernameError ? <span style={{ color: 'red', fontSize: '12px'}}>{usernameError}</span> : ''
                   }
                   </div>
                   <div>
                       <label htmlFor="password">Password</label> 
-                      <input type="password" name="password" onFocus={onPasswordFocus}/>
+                      <input type="password" name="password" onFocus={onPasswordFocus} />
                           {
                           passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
                           }
                   </div>
                   <div>
                       <label htmlFor="verifyPassword">Verify Password</label> 
-                      <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus}/>
+                      <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus} />
                           {
                           verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
                           }

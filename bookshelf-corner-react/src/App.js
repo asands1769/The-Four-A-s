@@ -1,26 +1,42 @@
 import Header from './components/Header';
+// import { Navigate } from "react-router-dom";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from './users/Login';
 import RegisterUser from './users/Register';
 import Profile from './users/Profile';
 import Test from './users/Test';
+import Home from './components/Home';
+import PrivateRoute from './users/PrivateRoute';
 
 import './App.css';
 import CreateEvent from './components/CreateEvent';
 import Events from './components/Events';
 import Reviews from './components/Reviews';
+import BookListComponent from './components/BookListComponent';
+//import { Route, Router } from 'react-router-dom';
+import HeaderComponent from './components/HeaderComponent';
+import FooterComponents from './components/FooterComponents';
+
 
 
 
 function App() {
   return (
     <div>
-      <Header />
+       
+      
       <Router>
+      <Header />
         <Routes>
-          <Route exact path="/users/Login" element={<Login/>}></Route>
-          <Route exact path="/users/Register" element={<RegisterUser/>}></Route>
-          <Route exact path="/users/Profile" element={<Profile/>}></Route>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path='/bookList' element={<BookListComponent/>}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/register" element={<RegisterUser />}></Route>
+          <Route path="/profile" element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }/>
           <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/createevent' element={<CreateEvent/>}></Route>
           <Route exact path='/events' element={<Events/>}></Route>
@@ -28,7 +44,10 @@ function App() {
         </Routes>
       </Router>
     </div>
+    
+    
   );
 }
+
 
 export default App;
