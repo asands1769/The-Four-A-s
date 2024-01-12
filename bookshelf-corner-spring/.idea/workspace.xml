@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller" />
-=======
     <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
->>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,5 +1,6 @@
 package org.launchcode.bookshelfcorner.models;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
@@ -17,8 +18,13 @@ public class User extends AbstractEntity {
     @ManyToMany(mappedBy = "eventParticipants")
     private List<Event> events= new ArrayList<>();
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "createdBy")
     private List<Review> reviews= new ArrayList<>();
+=======
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Genre> genreList;
+>>>>>>> e4a7513c2f43ea44789a529dcb7120728151b654
 
     @NotNull
     private String username;
@@ -61,11 +67,28 @@ public class User extends AbstractEntity {
     //Do we need another method to update booksToShare list?
     //Should this be another class by itself?
 
+
+    public List<Genre> getGenreList() {
+        return genreList;
+    }
+
+    public void setGenreList(List<Genre> genreList) {
+        this.genreList = genreList;
+    }
+
+    public void addGenre(Genre genre) {
+        this.genreList.add(genre);
+    }
+
+    public void removeGenre(Genre genre) {
+        this.genreList.remove(genre);
+    }
+
+
     @Override
     public String toString() {
         return username;
     }
-
 
     public boolean isMatchingPassword(String password) {
         return encoder.matches(password, pwHash);
