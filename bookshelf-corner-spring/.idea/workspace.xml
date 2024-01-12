@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/API/BookShelfNotFoundException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/BookShelfNotFoundException.java" afterDir="false" />
@@ -42,6 +43,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller" />
+=======
+    <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
+>>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +71,16 @@
         </task>
         <projects_view>
           <tree_state>
+<<<<<<< HEAD
             <expand />
+=======
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bookshelf-corner" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
             <select />
           </tree_state>
         </projects_view>
@@ -87,6 +104,7 @@
         <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; 6acc22c39df46417a1d945de6ad78c45ba9ba887
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -96,16 +114,22 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
+=======
+  &quot;associatedIndex&quot;: 8
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
 }</component>
   <component name="ProjectId" id="2ZeGYzJE2apC7HAxszjhaRsnsFk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -120,6 +144,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.bookshelf-corner-spring [bootRun]">
+=======
+    &quot;Gradle.bookshelf-corner-spring [:BookshelfCornerApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;john__branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
     <configuration name="BookshelfCornerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.bookshelfcorner.BookshelfCornerApplication" />
       <module name="bookshelf-corner.main" />
@@ -132,6 +167,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+<<<<<<< HEAD
     </configuration>
     <configuration name="bookshelf-corner-spring [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -158,62 +194,42 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.bookshelf-corner-spring [bootRun]" />
+=======
+    </configuration>
+    <recent_temporary>
+      <list>
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
         <item itemvalue="Application.BookshelfCornerApplication" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-98297cd8" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="" />
-      <created>1702775182846</created>
+      <changelist id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
+      <created>1704865776471</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702775182846</updated>
+      <updated>1704865776471</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added an event class with properties, getters/setters">
-      <created>1702841927057</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+<<<<<<< HEAD
+    <task id="LOCAL-00007" summary="added Methods for event controller">
+      <created>1705013273641</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1702841927057</updated>
+      <updated>1705013273641</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added an event class with properties, getters/setters">
-      <created>1702842459285</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1702842459285</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added an event controller with event and event view as properties (just to connect) and an empty view.">
-      <created>1702843565520</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1702843565520</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added a review model (with properties), controller and an empty view.">
-      <created>1702854641173</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702854641173</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added model and controller for calendar">
-      <created>1702947361437</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702947361437</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added Methods for event controller">
-      <created>1704413513948</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1704413513948</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="8" />
+=======
+>>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
     <servers />
   </component>
   <component name="UnknownFeatures">

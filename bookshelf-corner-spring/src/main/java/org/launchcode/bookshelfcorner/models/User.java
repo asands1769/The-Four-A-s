@@ -2,6 +2,7 @@ package org.launchcode.bookshelfcorner.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -15,6 +16,9 @@ public class User extends AbstractEntity {
 
     @ManyToMany(mappedBy = "eventParticipants")
     private List<Event> events= new ArrayList<>();
+
+    @OneToMany(mappedBy = "createdBy")
+    private List<Review> reviews= new ArrayList<>();
 
     @NotNull
     private String username;
