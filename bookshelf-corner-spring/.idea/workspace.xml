@@ -5,10 +5,51 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+    <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/API/BookShelfNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/BookShelfNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/15.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/API/APIBookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/API/APIBookShelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/BookShelfController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/BookShelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/BookShelf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/TagRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TagController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookShelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/TagType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/TagType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+=======
+<<<<<<< HEAD
     <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller" />
 =======
     <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
 >>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +71,16 @@
         </task>
         <projects_view>
           <tree_state>
+<<<<<<< HEAD
+            <expand />
+=======
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bookshelf-corner" type="f1a62948:ProjectNode" />
               </path>
             </expand>
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
             <select />
           </tree_state>
         </projects_view>
@@ -46,8 +91,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +114,12 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+=======
   &quot;associatedIndex&quot;: 8
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
 }</component>
   <component name="ProjectId" id="2ZeGYzJE2apC7HAxszjhaRsnsFk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -77,6 +129,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sumitha__branch&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.launchcode.bookshelfcorner.Controllers.API" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.bookshelf-corner-spring [bootRun]">
+=======
     &quot;Gradle.bookshelf-corner-spring [:BookshelfCornerApplication.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -86,6 +154,7 @@
   }
 }</component>
   <component name="RunManager">
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
     <configuration name="BookshelfCornerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.bookshelfcorner.BookshelfCornerApplication" />
       <module name="bookshelf-corner.main" />
@@ -98,9 +167,38 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+<<<<<<< HEAD
+    </configuration>
+    <configuration name="bookshelf-corner-spring [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.bookshelf-corner-spring [bootRun]" />
+=======
+    </configuration>
+    <recent_temporary>
+      <list>
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
         <item itemvalue="Application.BookshelfCornerApplication" />
       </list>
     </recent_temporary>
@@ -133,6 +231,9 @@
 =======
 >>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

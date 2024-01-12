@@ -66,4 +66,8 @@ public class BookList {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
