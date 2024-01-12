@@ -9,11 +9,14 @@ import Home from './components/Home';
 import PrivateRoute from './users/PrivateRoute';
 
 import './App.css';
+import CreateEvent from './components/CreateEvent';
+import Events from './components/Events';
+import Reviews from './components/Reviews';
 import BookListComponent from './components/BookListComponent';
 //import { Route, Router } from 'react-router-dom';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
-import Event from './components/Event';
+
 
 
 
@@ -35,7 +38,9 @@ function App() {
             </PrivateRoute>
           }/>
           <Route exact path="/users/Test" element={<Test/>}></Route>
-          <Route exact path='/events' element={<Event/>}></Route>
+          <Route exact path='/createevent' element={<CreateEvent/>}></Route>
+          <Route exact path='/events' element={<Events/>}></Route>
+          <Route exact path='/reviews' element={<Reviews/>}></Route>
         </Routes>
       </Router>
     </div>

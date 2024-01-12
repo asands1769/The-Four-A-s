@@ -1,18 +1,23 @@
 package org.launchcode.bookshelfcorner.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
-
+@Table(name="reviews")
 public class Review extends AbstractEntity{
 
+    @ManyToOne
+    private User createdBy;
 
-    private String user;
+    private LocalDateTime createdDate;
 
-    private LocalDate date;
-
+    @Column(columnDefinition= "TEXT")
     private String content;
 
     private Integer rating;
@@ -21,20 +26,20 @@ public class Review extends AbstractEntity{
 
     }
 
-    public String getUser() {
-        return user;
+    public User getCreatedBy() {
+        return createdBy;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setCreatedBy(User createdBy) {
+        this.createdBy = createdBy;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
     }
 
     public String getContent() {
