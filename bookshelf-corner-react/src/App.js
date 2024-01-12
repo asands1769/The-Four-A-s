@@ -9,11 +9,10 @@ import Home from './components/Home';
 import PrivateRoute from './users/PrivateRoute';
 
 import './App.css';
-<<<<<<< HEAD
-import Event from './components/Event';
+import Event from './components/Events.js';
 import BookShelf from './components/BookShelf.js';
 import TagList from './components/tag';
-=======
+
 import CreateEvent from './components/CreateEvent';
 import Events from './components/Events';
 import Reviews from './components/Reviews';
@@ -23,7 +22,7 @@ import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
 
 
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
+
 
 
 function App() {
@@ -44,15 +43,14 @@ function App() {
             </PrivateRoute>
           }/>
           <Route exact path="/users/Test" element={<Test/>}></Route>
-<<<<<<< HEAD
           <Route exact path='/events' element={<Event/>}></Route>
           <Route exact path='/bookshelf'element={<BookShelf/>}></Route>
           <Route exact path='/tag'element={<TagList/>}></Route>
-=======
+
           <Route exact path='/createevent' element={<CreateEvent/>}></Route>
           <Route exact path='/events' element={<Events/>}></Route>
           <Route exact path='/reviews' element={<Reviews/>}></Route>
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
+
         </Routes>
       </Router>
     </div>

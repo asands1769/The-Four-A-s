@@ -1,5 +1,6 @@
 package org.launchcode.bookshelfcorner.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
@@ -9,8 +10,10 @@ import java.util.List;
 @Entity
 public class Genre extends AbstractEntity {
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+//            (cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
+    @JsonManagedReference
     private User user;
 
     @NotNull
@@ -37,8 +40,7 @@ public class Genre extends AbstractEntity {
         return user;
     }
 
-    public void setUser(User user) { this.user = user;
-    }
+    public void setUser(User user) { this.user = user; }
 
     @Override
     public String toString() {

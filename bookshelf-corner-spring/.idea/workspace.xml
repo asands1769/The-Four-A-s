@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-=======
-<<<<<<< HEAD
-    <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/API/BookShelfNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/exceptions/BookShelfNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/14.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/15.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/5.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookshelf-corner-react/src/users/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -31,31 +24,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/API/APIBookShelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/API/APIBookShelfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/BookShelfController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/Controllers/TagController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/BookShelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/BookShelf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/repository/TagRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TagController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/launchcode/bookshelfcorner/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Review.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReviewRepository.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/BookShelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/TagType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/TagType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/TagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/bookshelfcorner/repository/GenreRepository.java" afterDir="false" />
     </list>
-=======
-<<<<<<< HEAD
-    <list default="true" id="6a5080af-feb1-42f7-b2d2-da27a8893b08" name="Changes" comment="added Methods for event controller" />
-=======
-    <list default="true" id="cf4c1ed3-b948-4c18-b55f-39e119fa3934" name="Changes" comment="" />
->>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
->>>>>>> ed40c84ee6aa8c6054a6d7c3d5812bccac2fecba
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,16 +56,12 @@
         </task>
         <projects_view>
           <tree_state>
-<<<<<<< HEAD
-            <expand />
-=======
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bookshelf-corner" type="f1a62948:ProjectNode" />
               </path>
             </expand>
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
             <select />
           </tree_state>
         </projects_view>
@@ -110,7 +85,6 @@
         <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt; 6acc22c39df46417a1d945de6ad78c45ba9ba887
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -120,12 +94,7 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
-<<<<<<< HEAD
-  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
-=======
-  &quot;associatedIndex&quot;: 8
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
 }</component>
   <component name="ProjectId" id="2ZeGYzJE2apC7HAxszjhaRsnsFk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -135,13 +104,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-<<<<<<< HEAD
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.bookshelf-corner-spring [:BookshelfCornerApplication.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sumitha__branch&quot;
+    &quot;git-widget-placeholder&quot;: &quot;john__branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -149,18 +119,7 @@
       <recent name="org.launchcode.bookshelfcorner.Controllers.API" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.bookshelf-corner-spring [bootRun]">
-=======
-    &quot;Gradle.bookshelf-corner-spring [:BookshelfCornerApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;john__branch&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
+  <component name="RunManager" selected="Application.BookshelfCornerApplication">
     <configuration name="BookshelfCornerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.bookshelfcorner.BookshelfCornerApplication" />
       <module name="bookshelf-corner.main" />
@@ -173,7 +132,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-<<<<<<< HEAD
     </configuration>
     <configuration name="bookshelf-corner-spring [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -200,12 +158,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.bookshelf-corner-spring [bootRun]" />
-=======
-    </configuration>
-    <recent_temporary>
-      <list>
->>>>>>> c15cd97ef3e5449ea4f903e1e6ebae008a389f18
-        <item itemvalue="Application.BookshelfCornerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1704865776471</updated>
     </task>
-<<<<<<< HEAD
     <task id="LOCAL-00007" summary="added Methods for event controller">
       <created>1705013273641</created>
       <option name="number" value="00007" />
@@ -234,8 +185,6 @@
       <updated>1705013273641</updated>
     </task>
     <option name="localTasksCounter" value="8" />
-=======
->>>>>>> f03a03d403a827affa6f195ddb6e7415a2b6dd66
     <servers />
   </component>
   <component name="UnknownFeatures">

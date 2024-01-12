@@ -1,5 +1,6 @@
 package org.launchcode.bookshelfcorner.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
@@ -19,6 +20,7 @@ public class User extends AbstractEntity {
     private List<Event> events= new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<Genre> genreList;
 
     @OneToMany(mappedBy = "createdBy")

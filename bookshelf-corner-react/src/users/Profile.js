@@ -7,10 +7,10 @@ export default function Profile() {
     
 
     useEffect(() => {
-        fetchData();
+        fetchUsername();
     },);
 
-        const fetchData = async () => {
+        const fetchUsername = async () => {
             await fetch("http://localhost:8080/getUsername/"+userId, {
             method: "GET",
             headers: {
@@ -18,6 +18,21 @@ export default function Profile() {
             },
             })
             .then((response) => response.text())
+            .then((data) => {
+                setUsername(data);
+                window.sessionStorage.setItem("username",data)
+            })
+            .catch((error) => error);
+        };
+
+        const fetchGenres = async () => {
+            await fetch("http://localhost:8080/getGenres/"+userId, {
+            method: "GET",
+            headers: {
+                "content-type": "application/json"
+            },
+            })
+            .then((response) => response.json())
             .then((data) => {
                 setUsername(data);
                 window.sessionStorage.setItem("username",data)

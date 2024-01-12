@@ -55,7 +55,8 @@ export default function RegisterUser() {
               sessionStorage.setItem("userId", data.userId);
               sessionStorage.setItem("loggedIn", "true");
               alert("You have succesfully registered.");
-              return navigate("/profile");
+              navigate("/profile");
+              return navigate(0);
             }
           })
           .catch((err) => err);
