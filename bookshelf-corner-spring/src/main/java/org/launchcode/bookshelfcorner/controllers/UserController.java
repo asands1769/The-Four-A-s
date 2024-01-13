@@ -29,7 +29,7 @@ public class UserController {
     private GenreRepository genreRepository;
 
     //Users can add genres to their profiles
-   @PostMapping("/saveGenre/{userId}")
+   @PostMapping("/addGenre/{userId}")
    public String saveGenre(@PathVariable int userId, @RequestBody String genre) {
        Optional optUser = userRepository.findById(userId);
        if (optUser.isPresent()) {
@@ -64,12 +64,13 @@ public class UserController {
 
     //Users can delete a particular genre from their profile
     @DeleteMapping("/deleteGenre/{genreId}")
-    public void deleteGenre(@PathVariable int genreId) {
+    public String deleteGenre(@PathVariable int genreId) {
         Optional optGenre = genreRepository.findById(genreId);
         if (optGenre.isPresent()) {
             Genre genre = (Genre) optGenre.get();
             genreRepository.deleteById(genreId);
         }
+        return "Genre deleted";
    }
 
    //Users can update a particular genre in their profile

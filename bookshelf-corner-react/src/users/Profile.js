@@ -3,12 +3,10 @@ import React, { useState, useEffect } from 'react'
 export default function Profile() {
 
     const userId = window.sessionStorage.getItem("userId");
-    const [username, setUsername] = useState([]);
-    
+    const [username, setUsername] = useState("");
+    const [genres, setGenres] = useState([]);
 
     useEffect(() => {
-        fetchUsername();
-    },);
 
         const fetchUsername = async () => {
             await fetch("http://localhost:8080/getUsername/"+userId, {
@@ -34,12 +32,14 @@ export default function Profile() {
             })
             .then((response) => response.json())
             .then((data) => {
-                setUsername(data);
-                window.sessionStorage.setItem("username",data)
+                    setGenres(data);
             })
             .catch((error) => error);
         };
-    
+        
+        fetchUsername();
+        fetchGenres();
+    },[userId]);
 
     // const onSubmitAddBook = (e) => {
     // e.preventDefault();
@@ -89,21 +89,24 @@ export default function Profile() {
                 <p>Click <a href="/EditProfile">here</a> to edit your profile and profile image.</p>
             </div>
             <div>
-                <h5>Favorite Books:</h5>
-                <ul>
-                    <li>book 1</li>
-                    <li>book 2</li>
-                    <li>book 3</li>
+                <h5>Favorite Genres:</h5>
+                <ul> 
+                    {
+                        genres.map(
+                            genre =>
+                            <li>{genre.genreName}</li>
+                        )
+                    }
                 </ul>
             </div>
-            <div>
+            {/* <div>
                 <h5>Favorite Genres:</h5>
                     <ul>
                         <li>Genre 1</li>
                         <li>Genre 2</li>
                         <li>Genre 3</li>
                     </ul>
-            </div>
+            </div> */}
 
 
               {/* <span>

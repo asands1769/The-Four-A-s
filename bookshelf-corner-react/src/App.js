@@ -20,6 +20,7 @@ import BookListComponent from './components/BookListComponent';
 //import { Route, Router } from 'react-router-dom';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
+import EditProfile from './users/EditProfile.js';
 
 
 
@@ -50,6 +51,11 @@ function App() {
           <Route exact path='/createevent' element={<CreateEvent/>}></Route>
           <Route exact path='/events' element={<Events/>}></Route>
           <Route exact path='/reviews' element={<Reviews/>}></Route>
+          <Route path="/editprofile" element={
+            <PrivateRoute>
+              <EditProfile />
+            </PrivateRoute>
+          }/>
 
         </Routes>
       </Router>
