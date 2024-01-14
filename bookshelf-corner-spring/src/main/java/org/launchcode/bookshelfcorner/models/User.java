@@ -26,6 +26,10 @@ public class User extends AbstractEntity {
     @OneToMany(mappedBy = "createdBy")
     private List<Review> reviews= new ArrayList<>();
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @JsonBackReference
+    private List<FavoriteBook> favoriteBookList;
+
     @NotNull
     private String username;
 
@@ -34,6 +38,8 @@ public class User extends AbstractEntity {
 
     @NotNull
     private String pwHash;
+
+    private String aboutMe;
 
 //    @ManyToMany
 //    private List<Book> booksToShare = new ArrayList<>();
@@ -84,6 +90,29 @@ public class User extends AbstractEntity {
         this.genreList.remove(genre);
     }
 
+    public void addFavoriteBook(FavoriteBook favoriteBook) {
+        this.favoriteBookList.add(favoriteBook);
+    }
+
+    public void removeFavoriteBook(FavoriteBook favoriteBook) {
+        this.favoriteBookList.remove(favoriteBook);
+    }
+
+    public List<FavoriteBook> getFavoriteBookList() {
+        return favoriteBookList;
+    }
+
+    public void setFavoriteBookList(List<FavoriteBook> favoriteBookList) {
+        this.favoriteBookList = favoriteBookList;
+    }
+
+    public String getAboutMe() {
+        return aboutMe;
+    }
+
+    public void setAboutMe(String aboutMe) {
+        this.aboutMe = aboutMe;
+    }
 
     @Override
     public String toString() {

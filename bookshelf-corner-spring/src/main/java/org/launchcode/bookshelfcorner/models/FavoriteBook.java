@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 
 
 @Entity
-public class Genre extends AbstractEntity {
+public class FavoriteBook extends AbstractEntity {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -14,23 +14,23 @@ public class Genre extends AbstractEntity {
     private User user;
 
     @NotNull
-    private String genreName;
+    private String bookName;
 
-    public Genre() {
+    public FavoriteBook() {
 
     }
 
-    public Genre(String aGenreName) {
+    public FavoriteBook(String aBookName) {
         super();
-        this.genreName = aGenreName;
+        this.bookName = aBookName;
     }
 
-    public String getGenreName() {
-        return genreName;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setGenreName(String genreName) {
-        this.genreName = genreName;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
     public User getUser() {
@@ -41,6 +41,6 @@ public class Genre extends AbstractEntity {
 
     @Override
     public String toString() {
-        return genreName;
+        return bookName;
     }
 }

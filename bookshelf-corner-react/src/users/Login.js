@@ -32,7 +32,9 @@ export default function Login() {
         })
           .then((response) => response.json())
           .then((data) => {
-            if(data.fieldErrors) {
+            if(data.message === "Invalid email or password") {
+              alert(data.message);
+            } else if(data.fieldErrors) {
               data.fieldErrors.forEach(fieldError => {
                 if(fieldError.field === 'email'){
                   setEmailError(fieldError.message);

@@ -39,18 +39,20 @@ export default function RegisterUser() {
         })
           .then((response) => response.json())
           .then((data) => {
-            if(data.fieldErrors) {
-              data.fieldErrors.forEach(fieldError => {
-                if(fieldError.field === 'email'){
-                  setEmailError(fieldError.message);
-                }
-                if(fieldError.field === 'username'){
-                    setUsernameError(fieldError.message);
+              if(data.message === "Username unavailable" || data.message === "Email already registered") {
+                alert(data.message);
+              } else if (data.fieldErrors) {
+                data.fieldErrors.forEach(fieldError => {
+                  if(fieldError.field === 'email'){
+                    setEmailError(fieldError.message);
                   }
-                if(fieldError.field === 'password'){
-                  setPasswordError(fieldError.message);
-                }
-              });
+                  if(fieldError.field === 'username'){
+                      setUsernameError(fieldError.message);
+                    }
+                  if(fieldError.field === 'password'){
+                    setPasswordError(fieldError.message);
+                  }
+                });
             } else {
               sessionStorage.setItem("userId", data.userId);
               sessionStorage.setItem("loggedIn", "true");

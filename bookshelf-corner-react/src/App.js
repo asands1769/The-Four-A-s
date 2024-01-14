@@ -21,6 +21,7 @@ import BookListComponent from './components/BookListComponent';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
 import EditProfile from './users/EditProfile.js';
+import ChangePassword from './users/ChangePassword';
 
 
 
@@ -56,7 +57,11 @@ function App() {
               <EditProfile />
             </PrivateRoute>
           }/>
-
+          <Route path="/changepassword" element={
+            <PrivateRoute>
+              <ChangePassword />
+            </PrivateRoute>
+           }/>
         </Routes>
       </Router>
     </div>

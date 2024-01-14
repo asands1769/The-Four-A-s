@@ -5,6 +5,7 @@ export default function Profile() {
     const userId = window.sessionStorage.getItem("userId");
     const [username, setUsername] = useState("");
     const [genres, setGenres] = useState([]);
+    const [favoriteBooks, setFavoriteBooks] = useState([]);
 
     useEffect(() => {
 
@@ -36,7 +37,25 @@ export default function Profile() {
             })
             .catch((error) => error);
         };
+
+        const fetchFavoriteBooks = async () => {
+            await fetch("http://localhost:8080/getFavoriteBooks/"+userId, {
+            method: "GET",
+            headers: {
+                "content-type": "application/json"
+            },
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                    setFavoriteBooks(data);
+                    // genres.forEach((object) => {
+                    //     object["editMode"] = false;
+                    // })
+            })
+            .catch((error) => error);
+        };
         
+        fetchFavoriteBooks();
         fetchUsername();
         fetchGenres();
     },[userId]);
@@ -99,14 +118,17 @@ export default function Profile() {
                     }
                 </ul>
             </div>
-            {/* <div>
-                <h5>Favorite Genres:</h5>
-                    <ul>
-                        <li>Genre 1</li>
-                        <li>Genre 2</li>
-                        <li>Genre 3</li>
-                    </ul>
-            </div> */}
+            <div>
+                <h5>Favorite Books:</h5>
+                <ul>
+                    {
+                        favoriteBooks.map(
+                            book =>
+                            <li>{book.bookName}</li>
+                        )
+                    }
+                </ul>
+            </div>
 
 
               {/* <span>
