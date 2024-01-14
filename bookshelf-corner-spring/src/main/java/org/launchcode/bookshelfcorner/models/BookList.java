@@ -31,10 +31,6 @@ public class BookList {
         return bookId;
     }
 
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
-    }
-
     public String getBookTitle() {
         return bookTitle;
     }
