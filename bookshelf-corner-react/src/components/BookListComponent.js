@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import BookListService from '../services/BookListService';
+import { Link } from 'react-router-dom';
+// import React, { useState, useEffect } from 'react';
 
 class BookListComponent extends Component {
     constructor(props){
@@ -9,22 +10,63 @@ class BookListComponent extends Component {
             books: []
 
         }
+        this.addBookList = this.addBookList.bind(this);
+        
     }
+    
 
-    //here the place to call rest Api
-    componentDidMount(){
-        BookListService.getBookList().then((Response) =>{
-            this.setState({books: Response.data});//response data to books array books:[]
-
+    componentDidMount() {
+    fetch('http://localhost:8080/api/books')
+        .then(response => response.json())
+        .then(data => {
+            this.setState({ books: data });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
         });
+}
+
+    // // create add BookList method
+    // addBookList(){
+    //     this.props.history.push('/addBookList');
+    // }
+    // create add BookList method
+    addBookList() {
+        //<button className='btn btn-primary' onClick={this.addBookList}>Add Book</button>
+        return (
+            <Link to="/addBookList" className='btn btn-success'>
+                Add Book
+            </Link>
+        );
     }
+    wishList() {
+        //<button className='btn btn-primary' onClick={this.wishList}>Add wishList</button>
+        return (
+            <Link to="/wishList" className='btn btn-primary'>
+                Add wishList
+            </Link>
+        );
+    }
+    viewBook() {
+        //<button className='btn btn-danger' onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>Cancel</button>
+        return (
+            <Link to="/viewBookList" className='btn btn-info'>
+                View
+            </Link>
+        );
+        }
 
     render() {
         return (
             <div>
-                <h2 className='text-left'>Book List</h2>
+                
+                <div className='text-left'>
+                    {this.addBookList()}   {this.wishList()}  
+                </div>
+
+               <h2 className='text-center'>Book List</h2>
                 <div className='row'>
-                    <table className='table table-striped table-border'>
+                    <table className='table table-striped'>
                             <thead>
                                 <tr>
                                     <th>Book Title</th>
@@ -43,6 +85,10 @@ class BookListComponent extends Component {
                                         <td>{book.bookAuthor}</td>
                                         <td>{book.publishedYear}</td>
                                         <td>{book.genre}</td>
+                                        <td>
+                                            <Link to="/viewBookList" className='btn btn-info' style={{marginLeft:"10px"}}>View</Link>
+                                        </td>
+                                        
 
                                     </tr>
                                 )
@@ -60,3 +106,4 @@ class BookListComponent extends Component {
 }
 
 export default BookListComponent;
+
