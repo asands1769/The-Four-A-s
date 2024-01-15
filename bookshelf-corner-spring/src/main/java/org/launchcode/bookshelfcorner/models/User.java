@@ -6,7 +6,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +43,8 @@ public class User extends AbstractEntity {
     @NotNull
     private String pwHash;
 
+    private boolean isEnabled;
+
     private String aboutMe;
 
 //    @ManyToMany
@@ -51,6 +57,7 @@ public class User extends AbstractEntity {
         this.username = aUsername;
         this.pwHash = encoder.encode(password);
         this.email = anEmail;
+        this.isEnabled = false;
     }
 
     public String getUsername() {
@@ -112,6 +119,14 @@ public class User extends AbstractEntity {
 
     public void setAboutMe(String aboutMe) {
         this.aboutMe = aboutMe;
+    }
+
+    public boolean isEnabled() {
+        return isEnabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        isEnabled = enabled;
     }
 
     @Override

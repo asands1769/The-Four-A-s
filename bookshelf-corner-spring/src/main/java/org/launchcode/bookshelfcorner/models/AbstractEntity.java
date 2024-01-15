@@ -3,6 +3,9 @@ package org.launchcode.bookshelfcorner.models;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.GenerationType;
+
+
 
 import java.util.Objects;
 
@@ -10,7 +13,7 @@ import java.util.Objects;
 public abstract class AbstractEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     public int getId() {

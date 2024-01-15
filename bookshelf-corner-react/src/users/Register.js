@@ -55,9 +55,8 @@ export default function RegisterUser() {
                 });
             } else {
               sessionStorage.setItem("userId", data.userId);
-              sessionStorage.setItem("loggedIn", "true");
-              alert("You have succesfully registered.");
-              navigate("/profile");
+              alert("You have succesfully registered. A verification email has been sent. Please click on the link to verify your acccount.");
+              navigate("/login");
               return navigate(0);
             }
           })
