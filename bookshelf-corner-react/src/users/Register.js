@@ -12,6 +12,7 @@ export default function RegisterUser() {
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
 
     if (window.sessionStorage.getItem('loggedIn') === "true") {
+      // alert(`Hi, ${window.sessionStorage.getItem("username")}, you are already registered.`)
       return <Navigate replace to="/profile" />
     }
 
@@ -87,42 +88,43 @@ export default function RegisterUser() {
     
       return (
           <div>
-              <span>
-                  <h3>Register New User</h3>
-              </span>
+            <div class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
               <form method="POST" autoComplete="off" onSubmit={onSubmit}>
-                  <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="text" name="email" onFocus={onEmailFocus} />
-                  {
-                      emailError ? <span style={{ color: 'red', fontSize: '12px'}}>{emailError}</span> : ''
-                  }
+                  <div class="form-outline mb-4">
+                    <h1>Register Here</h1>
                   </div>
-                  <div>
-                  <label htmlFor="username">Username</label>
-                  <input type="text" name="username" onFocus={onUsernameFocus} />
-                  {
-                      usernameError ? <span style={{ color: 'red', fontSize: '12px'}}>{usernameError}</span> : ''
-                  }
+                  <div class="form-outline mb-4">
+                    <input type="email" name="email" id="form2Example1" class="form-control" placeholder="Email address" onFocus={onEmailFocus} />
+                    {
+                        emailError ? <span style={{ color: 'red', fontSize: '12px'}}>{emailError}</span> : ''
+                    }
                   </div>
-                  <div>
-                      <label htmlFor="password">Password</label> 
-                      <input type="password" name="password" onFocus={onPasswordFocus} />
+                  <div class="form-outline mb-4"> 
+                    <input type="text" name="username" id="form2Example2" class="form-control" placeholder="Username" onFocus={onUsernameFocus} />
+                    {
+                        usernameError ? <span style={{ color: 'red', fontSize: '12px'}}>{usernameError}</span> : ''
+                    }
+                  </div>
+                  <div class="form-outline mb-4">
+                      <input type="password" name="password" id="form2Example3" class="form-control" placeholder="Password" onFocus={onPasswordFocus} />
                           {
                           passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
                           }
                   </div>
-                  <div>
-                      <label htmlFor="verifyPassword">Verify Password</label> 
-                      <input type="password" name="verifyPassword" onFocus={onVerifyPasswordFocus} />
+                  <div class="form-outline mb-4">
+                      <input type="password" name="verifyPassword" id="form2Example4" class="form-control" placeholder="Verify password" onFocus={onVerifyPasswordFocus} />
                           {
                           verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
                           }
                   </div>
                   <div>
-                      <input type="submit" name="submit" value="Sign up"/>
+                      <input type="submit" name="submit" class="btn btn-primary btn-block mb-4" value="Sign up"/>
                   </div>
+                  <p>
+                    Already a member? Sign in <a href="/login">here!</a>
+                  </p>
               </form>
+            </div>
           </div>
       );
         // <div>

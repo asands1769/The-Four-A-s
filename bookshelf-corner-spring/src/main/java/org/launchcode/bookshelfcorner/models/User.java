@@ -47,6 +47,10 @@ public class User extends AbstractEntity {
 
     private String aboutMe;
 
+    private String location;
+
+    private String contactInfo;
+
 //    @ManyToMany
 //    private List<Book> booksToShare = new ArrayList<>();
 
@@ -127,6 +131,22 @@ public class User extends AbstractEntity {
 
     public void setEnabled(boolean enabled) {
         isEnabled = enabled;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getContactInfo() {
+        return contactInfo;
+    }
+
+    public void setContactInfo(String contactInfo) {
+        this.contactInfo = contactInfo;
     }
 
     @Override

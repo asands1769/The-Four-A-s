@@ -20,8 +20,9 @@ import BookListComponent from './components/BookListComponent';
 //import { Route, Router } from 'react-router-dom';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
-import EditProfile from './users/EditProfile.js';
+import EditProfile from './users/EditProfile';
 import ChangePassword from './users/ChangePassword';
+import NavBar from './components/NavBar';
 
 
 
@@ -33,7 +34,7 @@ function App() {
        
       
       <Router>
-      <Header />
+      <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path='/bookList' element={<BookListComponent/>}></Route>

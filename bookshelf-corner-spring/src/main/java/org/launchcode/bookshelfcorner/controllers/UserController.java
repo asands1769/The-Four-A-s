@@ -161,6 +161,7 @@ public class UserController {
         if (optUser.isPresent()) {
             User user = (User) optUser.get();
             user.setAboutMe(aboutMe);
+            userRepository.save(user);
         }
     }
 
@@ -171,6 +172,50 @@ public class UserController {
         if (optUser.isPresent()) {
             User user = (User) optUser.get();
             return user.getAboutMe();
+        } else {
+            return "User not found";
+        }
+    }
+
+    @PostMapping("/updateLocation/{userId}")
+    public void updateLocation(@PathVariable int userId, @RequestBody String location) {
+        Optional optUser = userRepository.findById(userId);
+        if (optUser.isPresent()) {
+            User user = (User) optUser.get();
+            user.setLocation(location);
+            userRepository.save(user);
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/getLocation/{userId}")
+    public String getLocation(@PathVariable int userId) {
+        Optional optUser = userRepository.findById(userId);
+        if (optUser.isPresent()) {
+            User user = (User) optUser.get();
+            return user.getLocation();
+        } else {
+            return "User not found";
+        }
+    }
+
+    @PostMapping("/updateContactInfo/{userId}")
+    public void updateContactInfo(@PathVariable int userId, @RequestBody String contactInfo) {
+        Optional optUser = userRepository.findById(userId);
+        if (optUser.isPresent()) {
+            User user = (User) optUser.get();
+            user.setContactInfo(contactInfo);
+            userRepository.save(user);
+        }
+    }
+
+    @ResponseBody
+    @GetMapping("/getContactInfo/{userId}")
+    public String getContactInfo(@PathVariable int userId) {
+        Optional optUser = userRepository.findById(userId);
+        if (optUser.isPresent()) {
+            User user = (User) optUser.get();
+            return user.getContactInfo();
         } else {
             return "User not found";
         }

@@ -11,6 +11,7 @@ export default function Login() {
     const [passwordError, setPasswordError] = useState('');
 
     if (window.sessionStorage.getItem('loggedIn') === "true") {
+      // alert(`Hi, ${window.sessionStorage.getItem("username")}, you are already signed in.`)
       return <Navigate replace to="/profile" />
     }
     
@@ -66,36 +67,32 @@ export default function Login() {
 
       return (
         <div>
-            <span>
-                Sign in to your account
-            </span>
+            <div class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
             <form method="POST" autoComplete="off" onSubmit={onSubmit}>
-                <div>
-                  <label htmlFor="email">Email</label>
-                  <input type="text" name="email" onFocus={onEmailFocus}/>
+                <div class="form-outline mb-4">
+                  <h1>Sign In Here</h1>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" name="email" class="form-control" placeholder="Email address" onFocus={onEmailFocus}/>
                   {
                       emailError ? <span style={{ color: 'red', fontSize: '12px'}}>{emailError}</span> : ''
                   }
                 </div>
-                <div>
-                  <div>
-                    <label htmlFor="password">Password</label>
-                        {/* <div className="reset-pass">
-                          <a href="/">Forgot your password?</a>
-                        </div> */}
-                  </div>
-                  <input type="password" name="password" onFocus={onPasswordFocus}/>
+                <div class="form-outline mb-4">
+                  <input type="password" name="password" class="form-control" placeholder="Password" onFocus={onPasswordFocus}/>
                     {
                       passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
                     }
                 </div>
                   <div>
-                    <input type="submit" name="submit" value="Sign in" />
+                    <input type="submit" name="submit" value="Sign in" class="btn btn-primary btn-block mb-4"/>
                   </div>
+                  <p>
+                    Not a member of the BookShelf Corner? Sign up <a href="/register">here!</a>
+                  </p>
             </form>
-            <p>
-              Not a member of the BookShelf Corner? Sign up <a href="/register">here!</a>
-            </p>
+            </div>
+            
         </div>
       )
 
