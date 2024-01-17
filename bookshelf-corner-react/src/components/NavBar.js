@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar()  {
+
+        const navigate = useNavigate();
 
         const onLogout = () => {
           window.sessionStorage.setItem("loggedIn", null);
           window.sessionStorage.setItem("username", null);
-        //   this.setState(this.state);
+          return navigate(0);
         }
 
         return (
