@@ -1,0 +1,153 @@
+{
+    "title": "HarryPotter",
+    "author" : "SSSS",
+    "publishedYear": "1989",
+    "genre": "non-fiction"
+}
+
+{
+     "title":"Into the Wild",
+     "Author":"Jon Krakauer",
+     "publishedYear": "1996",
+     "genre": "travel"
+}
+
+{
+     "title": "Eat, Pray, Love",
+    "author" : " Elizabeth Gilbert",
+    "publishedYear": "2006",
+    "genre": "travel"
+}
+
+{
+     "title": "Wild",
+    "author" : "Cheryl Strayed",
+    "publishedYear": "2012",
+    "genre": "travel"
+}
+
+{
+     "title": "The Beach",
+    "author" : "Alex Garland",
+    "publishedYear": "1996",
+    "genre": "travel"
+}
+
+{
+     "title": "Becoming",
+    "author" : "Michelle Obama",
+    "publishedYear": "2018",
+    "genre": "non-fiction"
+}
+
+{
+     "title": "Sapiens: A Brief History of Humankind",
+    "author" : "Yuval Noah Harari",
+    "publishedYear": "2014",
+    "genre": "non-fiction"
+}
+
+{
+     "title": "The Immortal Life of Henrietta Lacks",
+    "author" : "Rebecca Skloot",
+    "publishedYear": "2010",
+    "genre": "non-fiction"
+}
+
+{
+    "title": "The Girl on the Train",
+   "author" : "Paula Hawkins",
+   "publishedYear": "2015",
+   "genre": "fiction"
+}
+
+{
+    "title": "The Road",
+   "author" : "Cormac McCarthy",
+   "publishedYear": "2006",
+   "genre": "fiction"
+}
+
+{
+    "title": "The Goldfinch",
+   "author" : "Donna Tartt",
+   "publishedYear": "2013",
+   "genre": "fiction"
+}
+
+{
+    "title": "The Help",
+   "author" : " Kathryn Stockett",
+   "publishedYear": "2009",
+   "genre": "fiction"
+}
+
+{
+    "title": "Cosmos",
+   "author" : "Carl Sagan",
+   "publishedYear": "1980",
+   "genre": "Science"
+}
+
+{
+    "title": "Exhalation: Stories",
+   "author" : "Ted Chiang",
+   "publishedYear": "2019",
+   "genre": "Science"
+}
+
+{
+    "title": "The Body: A Guide for Occupants",
+   "author" : " Bill Bryson",
+   "publishedYear": "2019",
+   "genre": "Science"
+}
+
+{
+    "title": "Breath: The New Science of a Lost Art",
+   "author" : "James Nestor",
+   "publishedYear": "2020",
+   "genre": "Science"
+}
+
+{
+    "title": "The Only Good Indians",
+   "author" : "Stephen Graham Jones",
+   "publishedYear": "2020",
+   "genre": "Horror"
+}
+
+{
+    "title": "Mexican Gothic",
+   "author" : "Silvia Moreno-Garcia",
+   "publishedYear": "2022",
+   "genre": "Horror"
+}
+
+{
+    "title": "Red, White & Royal Blue",
+   "author" : "Casey McQuiston",
+   "publishedYear": "2019",
+   "genre": "Romance"
+}
+
+{
+    "title": "The Bromance Book Club",
+   "author" : "Lyssa Kay Adams",
+   "publishedYear": "2020",
+   "genre": "Romance"
+}
+
+{
+    "title": "The Flatshare",
+   "author" : "Beth O'Leary",
+   "publishedYear": "2019",
+   "genre": "Romance"
+}
+
+{
+    "title": "How to Cook Everything",
+   "author" : " Mark Bittman",
+   "publishedYear": "2019",
+   "genre": "Food"
+}

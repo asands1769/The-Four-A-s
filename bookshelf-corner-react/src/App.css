@@ -27,7 +27,15 @@
 .App-link {
   color: #61dafb;
 }
-
+.bookshelfcorner-details {
+  background-color: #b24444;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.search-section {
+  background-color: #e9ecef;
+  padding: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

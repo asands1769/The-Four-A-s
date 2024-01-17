@@ -1,7 +1,8 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 
-export default function Test() {
+ function Test() {
 
     let navigate = useNavigate();
 
@@ -19,3 +20,4 @@ export default function Test() {
         </div>
     );
 }
+export default Test;

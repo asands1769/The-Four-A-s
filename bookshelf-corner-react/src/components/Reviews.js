@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from 'react';
 
 function Reviews() {
-   const [review, setReview] = useState({textarea:""});
+   // eslint-disable-next-line
+    const [review, setReview] = useState({textarea:""});
     
 
     function submitReview() {
@@ -17,6 +18,7 @@ function Reviews() {
     function updateReview(value) {
         const reviewCopy = {...review}
         reviewCopy.text = value;
+        // eslint-disable-next-line
         setReview = reviewCopy;
     }
 

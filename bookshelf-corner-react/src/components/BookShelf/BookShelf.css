@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #3754ab;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    color: #fff;
+    padding: 2rem;
+    width: 80%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+.backimage{
+    background-image: url("/../public/images/Books.jpg");
+    width:auto; 
+    height: auto; 
+    background-attachment: fixed;
+}
+.bookshelf__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+@media(max-width: 936px){
+    .container {
+        width: 90%;
+    }
+
+    .bookshelf__header {
+        flex-direction: column;
+    }
+
+}
+
