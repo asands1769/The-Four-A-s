@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 
 export default function EditProfile() {
 
+    const navigate = useNavigate();    
     const userId = window.sessionStorage.getItem("userId");
+    const backgroundStyle = {
+        background: "eee;"
+    };
+    const width = {
+        width: "150px;"
+    }
+
     
     const [genres, setGenres] = useState([]);
     const [favoriteBooks, setFavoriteBooks] = useState([]);
@@ -17,6 +26,18 @@ export default function EditProfile() {
     const [location, setLocation] = useState('');
     const [newLocation, setNewLocation] = useState('');
 
+    function deleteGenre(genreId) {
+        fetch("http://localhost:8080/deleteGenre/"+genreId, {method: "DELETE"});
+        navigate("/editprofile");
+        return navigate(0);
+    }
+
+    function deleteBook(bookId) {
+        fetch("http://localhost:8080/deleteFavoriteBook/"+bookId, {method: "DELETE"});
+        navigate("/editprofile");
+        return navigate(0);
+    }
+
     const handleSubmitGenre = (e) => {
         fetch("http://localhost:8080/addGenre/"+userId, {
             method: "POST",
@@ -25,6 +46,8 @@ export default function EditProfile() {
             },
             body: newGenre.toString()
         })
+        setGenres([...genres, {"id":null,"genreName":newGenre}]);
+        console.log(genres);
         setNewGenre('');
         e.preventDefault();
     };
@@ -37,6 +60,8 @@ export default function EditProfile() {
             },
             body: newFavoriteBook.toString()
         })
+        setFavoriteBooks([...favoriteBooks, {"id":null,"user":null,"bookName":newFavoriteBook}]);
+        console.log(favoriteBooks);
         setNewFavoriteBook('');
         e.preventDefault();
     };
@@ -49,6 +74,7 @@ export default function EditProfile() {
             },
             body: newUsername.toString()
         })
+        setUsername(newUsername);
         setNewUsername('');
         e.preventDefault();
     };
@@ -61,6 +87,7 @@ export default function EditProfile() {
             },
             body: newAboutMe.toString()
         })
+        setAboutMe(newAboutMe);
         setNewAboutMe('');
         e.preventDefault();
     };
@@ -73,6 +100,7 @@ export default function EditProfile() {
             },
             body: newLocation.toString()
         })
+        setLocation(newLocation);
         setNewLocation('');
         e.preventDefault();
     };
@@ -85,6 +113,7 @@ export default function EditProfile() {
             },
             body: newContactInfo.toString()
         })
+        setContactInfo(newContactInfo);
         setNewContactInfo('');
         e.preventDefault();
     };
@@ -214,7 +243,10 @@ export default function EditProfile() {
         fetchFavoriteBooks();
         fetchUsername();
         fetchGenres();
-    },);
+
+    },[userId,setGenres,setFavoriteBooks]);
+   
+    
     
     return (
     <section style={backgroundStyle}>
@@ -228,8 +260,17 @@ export default function EditProfile() {
                             <h5 class="my-3">{username}</h5>
                             <p class="mb-0">About me:</p><br />
                             <p class="text-muted mb-1">{aboutMe}</p><br />
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="/EditProfile" class="btn btn-primary">Edit Profile</a>
+                            <div class="mb-4 mt-1">
+                                <form onSubmit={handleSubmitAboutMe}>
+                                            <input type="text" class="form-control mb-2" value={newAboutMe} placeholder="Update about me" onChange={handleInputChangeAboutMe}/>
+                                            <input class="btn btn-secondary" type="submit" value="Update"/>
+                                </form>
+                            </div>
+                            <div class="d-flex justify-content-center mb-4">
+                                <a href="/Profile" class="btn btn-primary">View Profile</a>
+                            </div>
+                            <div class="row">
+                                <p>Click <a href="/changepassword">here</a> to change your password.</p>
                             </div>
                         </div>
                     </div>
@@ -239,28 +280,37 @@ export default function EditProfile() {
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p class="mb-0">Username</p>
+                                    <p class="mb-0">{username}</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <p class="text-muted mb-0">{username}</p>
+                                    <form onSubmit={handleSubmitUsername}>
+                                        <input type="text" class="form-control mb-2" value={newUsername} placeholder="Update username" onChange={handleInputChangeUsername}/>
+                                        <input class="btn btn-secondary" type="submit" value="Update"/>
+                                    </form>
                                 </div>
                             </div>
                             <hr />
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p class="mb-0">Contact me</p>
+                                    <p class="mb-0">{contactInfo}</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <p class="text-muted mb-0">{contactInfo}</p>
+                                    <form onSubmit={handleSubmitContactInfo}>
+                                        <input type="text" class="form-control mb-2" value={newContactInfo} placeholder="Update contact info" onChange={handleInputChangeContactInfo}/>
+                                        <input class="btn btn-secondary" type="submit" value="Update"/>
+                                    </form>
                                 </div>
                             </div>
                             <hr />
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p class="mb-0">Location</p>
+                                    <p class="mb-0">{location}</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <p class="text-muted mb-0">{location}</p>
+                                    <form onSubmit={handleSubmitLocation}>
+                                        <input type="text" class="form-control mb-2" value={newLocation} placeholder="Update location" onChange={handleInputChangeLocation}/>
+                                        <input class="btn btn-secondary" type="submit" value="Update"/>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -274,14 +324,24 @@ export default function EditProfile() {
                             <p class="mb-4"><span class="text-secondary font-italic me-1">Favorite</span> Books
                             </p>
                             <div class="row">
-                                <ul class="list-group list-group-flush"> 
+                                <ul class="list-group mb-2"> 
                                 {
                                     favoriteBooks.map(
                                         book =>
-                                        <li class="list-group-item">{book.bookName}</li>
+                                        <li key={book.id} class="list-group-item">{book.bookName}
+                                            <div>
+                                                <button class="btn btn-secondary ml-5" onClick={() => deleteBook(book.id)}>X</button>
+                                            </div>
+                                        </li>
                                     )
                                 }
                                 </ul>
+                                <div class="row">
+                                    <form onSubmit={handleSubmitFavoriteBook}>
+                                        <input type="text" class="form-control mb-2" value={newFavoriteBook} placeholder="Add book" onChange={handleInputChangeFavoriteBookSubmission}/>
+                                        <input class="btn btn-secondary" type="submit" value="Add"/>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -292,14 +352,25 @@ export default function EditProfile() {
                             <p class="mb-4"><span class="text-secondary font-italic me-1">Favorite</span> Genres
                             </p>
                             <div class="row">
-                                <ul class="list-group mb-1"> 
+                                <ul class="list-group mb-2"> 
                                 {
                                     genres.map(
                                         genre =>
-                                        <li class="list-group-item">{genre.genreName}</li>
+                                        
+                                            <li key={genre.id} class="list-group-item">{genre.genreName}
+                                                <div>
+                                                    <button class="btn btn-secondary ml-5" onClick={() => deleteGenre(genre.id)}>X</button>
+                                                </div>
+                                            </li>
                                     )
                                 }
                                 </ul>
+                                <div class="row">
+                                    <form onSubmit={handleSubmitGenre}>
+                                        <input type="text" class="form-control mb-2" value={newGenre} placeholder="Add genre" onChange={handleInputChangeGenreSubmission}/>
+                                        <input class="btn btn-secondary" type="submit" value="Add"/>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

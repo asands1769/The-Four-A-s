@@ -1,10 +1,8 @@
-import Header from './components/Header';
 // import { Navigate } from "react-router-dom";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from './users/Login';
 import RegisterUser from './users/Register';
 import Profile from './users/Profile';
-import Test from './users/Test';
 import Home from './components/Home';
 import PrivateRoute from './users/PrivateRoute';
 
@@ -17,7 +15,7 @@ import CreateEvent from './components/CreateEvent';
 import Events from './components/Events';
 import Reviews from './components/Reviews';
 import BookListComponent from './components/BookListComponent';
-//import { Route, Router } from 'react-router-dom';
+
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponents from './components/FooterComponents';
 import EditProfile from './users/EditProfile';
@@ -45,7 +43,6 @@ function App() {
               <Profile />
             </PrivateRoute>
           }/>
-          <Route exact path="/users/Test" element={<Test/>}></Route>
           <Route exact path='/events' element={<Event/>}></Route>
           <Route exact path='/bookshelf'element={<BookShelf/>}></Route>
           <Route exact path='/tag'element={<TagList/>}></Route>

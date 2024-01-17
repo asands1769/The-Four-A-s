@@ -10,9 +10,7 @@ export default function Profile() {
         width: "150px;"
     }
 
-    const fontSize = {
-        fontSize: ".77rem;" 
-    }
+    
     const [username, setUsername] = useState("");
     const [genres, setGenres] = useState([]);
     const [favoriteBooks, setFavoriteBooks] = useState([]);
@@ -178,7 +176,7 @@ export default function Profile() {
                                 <p class="mb-4"><span class="text-secondary font-italic me-1">Favorite</span> Books
                                 </p>
                                 <div class="row">
-                                    <ul class="list-group list-group-flush"> 
+                                    <ul class="list-group mb-1"> 
                                     {
                                         favoriteBooks.map(
                                             book =>
