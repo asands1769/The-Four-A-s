@@ -16,15 +16,18 @@ public class BookList {
     private int publishedYear;
     @Column(name = "Genre")
     private String genre;
+    private boolean isAvailable = true;
 
     public BookList() {
     }
 
-    public BookList(String bookTitle, String bookAuthor, int publishedYear, String genre) {
+
+    public BookList(String bookTitle, String bookAuthor, int publishedYear, String genre, boolean isAvailable) {
         this.bookTitle = bookTitle;
         this.bookAuthor = bookAuthor;
         this.publishedYear = publishedYear;
         this.genre = genre;
+        this.isAvailable = isAvailable;
     }
 
     public int getBookId() {
@@ -62,4 +65,12 @@ public class BookList {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+//
+//    public void setAvailable(boolean available) {
+//        isAvailable = available;
+//    }
 }

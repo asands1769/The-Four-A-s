@@ -1,32 +1,50 @@
 
 
-import React, { useState } from 'react';
 
-const WishListComponent = () => {
+import React, { useState, useEffect } from 'react';
+
+const WishlistComponent = () => {
+    const [books, setBooks] = useState([]);
     const [bookTitle, setBookTitle] = useState('');
     const [bookAuthor, setBookAuthor] = useState('');
     const [publishedYear, setPublishedYear] = useState('');
     const [genre, setGenre] = useState('');
 
-    const handleAddToWishlist = (event) => {
-        event.preventDefault(); // Prevents the default form submission behavior
+    useEffect(() => {
+        // Fetch the wishlist books from the API when the component mounts
+        fetch('http://localhost:8080/api/books')
+            .then(response => response.json())
+            .then(data => setBooks(data))
+            .catch(error => console.error('Error fetching wishlist:', error));
+    }, []); // Empty dependency array ensures this effect runs once when the component mounts
 
-        const formData = new FormData(event.target);
+    const handleAddToWishlist = (event) => {
+        event.preventDefault();
 
         fetch('http://localhost:8080/api/books', {
             method: 'POST',
             headers: {
+                Accept: "application/json",
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ 
-                bookTitle: formData.get('bookTitle'), 
-                bookAuthor: formData.get('bookAuthor'), 
-                publishedYear: formData.get('publishedYear'), 
-                genre: formData.get('genre') 
+                bookTitle, 
+                bookAuthor, 
+                publishedYear, 
+                genre 
             }),
         })
             .then(response => response.json())
-            .then(data => console.log('Book added to wishlist:', data))
+            .then(data => {
+                console.log('Book added to wishlist:', data);
+                // Update the local state to include the newly added book
+                setBooks([...books, data]);
+                // Clear input fields
+                setBookTitle('');
+                setBookAuthor('');
+                setPublishedYear('');
+                setGenre('');
+            })
             .catch(error => console.error('Error adding book to wishlist:', error));
     };
 
@@ -54,14 +72,22 @@ const WishListComponent = () => {
                     <input type="text" value={genre} onChange={event => setGenre(event.target.value)} />
                 </div>
 
-                 <div>
+                <div>
                     <input type="submit" name="submit" value="Add to Wishlist" />
-                  </div>
-
-            
+                </div>
             </form>
+
+            <div>
+                <h3>Wishlist</h3>
+                <ul>
+                    {books.map(book => (
+                        <li key={book.bookId}>{`${book.bookTitle} by ${book.bookAuthor}, ${book.publishedYear}, Genre: ${book.genre}`}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
-    )
+    );
 };
 
-export default WishListComponent;
+export default WishlistComponent;
+

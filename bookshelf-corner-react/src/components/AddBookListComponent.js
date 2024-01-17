@@ -12,6 +12,7 @@ class AddBookListComponent extends Component {
             bookAuthor: '',
             publishedYear: '',
             genre: '',
+            isAvailable: true
         };
 
         // Binding
@@ -51,18 +52,23 @@ saveBook = async (event) => {
             bookAuthor: this.state.bookAuthor,
             publishedYear: this.state.publishedYear,
             genre: this.state.genre,
+            isAvailable:true
         };
 
     // Make the API request
     fetch('http://localhost:8080/api/books', {
         method: 'POST',
         headers: {
+            Accept: "application/json",
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ bookList })
+        body: JSON.stringify(bookList)
     })
         .then(response => response.json())
-        .then(data => console.log('BookListComponent added successfully', data))
+        .then(data => {console.log('BookListComponent added successfully', data);
+        // Show alert message
+        alert('Book added');
+    })
         .catch(error => console.error('Error adding BookListComponent:', error));
     }
         //create event handler 

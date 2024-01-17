@@ -1,58 +1,51 @@
-import React, { Component } from 'react';
 
-class ViewBookList extends Component {
-    constructor(props){
-        super(props)
+import React, { useState, useEffect } from 'react';
 
-        this.state = {
-            bookId: this.props.match ? this.props.match.params.bookId : '',
-            books: {}
-            };
-    }
-     componentDidMount() {
-        // 
-        fetch(`http://localhost:8080/api/books${this.state.bookId}`)
-            .then(response => response.json())
-            .then(data => {
-                this.setState({ books: data });
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }
+const ViewBookList = () => {
+  const [books, setBooks] = useState([]);
 
-    render() {
-        return (
-            <div>
-                <div className='card col-md-6 offset-md-3'>
-                <h3 className='text-center'>View BookList Page</h3>
-                <div className='card-body'>
-                    <div className='row'>
-                        <label>Book Title: </label>
-                        <div>{this.state.books.bookTitle}</div>
-                    </div>
+  useEffect(() => {
+    // Function to fetch book data from the API
+    const fetchBooks = async () => {
+      try {
+        const response = await fetch('http://localhost:8080/api/books');
+        const data = await response.json();
+        setBooks(data);
+        console.log(data);
+      } catch (error) {
+        console.error('Error fetching book data:', error);
+      }
+    };
 
-                    <div className='row'>
-                        <label>Book Author: </label>
-                        <div>{this.state.books.bookAuthor}</div>
-                    </div>
-
-                    <div className='row'>
-                        <label>Published Year: </label>
-                        <div>{this.state.books.publishedYear}</div>
-                    </div>
-
-                    <div className='row'>
-                        <label>Genre: </label>
-                        <div>{this.state.books.genre}</div>
-                    </div>
-                    <div className='text-center'>{this.state.books.isAvailable ? 'Available to borrow' : 'Not Available'}</div>
-
-                </div>
-                </div>
+    // Call the fetchBooks function when the component mounts
+    fetchBooks();
+    //console.log(books);
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+ 
+  return (
+    <div>
+      <h3 className='text-primary'>Books Available to Borrow</h3>
+      <div className='bookshelf'>
+        {books.map((book) => (
+          <div key={book.bookId} className='book'>
+            <ol>
+              <li>
+            <span className="label">Book Title: {book.bookTitle}<br />
+                                    Book Author: {book.bookAuthor} <br />
+                                    Published Year: {book.publishedYear}<br />
+                                    Genre: {book.genre} </span>
+            <div className='text-success'>
+              {book.available ? 'Available to borrow' : 'Not Available'}
             </div>
-        );
-    }
-}
+            </li>
+            </ol>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default ViewBookList;
+
+
