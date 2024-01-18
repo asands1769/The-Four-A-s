@@ -12,7 +12,6 @@ export default function RegisterUser() {
     const [verifyPasswordError, setVerifyPasswordError] = useState('');
 
     if (window.sessionStorage.getItem('loggedIn') === "true") {
-      // alert(`Hi, ${window.sessionStorage.getItem("username")}, you are already registered.`)
       return <Navigate replace to="/profile" />
     }
 
@@ -127,35 +126,4 @@ export default function RegisterUser() {
             </div>
           </body>
       );
-        // <div>
-        //     <h3>Register</h3>
-        //     <form onSubmit={(e)=>onSubmit(e)}>
-        //         <div>
-        //             <label htmlFor="email">
-        //                 E-mail
-        //             </label>
-        //             <input type="text" placeholder="Enter your email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-        //         </div>
-        //         <div>
-        //             <label htmlFor="username">
-        //                 Username
-        //             </label>
-        //             <input type="text" placeholder="Enter your username" name="username" value={username} onChange={(e)=>setUsername(e.target.value)}/>
-        //         </div>
-        //         <div>
-        //             <label htmlFor="password">
-        //                 Password
-        //             </label>
-        //             <input type="password" placeholder="Enter your password" name="pwHash" value={pwHash} onChange={(e)=>setPwHash(e.target.value)}/>
-        //         </div>
-        //         <div>
-        //             <label htmlFor="verifyPassword">
-        //                 Verify Password
-        //             </label>
-        //             <input type="password" placeholder="Re-enter your password" name="pwHash" value={pwHash} onChange={(e)=>setPwHash(e.target.value)}/>
-        //         </div>
-        //     <button type="submit">Submit</button>
-        //     </form>
-        // </div>
-    
 }

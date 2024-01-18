@@ -171,9 +171,6 @@ export default function EditProfile() {
             .then((response) => response.json())
             .then((data) => {
                     setGenres(data);
-                    // genres.forEach((object) => {
-                    //     object["editMode"] = false;
-                    // })
             })
             .catch((error) => error);
         };
@@ -188,9 +185,6 @@ export default function EditProfile() {
             .then((response) => response.json())
             .then((data) => {
                     setFavoriteBooks(data);
-                    // genres.forEach((object) => {
-                    //     object["editMode"] = false;
-                    // })
             })
             .catch((error) => error);
         };

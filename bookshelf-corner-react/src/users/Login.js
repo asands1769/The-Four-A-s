@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
-// import "./App.css";
 
 export default function Login() {
 
@@ -11,7 +10,6 @@ export default function Login() {
     const [passwordError, setPasswordError] = useState('');
 
     if (window.sessionStorage.getItem('loggedIn') === "true") {
-      // alert(`Hi, ${window.sessionStorage.getItem("username")}, you are already signed in.`)
       return <Navigate replace to="/profile" />
     }
     

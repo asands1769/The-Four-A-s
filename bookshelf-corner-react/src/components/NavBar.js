@@ -29,8 +29,6 @@ export default function NavBar()  {
                                 <a class="nav-link" href="/tag">Book Tags</a>
                                 <a class="nav-link" href="/reviews">Book Reviews</a>
                                 <a class="nav-link" href="/events">Events</a>
-                                <a class="nav-link" href="/createevent">Create Event</a>
-                                {/* {window.sessionStorage.getItem("loggedIn") === "true" ? <Link class="nav-link" to="/Create Event">Create Event</Link> : null} */}
                                 {window.sessionStorage.getItem("loggedIn") === "true" ? <Link class="nav-link" to="/Profile">Profile</Link> : <Link class="nav-link" to="/Login">Sign in</Link>}
                                 {window.sessionStorage.getItem("loggedIn") === "true" ? <Link class="nav-link" to="/" onClick={onLogout}>Sign out</Link> : null}
                             </div>

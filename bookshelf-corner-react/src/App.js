@@ -1,4 +1,3 @@
-// import { Navigate } from "react-router-dom";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from './users/Login';
 import RegisterUser from './users/Register';
@@ -16,8 +15,6 @@ import Events from './components/Events';
 import Reviews from './components/Reviews';
 import BookListComponent from './components/BookListComponent';
 
-import HeaderComponent from './components/HeaderComponent';
-import FooterComponents from './components/FooterComponents';
 import EditProfile from './users/EditProfile';
 import ChangePassword from './users/ChangePassword';
 import NavBar from './components/NavBar';

@@ -59,9 +59,6 @@ export default function Profile() {
             .then((response) => response.json())
             .then((data) => {
                     setFavoriteBooks(data);
-                    // genres.forEach((object) => {
-                    //     object["editMode"] = false;
-                    // })
             })
             .catch((error) => error);
         };
