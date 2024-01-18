@@ -72,7 +72,7 @@ public class AuthenticationController {
                     return ResponseEntity.ok(new LoginResponseDTO(user.getId(), "Success !"));
                 }
             } else {
-                return ResponseEntity.badRequest().body((new LoginResponseDTO(0,"Please click the verification link.")));
+                return ResponseEntity.badRequest().body((new LoginResponseDTO(0,"Please click the verification link in your email.")));
             }
 
         }
