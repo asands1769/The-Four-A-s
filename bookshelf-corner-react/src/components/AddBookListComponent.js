@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-//import BookListServiceFetch from '../services/BookListServiceFetch';
 
 class AddBookListComponent extends Component {
     constructor(props) {
@@ -26,17 +25,6 @@ class AddBookListComponent extends Component {
   
 saveBook = async (event) => {
         event.preventDefault();
-
-        // let bookList = {
-        //     bookTitle: this.state.bookTitle,
-        //     bookAuthor: this.state.bookAuthor,
-        //     publishedYear: this.state.publishedYear,
-        //     genre: this.state.genre,
-        // };
-
-        //console.log('bookList => ' + JSON.stringify(bookList));
-
-        // Validation checks
         // Check if any required field is empty
     const isEmpty = [ 'bookTitle', 'bookAuthor', 'publishedYear', 'genre' ]
         .some(field => !this.state[field]);
@@ -88,13 +76,7 @@ saveBook = async (event) => {
         this.setState({ genre: event.target.value });
     }
 
-    
-    // cancel() {
-    //     this.props.history.push('/bookList');
-    // }
-
     cancel() {
-        //<button className='btn btn-danger' onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>Cancel</button>
         return (
             <Link to="/bookList" className='btn btn-danger'>
                 Cancel

@@ -14,7 +14,6 @@ class BookListComponent extends Component {
         
     }
     
-
     componentDidMount() {
     fetch('http://localhost:8080/api/books')
         .then(response => response.json())
@@ -25,14 +24,8 @@ class BookListComponent extends Component {
             console.error('Error fetching data:', error);
         });
 }
-
-    // // create add BookList method
-    // addBookList(){
-    //     this.props.history.push('/addBookList');
-    // }
     // create add BookList method
     addBookList() {
-        //<button className='btn btn-primary' onClick={this.addBookList}>Add Book</button>
         return (
             <Link to="/addBookList" className='btn btn-success'>
                 Add Book
@@ -40,7 +33,6 @@ class BookListComponent extends Component {
         );
     }
     wishList() {
-        //<button className='btn btn-primary' onClick={this.wishList}>Add wishList</button>
         return (
             <Link to="/wishList" className='btn btn-primary'>
                 Add wishList
@@ -48,7 +40,6 @@ class BookListComponent extends Component {
         );
     }
     viewBook() {
-        //<button className='btn btn-danger' onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>Cancel</button>
         return (
             <Link to="/viewBookList" className='btn btn-info'>
                 View
