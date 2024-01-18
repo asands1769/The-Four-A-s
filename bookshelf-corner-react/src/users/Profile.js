@@ -122,7 +122,7 @@ export default function Profile() {
     <body class="text-center bg">
         <section style={backgroundStyle}>
             <div id="white-bg" class="container p-5 d-flex h-100 mx-auto flex-column align-items-center">
-                <div class="row">
+                <div class="row p-5">
                     <div class="col-lg-4">
                         <div class="card mb-4">
                             <div class="card-body text-center">
@@ -217,69 +217,3 @@ export default function Profile() {
                         
         );
     }
-
-                
-
-
-
-
-{/* const onSubmitAddBook = (e) => {
-    // e.preventDefault();
-
-    // const formData = new FormData(e.target);
-
-    // fetch("http://localhost:8080/addBook", {
-    //     method: "POST",
-    //     headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //     title: formData.get('title'),
-    //     author: formData.get('author'),
-    //     }),
-    // })
-    //     .then((response) => response.json())
-    //     .then((data) => {
-    //     if(data.fieldErrors) {
-    //         data.fieldErrors.forEach(fieldError => {
-    //         if(fieldError.field === 'email'){
-    //             setEmailError(fieldError.message);
-    //         }
-    //         if(fieldError.field === 'username'){
-    //             setUsernameError(fieldError.message);
-    //             }
-    //         if(fieldError.field === 'password'){
-    //             setPasswordError(fieldError.message);
-    //         }
-    //         });
-    //     } else {
-            
-    //         alert("You have succesfully added a book to share.");
-    //         return navigate(0);
-    //     }
-    //     })
-    //     .catch((err) => err);
-    // }
-    // }
-*/}
-    {/* <span>
-                  <h5>Add a new book to share</h5>
-              </span>
-              <form method="POST" autoComplete="off" onSubmit={onSubmit}>
-                  <div>
-                  <label htmlFor="title">Book Title</label>
-                  <input type="text" name="title" />
-                  </div>
-                  <div>
-                  <label htmlFor="author">Author</label>
-                  <input type="text" name="author" />
-                  </div>
-                  <div>
-                      <label htmlFor="yearPublsihed">Year Published</label> 
-                      <input type="number" name="yearPublished" />
-                  </div>
-                  <div>
-                      <input type="submit" name="submit" value="Add Book"/>
-                  </div>
-              </form> */}

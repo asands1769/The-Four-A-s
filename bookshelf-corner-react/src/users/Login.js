@@ -33,7 +33,7 @@ export default function Login() {
         })
           .then((response) => response.json())
           .then((data) => {
-            if(data.message === "Invalid email or password" || data.message === "Please click the verification link.") {
+            if(data.message === "Invalid email or password" || data.message === "Please click the verification link in your email.") {
               alert(data.message);
             } else if(data.fieldErrors) {
               data.fieldErrors.forEach(fieldError => {
@@ -69,7 +69,7 @@ export default function Login() {
         <body class="text-center bg">
             <div id="white-bg" class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
             <form method="POST" autoComplete="off" onSubmit={onSubmit}>
-                <div class="form-outline mb-4">
+                <div class="form-outline p-5 m-5">
                   <h1>Sign In Here</h1>
                 </div>
                 <div class="form-outline mb-4">

@@ -252,7 +252,7 @@ export default function EditProfile() {
 <body class="text-center bg">
     <section style={backgroundStyle}>
         <div id="white-bg" class="container p-5 d-flex h-100 mx-auto flex-column align-items-center">
-            <div class="row">
+            <div class="row p-5">
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
