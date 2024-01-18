@@ -57,7 +57,6 @@ public class AuthenticationController {
             mailMessage.setText("To confirm your account, please click here : "
                     +"http://localhost:8080/confirm-account?token="+confirmationToken.getConfirmationToken());
             emailService.sendEmail(mailMessage);
-
             return ResponseEntity.ok(new LoginResponseDTO(newUser.getId(), "Success"));
         }
     }

@@ -54,8 +54,8 @@ export default function RegisterUser() {
                   }
                 });
             } else {
-              sessionStorage.setItem("userId", data.userId);
               alert("You have succesfully registered. A verification email has been sent. Please click on the link to verify your acccount.");
+              sessionStorage.setItem("userId", data.userId);
               navigate("/login");
               return navigate(0);
             }
