@@ -61,3 +61,17 @@
   align-items: center;
   padding: 10px 10%;
   }
+
+ #white-bg {
+  background-color: white;
+ }
+
+ .bg {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background-image: url("https://i1.pickpik.com/photos/934/227/750/bookshelf-library-literature-books-f3effa96974f5854fc29e9bdb3cecf5f.jpg");
+  background-size: cover;
+ }
+  
+   

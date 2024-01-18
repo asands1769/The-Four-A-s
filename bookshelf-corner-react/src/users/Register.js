@@ -87,8 +87,8 @@ export default function RegisterUser() {
       }
     
       return (
-          <div>
-            <div class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
+        <body class="text-center bg">
+            <div id="white-bg" class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
               <form method="POST" autoComplete="off" onSubmit={onSubmit}>
                   <div class="form-outline mb-4">
                     <h1>Register Here</h1>
@@ -125,7 +125,7 @@ export default function RegisterUser() {
                   </p>
               </form>
             </div>
-          </div>
+          </body>
       );
         // <div>
         //     <h3>Register</h3>

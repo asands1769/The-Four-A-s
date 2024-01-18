@@ -249,8 +249,9 @@ export default function EditProfile() {
     
     
     return (
+<body class="text-center bg">
     <section style={backgroundStyle}>
-        <div class="container py-5">
+        <div id="white-bg" class="container p-5 d-flex h-100 mx-auto flex-column align-items-center">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-4">
@@ -315,8 +316,6 @@ export default function EditProfile() {
                             </div>
                         </div>
                     </div>
-                
-            
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4 mb-md-0">
@@ -380,122 +379,7 @@ export default function EditProfile() {
     </div>
     </div>
 </section>
-        // <div>
-        //     <div>
-        //         <h3>Hi, {username}, you can edit your profile on this page!</h3>
-        //         <span>
-        //             <form onSubmit={handleSubmitUsername}>
-        //                 <input type="text" value={newUsername} onChange={handleInputChangeUsername}/>
-        //                 <input type="submit" value="Update Username"/>
-        //             </form>
-        //         </span>
-        //         <span>
-        //             <p>click <a href="/changepassword">here</a> to change your password.</p>
-        //         </span>
-        //         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Default User"></img>
-        //     </div>
-        //     <div>
-        //         <h5>Favorite Genres:</h5>
-        //         <ul> 
-        //             {
-        //                 genres.map(
-        //                     genre =>
-        //                     <div>
-        //                         <span>
-        //                             <li key={genre.id}>{genre.genreName}</li>
-        //                             {/* {genre["editMode"] === "true" ? <input key={genre.id} type="text" value={editGenre} onChange={handleInputChangeGenreEdit}/> : <li key={genre.id}>{genre.genreName}</li>} */}
-        //                             <button onClick={() => fetch("http://localhost:8080/deleteGenre/"+genre.id, {method: "DELETE"})}>Remove</button>
-        //                             {/* {genre["editMode"] === "true" ? <button onClick={() => handleSubmitGenreEdit(genre)}>Save</button> : <button onClick={() => onClickEditMode(genre)}>Edit</button>} */}
-        //                         </span>
-        //                     </div>
-        //                 )
-        //             }
-        //         </ul>
-        //         <form onSubmit={handleSubmitGenre}>
-        //             <input type="text" value={newGenre} onChange={handleInputChangeGenreSubmission}/><input type="submit" value="Add Genre" />
-        //         </form>
-        //     </div>
-        //     <div>
-        //         <h5>Favorite Books</h5>
-        //         <ul> 
-        //             {
-        //                 favoriteBooks.map(
-        //                     book =>
-        //                     <div>
-        //                         <span>
-        //                             <li key={book.id}>{book.bookName}</li>
-        //                             {/* {genre["editMode"] === "true" ? <input key={genre.id} type="text" value={editGenre} onChange={handleInputChangeGenreEdit}/> : <li key={genre.id}>{genre.genreName}</li>} */}
-        //                             <button onClick={() => fetch("http://localhost:8080/deleteFavoriteBook/"+book.id, {method: "DELETE"})}>Remove</button>
-        //                             {/* {genre["editMode"] === "true" ? <button onClick={() => handleSubmitGenreEdit(genre)}>Save</button> : <button onClick={() => onClickEditMode(genre)}>Edit</button>} */}
-        //                         </span>
-        //                     </div>
-        //                 )
-        //             }
-        //         </ul>
-        //         <form onSubmit={handleSubmitFavoriteBook}>
-        //             <input type="text" value={newFavoriteBook} onChange={handleInputChangeFavoriteBookSubmission}/><input type="submit" value="Add Book" />
-        //         </form>
-        //         <div>
-        //             <h3>About Me:</h3>
-        //             <p>{aboutMe}</p>
-        //             <div>
-        //             <form onSubmit={handleSubmitAboutMe}>
-        //                 <input type="text" value={newAboutMe} onChange={handleInputChangeAboutMe}/><input type="submit" value="Update" />
-        //             </form>
-        //             </div>
-        //         </div>
-        //         <div>
-        //             <h5>Best way to contact me:</h5>
-        //             <p>{contactInfo}</p>
-        //             <div>
-        //             <form onSubmit={handleSubmitContactInfo}>
-        //                 <input type="text" value={newContactInfo} onChange={handleInputChangeContactInfo}/><input type="submit" value="Update" />
-        //             </form>
-        //             </div>
-        //         </div>
-        //         <div>
-        //             <h5>My Location:</h5>
-        //             <p>{location}</p>
-        //             <div>
-        //             <form onSubmit={handleSubmitLocation}>
-        //                 <input type="text" value={newLocation} onChange={handleInputChangeLocation}/><input type="submit" value="Update" />
-        //             </form>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
+</body>
+    
     );
 }
-
- // const handleSubmitGenreEdit = (genre) => {
-    //     fetch("http://localhost:8080/updateGenre/"+genre.id, {
-    //         method: "PUT",
-    //         headers: {
-    //             "content-type": "text/plain"
-    //         },
-    //         body: editGenre.toString()
-    //     })
-    //     setEditGenre('');
-        // genres.map(g => {
-        //     if (g.id === genre.id) {
-        //         g["editMode"] = false;
-        //     }
-        //     return g
-        // });
-    // };
-
-    // const onClickEditMode = (genre) => {
-    //     setEditGenre(genre.genreName);
-    //     genres.map(g => {
-    //         // if (g.id === genre.id) {
-    //         //     g["editMode"] = true;
-    //         // }
-    //         // return g
-    //     });
-    //     // genreName.preventDefault();
-    //     console.log(genre);
-    // };
-
-    // const handleInputChangeGenreEdit = (e) => {
-    //     setEditGenre(e.target.value);
-    // }

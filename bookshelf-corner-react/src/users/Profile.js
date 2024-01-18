@@ -119,8 +119,9 @@ export default function Profile() {
     window.sessionStorage.setItem("username", username);
 
     return (
+    <body class="text-center bg">
         <section style={backgroundStyle}>
-            <div class="container py-5">
+            <div id="white-bg" class="container p-5 d-flex h-100 mx-auto flex-column align-items-center">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card mb-4">
@@ -211,6 +212,7 @@ export default function Profile() {
         </div>
         </div>
     </section>
+    </body>
 
                         
         );
