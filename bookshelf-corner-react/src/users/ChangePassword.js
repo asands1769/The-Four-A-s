@@ -59,30 +59,30 @@ export default function Profile() {
           }
 
     return (
-      <div>
-      <div class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
-      <form method="PUT" autoComplete="off" onSubmit={onSubmit}>
-          <div class="form-outline mb-4">
-            <h1>Change Your Password Below</h1>
-          </div>
-          <div class="form-outline mb-4">
-            <input type="password" name="password" class="form-control" placeholder="Password" onFocus={onPasswordFocus}/>
-              {
-                passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
-              }
-          </div>
-          <div class="form-outline mb-4">
-          <input type="password" name="verifyPassword" class="form-control" placeholder="Verify password" onFocus={onVerifyPasswordFocus}/>
-                    {
-                    verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
-                    }
-          </div>
-          <div>
-             <input type="submit" name="submit" value="Sign in" class="btn btn-primary btn-block mb-4"/>
-          </div>
-      </form>
-    </div>
-</div>
+      <body class="text-center bg">
+          <div id="white-bg" class="container min-vh-100 p-5 d-flex justify-content-center align-items-top">
+          <form method="PUT" autoComplete="off" onSubmit={onSubmit}>
+              <div class="form-outline p-5 m-5">
+                <h1>Change Your Password Below</h1>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="password" name="password" class="form-control" placeholder="Password" onFocus={onPasswordFocus}/>
+                  {
+                    passwordError ? <span style={{ color: 'red', fontSize: '12px'}}>{passwordError}</span> : ''
+                  }
+              </div>
+              <div class="form-outline mb-4">
+              <input type="password" name="verifyPassword" class="form-control" placeholder="Verify password" onFocus={onVerifyPasswordFocus}/>
+                        {
+                        verifyPasswordError ? <span style={{ color: 'red', fontSize: '12px'}}>{verifyPasswordError}</span> : ''
+                        }
+              </div>
+              <div>
+                <input type="submit" name="submit" value="Sign in" class="btn btn-primary btn-block mb-4"/>
+              </div>
+          </form>
+        </div>
+  </body>
     );
 }
 
