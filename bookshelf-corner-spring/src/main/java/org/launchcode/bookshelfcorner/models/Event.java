@@ -14,9 +14,6 @@ import java.util.List;
 @Table(name="events")
 public class Event extends AbstractEntity {
 
-    @ManyToOne
-    private Calendar calendar;
-
     @NotNull
     private String eventName;
 
@@ -32,12 +29,17 @@ public class Event extends AbstractEntity {
     @NotNull
     private LocalDateTime eventEndDateTime;
 
-    @NotNull
-    @ManyToMany
-    private List<User> eventParticipants = new ArrayList<>();
-
-
     public Event() {
+
+    }
+
+    public Event(String eventName, String eventDescription, String eventLocation, LocalDateTime eventStartDateTime, LocalDateTime eventEndDateTime) {
+        super();
+        this.eventName = eventName;
+        this.eventDescription = eventDescription;
+        this.eventLocation = eventLocation;
+        this.eventStartDateTime = eventStartDateTime;
+        this.eventEndDateTime = eventEndDateTime;
     }
 
     public String getEventName() {
@@ -48,13 +50,6 @@ public class Event extends AbstractEntity {
         this.eventName = eventName;
     }
 
-    public Calendar getCalendar() {
-        return calendar;
-    }
-
-    public void setCalendar(Calendar calendar) {
-        this.calendar = calendar;
-    }
 
     public String getEventDescription() {
         return eventDescription;
@@ -88,24 +83,6 @@ public class Event extends AbstractEntity {
         this.eventEndDateTime = eventEndDateTime;
     }
 
-    public List<User> getEventParticipants() {
-        return eventParticipants;
-    }
 
-    public void setEventParticipants(List<User> eventParticipants) {
-        this.eventParticipants = eventParticipants;
-    }
 
-    @Override
-    public String toString() {
-        return "Event{" +
-                "eventId=" + /*eventId*/
-                ", eventName='" + eventName + '\'' +
-                ", eventDescription='" + eventDescription + '\'' +
-                ", eventLocation='" + eventLocation + '\'' +
-                ", eventParticipants='" + eventParticipants + '\'' +
-                ", eventStartDateTime=" + eventStartDateTime +
-                ", eventEndDateTime=" + eventEndDateTime +
-                '}';
-    }
 }

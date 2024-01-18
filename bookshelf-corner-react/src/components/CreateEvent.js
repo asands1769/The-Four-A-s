@@ -7,8 +7,8 @@ import 'react-clock/dist/Clock.css';
 import { useState } from 'react';
 
 function CreateEvent() {
-    const [ eventStartDate, setEventStartDate ] = useState(new Date());
-    const [ eventEndDate, setEventEndDate ] = useState(new Date());
+    const [ eventStartDateTime, setEventStartDate ] = useState(new Date());
+    const [ eventEndDateTime, setEventEndDate ] = useState(new Date());
     const [ eventName, setEventName ] = useState("");
     const [ eventDescription, setEventDescription ] = useState("");
     const [ eventLocation, setEventLocation ] = useState("");
@@ -38,22 +38,24 @@ function CreateEvent() {
         await supabase.auth.signOut();
     }
 
-    async function createCalendarEvent() {
-        console.log("Creating Event with Google Calendar");
-        const event = {
-            'summary': eventName,
-            'description': eventDescription,
-            'location': eventLocation,
-            'startDate': {
-                'dateTime': eventStartDate.toISOString(),
-                'timeZone': Intl.DateTimeFormat().resolvedOptions().timeZone
-            },
-            'endDate': {
-                'dateTime': eventEndDate.toISOString(),
-                'timeZone': Intl.DateTimeFormat().resolvedOptions().timeZone
-            }
-        }
-        await fetch("https://www.googleapis.com/calendar/v3/calendars/primary/events", {
+    async function saveCalendarEvent() {
+        
+        console.log("Creating Event");
+         const event = {
+            'eventName': eventName,
+            'eventDescription': eventDescription,
+            'eventLocation': eventLocation,
+            'eventStartDateTime': eventStartDateTime,
+               // 'timeZone': Intl.DateTimeFormat().resolvedOptions().timeZone
+            
+            'eventEndDateTime': eventEndDateTime
+               // 'timeZone': Intl.DateTimeFormat().resolvedOptions().timeZone
+        
+         }
+
+        console.log(event);
+        
+       /* await fetch("https://www.googleapis.com/calendar/v3/calendars/primary/events", {
             method: "POST",
             headers: {
                 'Authorization':'Bearer ' + session.provider_token
@@ -64,12 +66,26 @@ function CreateEvent() {
         }).then((data) => {
             console.log(data);
             alert("Event created, check your Google Calendar!");
+        }); */
+
+        await fetch("http://localhost:8080/createEvent", {
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain",
+              },
+            body: JSON.stringify(event)
+        }).then((data) => {
+            return data.json();
+        }).then((data) => {
+            console.log(data);
+            alert("Event created, checkout the events page!");
         });
     }
+   
 
     console.log(session);
-    console.log(eventStartDate);
-    console.log(eventEndDate);
+    console.log(eventStartDateTime);
+    console.log(eventEndDateTime);
     console.log(eventName);
     console.log(eventDescription);
     console.log(eventLocation);
@@ -80,19 +96,23 @@ function CreateEvent() {
                 {session ?
                 <>
                     <h2>Hello {session.user.email}</h2>
-                    <p>Event Start Date </p>
-                    <DateTimePicker onChange={setEventStartDate} value={eventStartDate} />
-                    <p>Event End Date </p>
-                    <DateTimePicker onChange={setEventEndDate} value={eventEndDate} />
                     <p>Event Name</p>
                     <input type="text" onChange={(e) => setEventName(e.target.value)} />
+                    <p></p>
                     <p>Event Description</p>
                     <input type="text" onChange={(e) => setEventDescription(e.target.value)} />
+                    <p></p>
                     <p>Event Location</p>
                     <input type="text" onChange={(e) => setEventLocation(e.target.value)} />
                     <p></p>
+                    <p>Event Start Date </p>
+                    <DateTimePicker onChange={setEventStartDate} value={eventStartDateTime} />
+                    <p></p>
+                    <p>Event End Date </p>
+                    <DateTimePicker onChange={setEventEndDate} value={eventEndDateTime} />
+                    <p></p>
                     <hr />
-                    <button onClick={() => createCalendarEvent()}>Create Event with Google</button>
+                    <button onClick={() => saveCalendarEvent()}>Create Event</button>
                     <p></p>
                     <button onClick={() => signOut()}>Sign Out</button>
                 </>

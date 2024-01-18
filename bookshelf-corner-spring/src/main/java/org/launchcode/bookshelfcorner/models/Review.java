@@ -1,60 +1,67 @@
 package org.launchcode.bookshelfcorner.models;
-
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-
+import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 
 @Entity
 @Table(name="reviews")
 public class Review extends AbstractEntity{
 
-    @ManyToOne
-    private User createdBy;
+    @NotNull
+    private String createdBy;
 
-    private LocalDateTime createdDate;
 
-    @Column(columnDefinition= "TEXT")
-    private String content;
+    @NotNull
+    private String bookTitle;
 
-    private Integer rating;
+    @NotNull
+    private LocalDate createdDate;
 
-    public Review() {
+    @NotNull
+    private String text;
 
-    }
 
-    public User getCreatedBy() {
+    public Review(String bookTitle, String createdBy, LocalDate createdDate, String text) {
+        super();
+        this.bookTitle= bookTitle;
+        this.createdBy= createdBy;
+        this.createdDate= createdDate;
+        this.text= text;
+   }
+
+    public String getCreatedBy() {
         return createdBy;
     }
 
-    public void setCreatedBy(User createdBy) {
+    public void setCreatedBy(String createdBy) {
         this.createdBy = createdBy;
     }
 
-    public LocalDateTime getCreatedDate() {
+    public String getBookTitle() {
+        return bookTitle;
+    }
+
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
+    }
+
+    public LocalDate getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(LocalDateTime createdDate) {
+    public void setCreatedDate(LocalDate createdDate) {
         this.createdDate = createdDate;
     }
 
-    public String getContent() {
-        return content;
+    public String getText() {
+        return text;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public Integer getRating() {
-        return rating;
-    }
-
-    public void setRating(Integer rating) {
-        this.rating = rating;
-    }
 }

@@ -17,6 +17,7 @@ public class BookList {
     @Column(name = "Genre")
     private String genre;
 
+
     public BookList() {
     }
 

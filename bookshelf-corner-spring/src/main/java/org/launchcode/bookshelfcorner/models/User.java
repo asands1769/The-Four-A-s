@@ -14,11 +14,11 @@ public class User extends AbstractEntity {
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    @ManyToMany(mappedBy = "eventParticipants")
-    private List<Event> events= new ArrayList<>();
+    //@ManyToMany(mappedBy = "eventAttendees")
+    //private List<Event> events= new ArrayList<>();
 
-    @OneToMany(mappedBy = "createdBy")
-    private List<Review> reviews= new ArrayList<>();
+//    @OneToMany(mappedBy = "createdBy")
+//    private List<Review> reviews= new ArrayList<>();
 
     @NotNull
     private String username;

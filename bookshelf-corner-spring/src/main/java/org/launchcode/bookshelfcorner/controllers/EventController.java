@@ -3,19 +3,14 @@ package org.launchcode.bookshelfcorner.controllers;
 import org.launchcode.bookshelfcorner.models.Event;
 import org.launchcode.bookshelfcorner.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
 
-@Controller
-
+@CrossOrigin(origins= "http://localhost:3000")
+@RestController
 public class EventController {
 
-   // private Event event;
 
     @Autowired
     private EventRepository eventRepository;
@@ -25,13 +20,30 @@ public class EventController {
         this.eventRepository = eventRepository;
     }*/
 
-    public boolean validateEventData(String eventName, String eventDescription, String eventLocation, LocalDateTime eventDateTime) {
+    @PostMapping("/createEvent")
+
+    public String createEvent (@RequestBody Event event) {
+        Event newEvent= new Event(event.getEventName(), event.getEventDescription(), event.getEventLocation(), event.getEventStartDateTime(), event.getEventEndDateTime());
+        eventRepository.save(newEvent);
+
+        return "save";
+    }
+
+    @GetMapping(value = "/getEvent", produces = MediaType.APPLICATION_JSON_VALUE)
+
+    public Iterable<Event> getEvent () {
+        return eventRepository.findAll();
+    }
+
+
+   /* public boolean validateEventData(String eventName, String eventDescription, String eventLocation, LocalDateTime eventDateTime) {
         if (eventName == null || eventName.trim().isEmpty() || eventDateTime == null || eventLocation == null) {
 
             throw new Error("Invalid input.");
         }
         return true;
     }
+
     public void createEvent(Event event) {
         eventRepository.save(event);
     }
@@ -68,10 +80,10 @@ public class EventController {
 
 
 
-    @GetMapping("/events")
-    @ResponseBody
-    public String renderEventsHomePage() {
-       return "Host and add an Event!";
-    }
+   // @GetMapping("/events")
+    //@ResponseBody
+    //public String renderEventsHomePage() {
+     //  return "Host and add an Event!";
+
 
 }
