@@ -20,15 +20,15 @@ public class User extends AbstractEntity {
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    @ManyToMany(mappedBy = "eventParticipants")
-    private List<Event> events= new ArrayList<>();
+//    @ManyToMany(mappedBy = "eventParticipants")
+//    private List<Event> events= new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonBackReference
     private List<Genre> genreList;
 
-    @OneToMany(mappedBy = "createdBy")
-    private List<Review> reviews= new ArrayList<>();
+//    @OneToMany(mappedBy = "createdBy")
+//    private List<Review> reviews= new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonBackReference
