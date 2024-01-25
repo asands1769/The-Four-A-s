@@ -24,9 +24,7 @@ export default function NavBar()  {
                             </div>
                             <div class="navbar-nav ms-auto">
                                 <a class="nav-link active" aria-current="page" href="/">Home</a>
-                                <a class="nav-link" href="/booklist">Book List</a>
                                 <a class="nav-link" href="/bookshelf">BookShelf</a>
-                                <a class="nav-link" href="/tag">Book Tags</a>
                                 <a class="nav-link" href="/reviews">Book Reviews</a>
                                 <a class="nav-link" href="/events">Events</a>
                                 {window.sessionStorage.getItem("loggedIn") === "true" ? <Link class="nav-link" to="/Profile">Profile</Link> : <Link class="nav-link" to="/Login">Sign in</Link>}
