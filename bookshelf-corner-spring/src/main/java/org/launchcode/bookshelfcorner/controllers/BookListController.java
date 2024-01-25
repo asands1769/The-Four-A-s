@@ -24,8 +24,8 @@ public class BookListController {
     //create bookList rest api
     @PostMapping("/books")
     public void addBook( @RequestBody BookList bookList){
-        System.out.println(bookList.isAvailable());;
-        System.out.println(bookList);
+        //System.out.println(bookList.isAvailable());;
+        //System.out.println(bookList);
           bookListRepository.save(bookList);
     }
     //get bookList ById rest api
@@ -37,6 +37,10 @@ public class BookListController {
 //    public List<BookList> getAvailableBooks() {
 //        return bookListRepository.findByAvailable(true);
 //    }
+@DeleteMapping("/books/{bookId}")
+public void deleteBook( @RequestBody BookList bookList){
+    bookListRepository.delete(bookList);
+}
 
     //update bookList rest api
     @PutMapping("/books/{bookId}")

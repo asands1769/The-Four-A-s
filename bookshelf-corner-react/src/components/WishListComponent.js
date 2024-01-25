@@ -45,6 +45,19 @@ const WishlistComponent = () => {
             })
             .catch(error => console.error('Error adding book to wishlist:', error));
     };
+     const handleRemoveFromWishlist = (bookId) => {
+        // Send a DELETE request to remove the book from the wishlist
+        fetch(`http://localhost:8080/api/books/${bookId}`, {
+            method: 'DELETE',
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Book removed from wishlist:', data);
+                // Update the local state to exclude the removed book
+                setBooks(books.filter(book => book.bookId !== bookId));
+            })
+            .catch(error => console.error('Error removing book from wishlist:', error));
+    };
 
     return (
         <div>
@@ -76,10 +89,12 @@ const WishlistComponent = () => {
             </form>
 
             <div>
-                <h3>Wishlist</h3>
                 <ul>
                     {books.map(book => (
-                        <li key={book.bookId}>{`${book.bookTitle} by ${book.bookAuthor}, ${book.publishedYear}, Genre: ${book.genre}`}</li>
+                        <li key={book.bookId}>
+                            {`${book.bookTitle} by ${book.bookAuthor}, ${book.publishedYear}, Genre: ${book.genre}`}
+                            <button onClick={() => handleRemoveFromWishlist(book.bookId)}>Remove </button>
+                        </li>
                     ))}
                 </ul>
             </div>

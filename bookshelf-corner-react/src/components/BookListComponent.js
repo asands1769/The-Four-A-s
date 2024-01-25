@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import React, { useState, useEffect } from 'react';
 
 class BookListComponent extends Component {
     constructor(props){
@@ -22,6 +21,7 @@ class BookListComponent extends Component {
         })
         .catch(error => {
             console.error('Error fetching data:', error);
+            alert('There was an error fetching data. Please try again later.');
         });
 }
     // create add BookList method
@@ -35,7 +35,7 @@ class BookListComponent extends Component {
     wishList() {
         return (
             <Link to="/wishList" className='btn btn-primary'>
-                Add wishList
+                WishList
             </Link>
         );
     }
@@ -97,4 +97,6 @@ class BookListComponent extends Component {
 }
 
 export default BookListComponent;
+
+
 
