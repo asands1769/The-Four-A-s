@@ -4,24 +4,24 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Books")
-public class Book {
+public class BookList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookId;
-    @Column(name = "book_title")
+    @Column(name = "title")
     private String bookTitle;
-    @Column(name = "book_author")
+    @Column(name = "author")
     private String bookAuthor;
-    @Column(name = "published_year")
+    @Column(name = "publishedYear")
     private int publishedYear;
     @Column(name = "Genre")
     private String genre;
-    private String title;
+//    private String title;
 
-    public Book() {
+    public BookList() {
     }
 
-    public Book(String bookTitle, String bookAuthor, int publishedYear, String genre) {
+    public BookList(String bookTitle, String bookAuthor, int publishedYear, String genre) {
         this.bookTitle = bookTitle;
         this.bookAuthor = bookAuthor;
         this.publishedYear = publishedYear;
@@ -68,19 +68,19 @@ public class Book {
         this.genre = genre;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthor(String author) {
-        this.bookAuthor = author;
-    }
-
-    public String getAuthor() {
-        return bookAuthor;
-    }
+//    public String getTitle() {
+//        return title;
+//    }
+//
+//    public void setTitle(String title) {
+//        this.title = title;
+//    }
+//
+//    public void setAuthor(String author) {
+//        this.bookAuthor = author;
+//    }
+//
+//    public String getAuthor() {
+//        return bookAuthor;
+//    }
 }

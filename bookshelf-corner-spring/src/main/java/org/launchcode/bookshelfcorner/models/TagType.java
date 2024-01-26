@@ -4,12 +4,12 @@ package org.launchcode.bookshelfcorner.models;
 public enum TagType {
 
 
-    MUSTREAD("Mustread"),
+    MUSTREAD("MustRead"),
     TIMELESS("Timeless"),
 
-    GENRE("Genre"),
+    RECOMMENDED("Recommended"),
 
-    AUTHOR("Author");
+    NOTRECOMMENDED("NotRecommended");
 
     private final String tagName;
 
